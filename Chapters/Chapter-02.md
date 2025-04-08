@@ -397,9 +397,6 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 
 #### 2.3.5. As-is Scenario Mapping
 
-# REQUIREMENTS SPECIFICATION
-
-## 3.1 As-Is Scenario Mapping
 
 #### As-Is Scenario Mapping: Segmento Doméstico (Usuarios que arman PCs)
 
