@@ -360,47 +360,30 @@ Aca le mencionamos nuestra propuesta de BuilMaster
 #### 2.3.1. User Personas
 #### 2.3.2. User Task Matrix
 
-# User Task Matrix para BuildMaster
-
 #### **Segmentos considerados:**  
 
-1. **Usuario Doméstico:** Individuos que buscan armar o comprar una PC para uso personal (gaming, estudio, trabajo remoto).  
+#### Segmento Doméstico (Usuarios Individuales)
 
-2. **Usuario Empresarial:** Responsables de TI en PyMEs que necesitan equipos para equipos de trabajo o proyectos específicos.  
-
-| Tarea (Task) | Usuario Doméstico                | Usuario Empresarial               |
-|---------------------------------------|----------------------------------|-----------------------------------|
-|                                       | Frecuencia    | Importancia     | Frecuencia    | Importancia     |
-| Investigar componentes compatibles    | Semanal       | Alta            | Mensual       | Media           |
-| Comparar precios en múltiples tiendas | Mensual       | Alta            | Trimestral    | Alta            |
-| Verificar especificaciones técnicas   | Mensual       | Media           | Mensual       | Alta            |
-| Consultar reviews de productos        | Semanal       | Media           | Raramente     | Baja            |
-| Estimar presupuesto total             | Única vez     | Alta            | Trimestral    | Alta            |
-| Asegurar escalabilidad futura         | Raramente     | Baja            | Mensual       | Alta            |
-| Coordinar compras masivas             | No aplica     | No aplica       | Trimestral    | Alta            |
-| Validar garantías y soporte           | Única vez     | Media           | Mensual       | Alta            |
+| Task                     | Frequency of the Task | Severity of the Task | Dependencies                                  | User Inputs                            |
+|--------------------------|-----------------------|----------------------|-----------------------------------------------|----------------------------------------|
+| Investigar componentes   | Semanal               | Alta                 | Ninguna. Acceso sin registro.                 | Presupuesto, uso previsto (gaming/estudio) |
+| Comparar precios         | Mensual               | Alta                 | Lista de componentes seleccionados.          | Componentes, tiendas preferidas         |
+| Verificar compatibilidad | Única vez (por build) | Crítica              | Componentes seleccionados.                    | Especificaciones técnicas               |
+| Comprar componentes      | Única vez             | Alta                 | Presupuesto definido y lista validada.        | Método de pago, dirección de envío      |
+| Ensamblar PC             | Única vez             | Media                | Componentes físicos recibidos.                | Guías de ensamblaje                     |
 
 ---
 
-#### **Tareas de Alta Frecuencia + Importancia**  
-- **Doméstico:**  
-  - *Investigar componentes compatibles (Semanal/Alta)*: Necesidad constante de actualizar conocimiento ante nuevos lanzamientos.  
-  - *Comparar precios (Mensual/Alta)*: Relacionado con la sensibilidad al presupuesto.  
+#### Segmento Empresarial (Departamentos de TI)
 
-- **Empresarial:**  
-  - *Coordinar compras masivas (Trimestral/Alta)*: Requiere planificación logística y negociación con proveedores.  
-  - *Validar garantías (Mensual/Alta)*: Critico para reducir tiempos muertos por fallas técnicas.  
+| Task                     | Frequency of the Task | Severity of the Task | Dependencies                                  | User Inputs                            |
+|--------------------------|-----------------------|----------------------|-----------------------------------------------|----------------------------------------|
+| Generar reporte de necesidades | Trimestral       | Alta                 | Registro de equipos actuales y carga de trabajo. | Requerimientos técnicos (RAM, CPU, etc.) |
+| Cotizar compras masivas  | Trimestral            | Alta                 | Lista de componentes aprobados por el área de finanzas. | Proveedores preferidos, presupuesto     |
+| Validar garantías        | Anual                 | Media                | Contratos con proveedores.                    | Términos de garantía, soporte técnico  |
+| Configurar equipos       | Semestral             | Alta                 | Componentes recibidos y aprobados.            | Software corporativo (ERP, VPN, etc.)  |
+| Monitorear rendimiento   | Mensual               | Media                | Equipos en funcionamiento.                    | Datos de uso (temperatura, rendimiento)|
 
-#### **Diferencias Clave**  
-1. **Escalabilidad:**  
-   - Las empresas priorizan tareas de planificación a largo plazo (*Asegurar escalabilidad*: Importancia Alta vs. Baja en domésticos).  
-   - Los usuarios domésticos enfocan esfuerzos en investigación técnica puntual (*Consultar reviews*: Frecuencia Semanal vs. Raramente en empresas).  
-
-2. **Enfoque de compra:**  
-   - Empresas necesitan validar aspectos legales/operativos (*Garantías*: Frecuencia Mensual vs. Única vez en domésticos).  
-   - Domésticos realizan tareas de estimación presupuestaria de forma esporádica pero crítica (*Estimar presupuesto*: Única vez/Alta).  
-
----
 
 **Insight para BuildMaster:**  
 
