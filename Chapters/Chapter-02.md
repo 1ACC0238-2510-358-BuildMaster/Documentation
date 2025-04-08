@@ -422,8 +422,7 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 
 
 Glosario de términos del dominio de emsablado  y configuración de PCs:
-
-#### **Componentes y Hardware**  
+ 
 1. **PC Build** (Configuración de PC):  
    Conjunto específico de componentes de hardware seleccionados para armar una computadora personalizada.  
 
@@ -439,9 +438,7 @@ Glosario de términos del dominio de emsablado  y configuración de PCs:
 5. **Enterprise Workload** (Carga de Trabajo Empresarial):  
    Requerimientos técnicos específicos para hardware destinado a tareas corporativas (ej: virtualización, procesamiento masivo).  
 
----
 
-## **Proceso de Configuración**  
 6. **Budget Estimation** (Estimación de Presupuesto):  
    Cálculo inicial del costo total basado en componentes seleccionados y uso previsto (gaming, diseño, oficina).  
 
@@ -451,9 +448,6 @@ Glosario de términos del dominio de emsablado  y configuración de PCs:
 8. **Bottleneck Identification** (Identificación de Cuellos de Botella):  
    Detección de componentes que limitan el rendimiento general del sistema (ej: CPU lenta con GPU potente).  
 
-
-
-#### **Términos de Compra**  
 9. **Price Comparison** (Comparación de Precios):  
    Análisis de costos de un mismo componente en diferentes retailers (Amazon, Newegg, tiendas locales).  
 
@@ -463,9 +457,6 @@ Glosario de términos del dominio de emsablado  y configuración de PCs:
 11. **Bulk Purchase** (Compra Masiva):  
     Adquisición de múltiples unidades idénticas de hardware para uso empresarial.  
 
-
-
-#### **Segmentos de Usuario**  
 12. **Home User** (Usuario Doméstico):  
     Individuo que arma o compra una PC para uso personal (gaming, estudio, entretenimiento).  
 
@@ -475,9 +466,7 @@ Glosario de términos del dominio de emsablado  y configuración de PCs:
 14. **Scalability** (Escalabilidad):  
     Capacidad de un PC Build de adaptarse a futuras actualizaciones sin cambios mayores en la configuración base.  
 
-
-
-#### **Soporte y Garantías**  
+  
 15. **Warranty Coverage** (Cobertura de Garantía):  
     Período y condiciones bajo los cuales un fabricante repara/reemplaza componentes defectuosos.  
 
