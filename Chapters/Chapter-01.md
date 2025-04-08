@@ -222,21 +222,304 @@ Difícil de cuantificar, pero con millones de PCs vendidas anualmente, miles enf
 
 ##### 1.2.2.1. Lean UX Problem Statements  
 
-[Definir problemas centrales]  
+Cuando lanzamos BuildMaster, el mercado carecía de una herramienta accesible y confiable para armar PCs personalizadas, tanto para uso doméstico como profesional. Nuestra solución se destacó al ofrecer una interfaz intuitiva y un catálogo detallado que simplifica la elección de componentes, permitiendo a los usuarios configurar PCs adaptadas a sus necesidades. Sin embargo, el rápido avance tecnológico y la introducción constante de nuevos componentes han generado desafíos significativos:
+
+__Para uso doméstico:__ Los usuarios enfrentan problemas comunes, como elegir PCs con RAM insuficiente (menos de 8GB) o discos duros lentos (HDD en lugar de SSD), lo que causa lentitud y frustración. Estas decisiones inadecuadas afectan la satisfacción del usuario y limitan la capacidad de BuildMaster para ofrecer recomendaciones personalizadas y precisas.
+
+__Para uso profesional:__ Las empresas luchan por equilibrar costos, rendimiento y seguridad, como decidir entre laptops portátiles y desktops potentes, asegurar suficiente capacidad para tareas específicas (como 16GB de RAM para trabajadores del conocimiento) y evitar costos altos de mantenimiento por elegir equipos de baja calidad. Este problema afecta la confianza de las empresas en la precisión de las recomendaciones y limita nuestra capacidad para escalar el negocio, ya que las empresas potenciales no logran encontrar soluciones que se ajusten a sus necesidades específicas.
+
 
 ##### 1.2.2.2. Lean UX Assumptions  
 
-[Definir supuestos clave]  
+Assumption 1: Uso Doméstico
 
+-  Tendremos éxito cuando los usuarios perciban BuildMaster como una solución confiable y útil para armar PCs personalizadas.
+- Es importante resaltar la precisión y la confiabilidad de las recomendaciones de componentes, así como la transparencia en el proceso de selección.
+
+Assumption 2: Uso Doméstico
+- Tendremos éxito cuando los usuarios puedan aliviar su tiempo y esfuerzo en la elección de componentes, utilizando las herramientas de BuildMaster basadas en filtros eficientes para comparar y encontrar lo que el usuario busca.
+- Es importante resaltar la facilidad de uso y la eficiencia de BuildMaster, permitiendo a los usuarios encontrar rápidamente opciones que se ajusten a sus criterios específicos.
+
+Assumption 3: Uso Doméstico
+
+- Tendremos éxito cuando los usuarios disfruten de una interfaz cómoda y personalizada, adaptándose a sus necesidades y preferencias individuales.
+- Es importante resaltar la capacidad de BuildMaster para ofrecer opciones de configuración relevantes y personalizadas, así como la atención a las necesidades específicas de cada usuario.
+
+Assumption 4: Uso Doméstico
+
+- Tendremos éxito cuando los usuarios experimenten un alto nivel de satisfacción al encontrar una PC que cumpla con sus expectativas y necesidades.
+- Es importante resaltar la calidad y la diversidad de las opciones de componentes disponibles en BuildMaster, así como la facilidad para evaluar y comparar diferentes configuraciones.
+
+Assumption 5: Uso Doméstico
+
+- Tendremos éxito cuando los usuarios recomienden BuildMaster a amigos y familiares como una herramienta confiable y efectiva para armar PCs personalizadas.
+- Es importante resaltar la satisfacción y la confianza de los usuarios en BuildMaster, así como su disposición a compartir su experiencia positiva con otros.
+
+Assumption 1: Uso Profesional
+
+- Tendremos éxito cuando las empresas perciban BuildMaster como una solución confiable y útil para configurar PCs profesionales.
+- Es importante resaltar la precisión y la confiabilidad de las recomendaciones de componentes, así como la transparencia en el proceso de selección.
+
+Assumption 2: Uso Profesional
+
+- Tendremos éxito cuando las empresas puedan aliviar su tiempo y esfuerzo en la elección de componentes, utilizando las herramientas de BuildMaster basadas en filtros eficientes para comparar y encontrar lo que la empresa busca.
+- Es importante resaltar la facilidad de uso y la eficiencia de BuildMaster, permitiendo a las empresas encontrar rápidamente opciones que se ajusten a sus criterios específicos.
+
+Assumption 3: Uso Profesional
+
+- Tendremos éxito cuando las empresas disfruten de una interfaz cómoda y personalizada, adaptándose a sus necesidades y preferencias específicas.
+
+- Es importante resaltar la capacidad de BuildMaster para ofrecer opciones de configuración relevantes y personalizadas, así como la atención a las necesidades específicas de cada empresa.
+
+Assumption 4: Uso Profesional
+
+- Tendremos éxito cuando las empresas experimenten un alto nivel de satisfacción al encontrar PCs que cumplan con sus expectativas y necesidades.
+- Es importante resaltar la calidad y la diversidad de las opciones de componentes disponibles en BuildMaster, así como la facilidad para evaluar y comparar diferentes configuraciones.
+
+Assumption 5: Uso Profesional
+
+- Tendremos éxito cuando las empresas recomienden BuildMaster a otras empresas como una herramienta confiable y efectiva para armar PCs profesionales.
+- Es importante resaltar la satisfacción y la confianza de las empresas en BuildMaster, así como su disposición a compartir su experiencia positiva con otros.
 ##### 1.2.2.3. Lean UX Hypothesis Statements  
 
-[Hipótesis basadas en supuestos]  
+- Hipótesis 1: Uso Doméstico
+Creemos que: Si simplificamos el proceso de selección de componentes mediante una interfaz intuitiva y herramientas de filtrado eficientes, los usuarios encontrarán más fácilmente PCs que se ajusten a sus necesidades.
+Sabremos que: Esta hipótesis será cierta cuando observemos un aumento del 5% en la tasa de interacción para la sección de herramientas de filtrado y una disminución del 8% en el número de usuarios que abandonan el proceso de selección.
+
+- Hipótesis 2: Uso Doméstico
+Creemos que: Al personalizar la experiencia del usuario y ofrecer configuraciones recomendadas basadas en su presupuesto, aumentaremos la satisfacción general y la confianza en BuildMaster.
+Sabremos que: Esta hipótesis será cierta si observamos un incremento del 5% en el número de usuarios que finalizan el proceso de selección y un aumento del 10% en la duración promedio de la sesión.
+
+- Hipótesis 3: Uso Doméstico
+Creemos que: Al proporcionar información detallada y precisa sobre cada componente, aumentaremos la confianza de los usuarios en BuildMaster.
+Sabremos que: Esta hipótesis será cierta cuando observemos un aumento del 8% en la tasa de clics en los detalles de los componentes y una disminución del 13% en las consultas de soporte relacionadas con la falta de información.
+
+- Hipótesis 4: Uso Doméstico
+Creemos que: Al mejorar la comunicación y la transparencia durante el proceso de configuración de PCs, aumentaremos la confianza de los usuarios en BuildMaster.
+Sabremos que: Esta hipótesis será cierta a través de encuestas de satisfacción del usuario que muestren un aumento del 8% en la percepción de transparencia y confiabilidad.
+
+- Hipótesis 5: Uso Doméstico
+Creemos que: Al ofrecer una variedad de opciones de componentes que se adapten a diferentes presupuestos y preferencias, aumentaremos la satisfacción general de los usuarios.
+Sabremos que: Esta hipótesis será cierta si observamos un incremento significativo del 10% en la tasa de retención de usuarios que completan la configuración de su PC ideal.
+
+- Hipótesis 6: Uso Doméstico
+Creemos que: Al simplificar el proceso de contacto con asistentes de soporte técnico y expertos en componentes, aumentaremos la probabilidad de que los usuarios conviertan su interés en una acción concreta, como la compra final.
+Sabremos que: Esta hipótesis será cierta si observamos un aumento del 10% en la tasa de conversión final.
+
+- Hipótesis 7: Uso Doméstico
+Creemos que: Al optimizar la velocidad de carga y la capacidad de respuesta de BuildMaster, mejoraremos la satisfacción del usuario y la retención.
+Sabremos que: Esta hipótesis será cierta si observamos una disminución del 3% en el tiempo de carga de las páginas y una mejora en las métricas de retención y compromiso del usuario.
+
+- Hipótesis 8: Uso Doméstico
+Creemos que: Al ofrecer una guía de navegación sobre el proceso de configuración de PCs en BuildMaster, aumentaremos la confianza y la satisfacción de los usuarios.
+Sabremos que: Esta hipótesis será cierta si, mediante encuestas de usuario, observamos una mejora del 8% en las métricas de satisfacción del cliente y una reducción del 10% en consultas relacionadas con el proceso de configuración.
+
+- Hipótesis 1: Uso Profesional
+Creemos que: Si simplificamos el proceso de selección de componentes mediante una interfaz intuitiva y herramientas de filtrado eficientes, las empresas encontrarán más fácilmente PCs que se ajusten a sus necesidades.
+Sabremos que: Esta hipótesis será cierta cuando observemos un aumento del 5% en la tasa de interacción para la sección de herramientas de filtrado y una disminución del 8% en el número de clientes que abandonan el proceso de selección.
+
+- Hipótesis 2: Uso Profesional
+Creemos que: Al personalizar la experiencia del usuario y ofrecer configuraciones recomendadas basadas en su presupuesto y necesidades específicas, aumentaremos la satisfacción general y la confianza en BuildMaster.
+Sabremos que: Esta hipótesis será cierta si observamos un incremento del 5% en el número de empresas que finalizan el proceso de selección y un aumento del 10% en la duración promedio de la sesión.
+
+- Hipótesis 3: Uso Profesional
+Creemos que: Al proporcionar información detallada y precisa sobre cada componente, aumentaremos la confianza de las empresas en BuildMaster.
+Sabremos que: Esta hipótesis será cierta cuando observemos un aumento del 8% en la tasa de clics en los detalles de los componentes y una disminución del 13% en las consultas de soporte relacionadas con la falta de información.
+
+- Hipótesis 4: Uso Profesional
+Creemos que: Al mejorar la comunicación y la transparencia durante el proceso de configuración de PCs, aumentaremos la confianza de las empresas en BuildMaster.
+Sabremos que: Esta hipótesis será cierta a través de encuestas de satisfacción del usuario que muestren un aumento del 8% en la percepción de transparencia y confiabilidad.
+
+- Hipótesis 5: Uso Profesional
+Creemos que: Al ofrecer una variedad de opciones de componentes que se adapten a diferentes presupuestos y necesidades específicas, aumentaremos la satisfacción general de las empresas.
+Sabremos que: Esta hipótesis será cierta si observamos un incremento significativo del 10% en la tasa de retención de empresas que completan la configuración de sus PCs ideales.
+
+- Hipótesis 6: Uso Profesional
+Creemos que: Al simplificar el proceso de contacto con asistentes de soporte técnico y expertos en componentes, aumentaremos la probabilidad de que las empresas conviertan su interés en una acción concreta, como la compra final.
+Sabremos que: Esta hipótesis será cierta si observamos un aumento del 10% en la tasa de conversión final.
+
+- Hipótesis 7: Uso Profesional
+Creemos que: Al optimizar la velocidad de carga y la capacidad de respuesta de BuildMaster, mejoraremos la satisfacción del usuario y la retención.
+Sabremos que: Esta hipótesis será cierta si observamos una disminución del 3% en el tiempo de carga de las páginas y una mejora en las métricas de retención y compromiso del usuario.
+
+- Hipótesis 8: Uso Profesional
+Creemos que: Al ofrecer una guía de navegación sobre el proceso de configuración de PCs en BuildMaster, aumentaremos la confianza y la satisfacción de las empresas.
+Sabremos que: Esta hipótesis será cierta si, mediante encuestas de usuario, observamos una mejora del 8% en las métricas de satisfacción del cliente y una reducción del 10% en consultas relacionadas con el proceso de configuración.
 
 ##### 1.2.2.4. Lean UX Canvas  
 
-[Visualizar canvas de Lean UX]  
+<div style="text-align: center; margin: 20px;">
+  <h1>Lean UX Canvas (v2)</h1>
+</div>
+
+<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <td colspan="3" style="background-color:rgb(0, 0, 0); padding: 10px;">
+      <div style="float: left; width: 50%;">
+        <strong>Title of initiative: Build master</strong>
+      </div>
+      <div style="float: right; width: 40%;">
+        <div>
+          <strong>Date:</strong>
+        </div>
+        <div>
+          <strong>Iteration:</strong>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2" style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>Business Problem</h2>
+      <p>
+      El problema es la dificultad para elegir una PC que cumpla con las necesidades específicas, ya sea por falta de conocimiento técnico, restricciones presupuestarias o especificaciones inadecuadas. Este problema afecta tanto a individuos como a empresas, generando frustración y, en algunos casos, pérdidas monetarias significativas.
+      </p>
+    </td>
+    <td rowspan="2" style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>Solutions</h2>
+      <p> 
+
+- interfaz intuitiva y asistente de configuración: Una interfaz amigable que guíe al usuario a través del proceso de selección de componentes, destacando recomendaciones basadas en su presupuesto y necesidades específicas.
+
+- Filtros inteligentes: Herramientas avanzadas de filtrado que permitan a los usuarios encontrar PCs que se ajusten a su uso principal, como trabajo remoto, estudio, gaming o entretenimiento.
+      
+- Comparador de PCs: Una sección que permita comparar PCs directamente en términos de rendimiento, precio y especificaciones, ayudando a los usuarios a tomar decisiones más informadas. 
+
+- Educación sobre especificaciones: Un recurso educativo que explique términos clave como RAM, almacenamiento, procesadores y gráficos, para ayudar a los usuarios a entender las diferencias entre componentes.
+Recomendaciones de mantenimiento: Información sobre cómo mantener las PCs funcionando correctamente, incluidas actualizaciones de software y hardware, y consejos para prolongar la vida útil del equipo.
+      </p>
+    </td>
+    <td style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>Business Outcomes</h2>
+      <p>
+
+- Incremento en la tasa de conversión: Un aumento en el porcentaje de usuarios que finalizan la configuración de su PC ideal y realizan la compra a través de BuildMaster.
+
+- Reducción en el tiempo de compra: Un menor tiempo promedio de selección de componentes, lo que indica que la interfaz y el asistente son efectivos.
+Mayor satisfacción post-compra: Una mejora en las evaluaciones de satisfacción del cliente, como encuestas de NPS (Net Promoter Score), que midan la probabilidad de que los usuarios recomienden BuildMaster a otros.
+
+- Menor tasa de fallos técnicos: Una reducción en la cantidad de consultas de soporte técnico relacionadas con problemas de compatibilidad o rendimiento.
+Mejora en el ROI (Retorno de la Inversión): Un aumento en los ingresos netos y una disminución en los costos operativos, como el tiempo dedicado a la actualización manual de la base de datos.
+
+- Mayor retención de clientes: Un aumento en la cantidad de usuarios que regresan a BuildMaster para futuras configuraciones o actualizaciones de sus PCs.
+
+- Mayor adopción empresarial: Un aumento en la cantidad de empresas que confían en BuildMaster para elegir PCs que se ajusten a sus cargas de trabajo específicas, como virtualización o procesamiento de datos intensivo.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>User Outcomes & Benefits</h2>
+      <p>
+- Ahorro de tiempo: Los usuarios no tendrán que pasar horas investigando componentes compatibles, ya que BuildMaster hará el trabajo por ellos.
+Mayor rendimiento: Al elegir PCs con especificaciones adecuadas, los usuarios evitarán problemas de lentitud y congelamientos, mejorando su productividad.
+
+- Mayor confianza: La información precisa y transparente sobre cada componente permitirá a los usuarios sentirse seguros de su compra, reduciendo la frustración y aumentando la satisfacción post-compra.
+
+- Economía: Los usuarios evitarán comprar componentes innecesariamente caros, ya que BuildMaster les guiará hacia opciones económicas que aún cumplen con sus necesidades.
+
+- Mejora en la experiencia del usuario: Los usuarios disfrutarán de un proceso de compra más fluido y sin inconvenientes, lo que se traducirá en un mayor compromiso con la plataforma.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>Hypotheses</h2>
+      <p>
+- Hipótesis 1:
+"Creemos que si simplificamos el proceso de selección de componentes mediante una interfaz intuitiva y herramientas de filtrado eficientes, los usuarios encontrarán más fácilmente PCs que se ajusten a sus necesidades."
+"Sabremos que esta hipótesis es cierta cuando observemos un aumento del 5% en la tasa de interacción con el asistente de configuración y una disminución del 8% en el número de usuarios que abandonan el proceso de selección."
+- Hipótesis 2:
+"Creemos que si personalizamos la experiencia del usuario y ofrecemos configuraciones recomendadas basadas en su presupuesto y necesidades específicas, aumentaremos la satisfacción general y la confianza en BuildMaster."
+"Sabremos que esta hipótesis es cierta si observamos un incremento del 5% en el número de usuarios que finalizan el proceso de selección y un aumento del 10% en la duración promedio de la sesión."
+- Hipótesis 3:
+"Creemos que si proporcionamos información detallada y precisa sobre cada componente, aumentaremos la confianza de los usuarios en BuildMaster."
+"Sabremos que esta hipótesis es cierta cuando observemos un aumento del 8% en la tasa de clics en los detalles de los componentes y una disminución del 13% en las consultas de soporte técnico relacionadas con la falta de información."
+- Hipótesis 4:
+"Creemos que si mejoramos la comunicación y la transparencia durante el proceso de configuración de PCs, aumentaremos la confianza de los usuarios en BuildMaster."
+"Sabremos que esta hipótesis es cierta a través de encuestas de usuario que muestren un aumento del 8% en la percepción de transparencia y confiabilidad."
+- Hipótesis 5:
+"Creemos que si ofrecemos una variedad de opciones de componentes que se adapten a diferentes presupuestos y necesidades específicas, aumentaremos la satisfacción general de los usuarios."
+"Sabremos que esta hipótesis es cierta si observamos un incremento significativo del 10% en la tasa de retención de usuarios que completan la configuración de su PC ideal."
+- Hipótesis 6:
+"Creemos que si simplificamos el proceso de contacto con asistentes de soporte técnico y expertos en componentes, aumentaremos la probabilidad de que los usuarios conviertan su interés en una acción concreta, como la compra final."
+"Sabremos que esta hipótesis es cierta si observamos un aumento del 10% en la tasa de conversión final."
+- Hipótesis 7:
+"Creemos que si optimizamos la velocidad de carga y la capacidad de respuesta de BuildMaster, mejoraremos la satisfacción del usuario y la retención."
+"Sabremos que esta hipótesis es cierta si observamos una disminución del 3% en el tiempo de carga de las páginas y una mejora en las métricas de retención y compromiso del usuario."
+- Hipótesis 8:
+"Creemos que si ofrecemos una guía de navegación sobre el proceso de configuración de PCs en BuildMaster, aumentaremos la confianza y la satisfacción de los usuarios."
+"Sabremos que esta hipótesis es cierta si, mediante encuestas de usuario, observamos una mejora del 8% en las métricas de satisfacción del cliente y una reducción del 10% en consultas relacionadas con el proceso de configuración."
+      </p>
+    </td>
+    <td style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>What’s the most important thing we need to learn first?</h2>
+      <p>
+- Pruebas A/B: Comparar la tasa de conversión entre usuarios que utilizan nuestro asistente de configuración y aquellos que no.
+
+- Encuestas de usuario: Medir la satisfacción post-compra y el nivel de confianza en nuestras recomendaciones.
+
+- Análisis de datos: Monitorear el uso de filtros inteligentes y evaluar si realmente guían a los usuarios hacia configuraciones adecuadas.
+      </p>
+    </td>
+    <td style="border: 2px solid black; padding: 20px; vertical-align: top;">
+      <h2>What’s the least amount of work we need to do to learn the next most important thing?</h2>
+      <p>
+- Prototipos de baja fidelidad: Crear una versión básica del asistente de configuración y los filtros inteligentes para validar rápidamente si los usuarios encuentran valor en estas características.
+
+- Experimentos rápidos: Diseñar encuestas simples que midan la confianza en nuestras recomendaciones y la satisfacción post-compra.
+
+- Iteraciones rápidas: Realizar pequeñas mejoras en la interfaz y las recomendaciones basadas en retroalimentación inmediata de los usuarios.
+      </p>
+    </td>
+  </tr>
+</table>
+
+
 
 #### 1.3. Segmentos objetivo  
+
+
+##### 1. __Segmento Doméstico (Personas en casa)__
+
+Perfil:
+
+- Usuarios individuales sin conocimiento técnico avanzado
+
+- Necesidades básicas: estudio, entretenimiento, teletrabajo ocasional
+
+- Sensibles al precio (presupuestos limitados)
+
+Dolor principal:
+
+- "No sé qué componentes necesito"
+
+- "Temo pagar de más por specs que no usaré"
+
+
+
+#####  2. __Segmento Profesional (Empresas)__
+
+Perfil:
+
+- Responsables de TI o compras corporativas
+
+- Necesidades específicas: equipos masivos, soporte técnico, garantías extendidas
+
+ Priorizan:
+
+- Compatibilidad con software empresarial
+
+- Escalabilidad y vida útil del hardware
+
+- Costo total de propiedad (no solo precio inicial)
+
+Dolor principal:
+
+- "Necesito 50 PCs iguales con specs precisas para nuestro ERP"
+
+- "No puedo permitir tiempos muertos por hardware inadecuado"
+
 
 ---
 
