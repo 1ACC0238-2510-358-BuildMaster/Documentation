@@ -146,7 +146,7 @@ Debilidades :
     <td>App móvil + web + integración ERP</td>
     <td>Solo app móvil</td>
     <td>App móvil</td>
-    <td>App móvil (solo Android)</td>
+    <td>Juego móvil (solo Android)</td>
   </tr>
 
   <tr>
@@ -291,7 +291,7 @@ __Tácticas Concretas__
 
 ---
 
-## 🔥 Ataque a Competidores
+## Ataque a Competidores
  
 
 1. __Contra BuildCores__
@@ -318,7 +318,7 @@ __Tácticas Concretas__
 
 __Entrevistas para Usuarios Domésticos__
 
-Objetivo: Entender frustraciones al elegir PCs y validar funcionalidades clave del asistente.
+Objetivo: Entender frustraciones al elegir PCs y validar funcionalidades clave del asistente o simulador.
 
 
 1. "¿Cómo describirías tu último proceso de compra de una PC? ¿Qué fue lo más frustrante?"
@@ -329,8 +329,7 @@ Objetivo: Entender frustraciones al elegir PCs y validar funcionalidades clave d
 
 4. "¿Alguna vez compraste un componente incompatible? ¿Cómo lo resolviste?"
 
-5. Sobre la solución:
-"¿Qué 3 características debería tener una app ideal para ayudarte a elegir una PC?"
+5. "¿Qué 3 características debería tener una app ideal para ayudarte a elegir una PC?"
 
 6. "¿Pagías por una app que te muestre alternativas más baratas y evite errores de compatibilidad?"
 
