@@ -32,7 +32,9 @@ Producto: BuildMaster
 
 | **Nombre**                  | **Código**    |
 |-----------------------------|---------------|
-| Ernesto David Casaverde     | U20221B657    |
+| Casaverde De La Cruz, Ernesto David      | U20221B657    |
+| Cantoral Sedamano, Alexander Alberto | U20181B152 |
+| Romero Qwistgaard, Russell Stephen ||
 
 
 <div align="center">
@@ -43,7 +45,7 @@ Ciclo 2025-01
 ## Registro de Versiones  
 | **Versión** | **Fecha**   | **Autor/es**         | **Descripción y Modificación**       |
 |-------------|-------------|----------------------|--------------------------------------|
-| 1.0         | [Fecha]     | [Autores]            | [Descripción de cambios]            |
+| 1.0         | /04/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen      |    Se redactó la descripción de la startup, los antecedentes y la problemática. Además, se desarrolló el Lean UX Process y se delimitó el segmento objetivo.<br><br> Se completó la sección de Competidores (Incluyendo un análisis competitivo y tácticas frente a competidores). <br><br> Se realizó el diseño de entrevistas, el to-be scenario mapping y el impact mapping. <br><br> Se realizó el Needfinding para obtener las user personas, los user task matrix y el user journey mapping. <br><br> Se completó el Needfinding para obtener el emphaty mapping, el as-is scenario mapping y el lenguaje ubicuo. <br><br> Se desarrollaron los wireframes y prototipos de la landing page y web application. <br><br> Se realizaron los Web Applications Wireflow Diagrams. <br><br> Se realizaron los diagramas C4, el DDD, diagramas de clase y de base de datos.        |
 
 ## Project Report Collaboration Insights  
 [URL del Repositorio]  
@@ -147,6 +149,15 @@ En **NovaPeak**, construimos el futuro de la informática, un equipo a la vez.
 Estudio la carrera de ingeniería de software en la universidad de Ciencias Aplicadas – UPC. Siempre me tomo los trabajos como parte de mi desarrollo personal tengo habilidades de programación web y native c++ Además se dominar las metodologías agiles y gestión de proyectos privados o públicos. Me gustaría aprender más sobre la programación. En mis tiempos libres practico fútbol, también me gusta leer libros, ver películas y viajar. Me considero responsable, respetuosa y amable, con estas habilidades comprometo a terminar el proyecto de la mejor manera para aportar al proyecto.
 
 ---
+
+Cantoral Sedamano, Alexander Alberto - U20181B152
+
+<div align="center"> <img src="https://raw.githubusercontent.com/AlexlmL/ImagesforOpenSource/main/foto%20alexander%5B797%5D.jpg" width="250" height="250"> </div>
+Estudiante de Ingeniería de Software con sólidos conocimientos en programación de aplicaciones web, manejo intermedio de bases de datos con SQL y experiencia en el uso de herramientas tecnológicas de diversos rubros.
+
+Destaco por mi capacidad para presentar y analizar información mediante Excel y Power BI, así como por mi participación activa en el desarrollo y despliegue de soluciones de software.
+
+Además, cuento con habilidades versátiles en el uso de herramientas comunes para el trabajo universitario. En el ámbito de las habilidades blandas, me caracterizo por ser organizado, comprometido con la calidad de las entregas y por saber trabajar eficientemente en equipo.
 
 ### 1.2. Solution Profile  
 
@@ -522,27 +533,3 @@ Dolor principal:
 
 
 ---
-
-
-
-
-
-
-## Conclusiones
-Conclusiones y recomendaciones.
-Video About-the-team
-
-
-## Bibliografía
-https://www.techtarget.com/searchenterprisedesktop/tip/How-to-choose-the-right-PC-for-business
-
-https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
-
-https://www.linkedin.com/pulse/top-7-things-consider-when-buying-new-computer-avoid-
-
-
-https://www.kingston.com/en/blog/gaming/top-10-pc-build-mistakes-beginners-make
-
-
-http://www.justiceitc.com/?trk=article-ssr-frontend-pulse_little-text-block 
-## Anexos
