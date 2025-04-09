@@ -325,13 +325,13 @@ Objetivo: Entender frustraciones al elegir PCs y validar funcionalidades clave d
 
 2. "¿Qué fuentes usaste para informarte sobre componentes? (amigos, YouTube, foros, etc.)"
 
-3. "Si tuvieras que armar una PC hoy, ¿qué te detendría o generaría ansiedad?"
+3. "Si tuvieras que armar una PC nuevamente, ¿qué te detendría o generaría ansiedad?"
 
 4. "¿Alguna vez compraste un componente incompatible? ¿Cómo lo resolviste?"
 
 5. "¿Qué 3 características debería tener una app ideal para ayudarte a elegir una PC?"
 
-6. "¿Pagías por una app que te muestre alternativas más baratas y evite errores de compatibilidad?"
+6. "¿Pagarías por una app que te muestre alternativas más baratas y evite errores de compatibilidad?"
 
 7. "Si esta app existiera, ¿la recomendarías a alguien como tú? ¿Por qué?"
 
@@ -351,7 +351,7 @@ Objetivo: Identificar necesidades en gestión de hardware y validar el modelo em
 
 6. "¿Qué porcentaje del presupuesto de TI se destina a hardware vs. software?"
 
-Aca le mencionamos nuestra propuesta de BuilMaster
+Aquí le mencionamos nuestra propuesta de BuilMaster
 
 7. "¿Qué obstáculos ven para adoptar una solución como BuildMaster en los próximos 6 meses?"
 #### 2.2.2. Registro de entrevistas
