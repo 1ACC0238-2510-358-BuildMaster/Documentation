@@ -10,21 +10,21 @@ Aplicación nativa para crear builds de PCs personalizadas con comparación de p
 
 Fortalezas:
 
-✔️ Actualización horaria de precios y disponibilidad en múltiples tiendas.
+-  Actualización horaria de precios y disponibilidad en múltiples tiendas.
 
-✔️ Modo offline para guardar builds localmente.
+-  Modo offline para guardar builds localmente.
 
-✔️ Integración con eBay para partes usadas (única entre las analizadas).
+- Integración con eBay para partes usadas (única entre las analizadas).
 
-✔️ Comparte builds en formato Reddit (útil para comunidades como r/buildapc).
+-  Comparte builds en formato Reddit (útil para comunidades como r/buildapc).
 
 Debilidades:
 
-✖️ Base de datos limitada (usuarios reportan componentes faltantes 8).
+-  Base de datos limitada (usuarios reportan componentes faltantes 8).
 
-✖️ Premium requerido ($2.99) para añadir partes personalizadas.
+-  Premium requerido ($2.99) para añadir partes personalizadas.
 
-✖️ No sincroniza con cuentas web externas (ej: PCPartPicker).
+-  No sincroniza con cuentas web externas (ej: PCPartPicker).
 
 2. __PC Builder: Part Picker [Disponible en Android/iOS]__
 
@@ -34,19 +34,19 @@ App enfocada en builds automáticas según presupuesto, con estimador de consumo
 
 Fortalezas:
 
-✔️ Generador automático de builds optimizadas por precio/rendimiento.
+-  Generador automático de builds optimizadas por precio/rendimiento.
 
-✔️ Soporte para 10+ regiones con conversión de moneda.
+-  Soporte para 10+ regiones con conversión de moneda.
 
-✔️ Incluye periféricos (teclados, monitores) en la base de datos.
+-  Incluye periféricos (teclados, monitores) en la base de datos.
 
 Debilidades:
 
-✖️ Errores de compatibilidad reportados (ej: coolers que no caben en casos 11).
+-  Errores de compatibilidad reportados (ej: coolers que no caben en casos 11).
 
-✖️ Solo muestra precios de Amazon (vs. competidores que integran más tiendas).
+-  Solo muestra precios de Amazon (vs. competidores que integran más tiendas).
 
-✖️ Interfaz poco intuitiva según reseñas.
+-  Interfaz poco intuitiva según reseñas.
 
 3. __PC Creator Simulator [Disponible en Android]__
 
@@ -56,15 +56,15 @@ Nota: Esta app es un juego de simulación (no un asistente real para comprar PCs
 
 Fortalezas:
 
-✔️ Educa sobre ensamblaje básico de componentes.
+- Educa sobre ensamblaje básico de componentes.
 
-✔️ Entretenida para principiantes que quieren aprender.
+- Entretenida para principiantes que quieren aprender.
 
 Debilidades :
 
-✖️ No útil para compras reales (sin datos de mercado).
+- No útil para compras reales (sin datos de mercado).
 
-✖️ Componentes ficticios o desactualizados.
+- Componentes ficticios o desactualizados.
 
 #### 2.1.1. Análisis competitivo
 
@@ -404,7 +404,7 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 |--------------------------|----------------------------------------|----------------------------------------|---------------------------------------|--------------------------------------|
 | **DOING**                | Busca tutoriales en YouTube            | Compara precios en Amazon/Newegg      | Compra componentes en tiendas distintas | Sigue guías de ensamblaje en PDF     |
 | **THINKING**             | "¿Qué tarjeta gráfica necesito?"       | "¿Son compatibles estos componentes?" | "Ojalá lleguen todos los paquetes"    | "¿Por qué no enciende mi PC?"        |
-| **FEELING**              | 😕 Confundido por términos técnicos    | 😟 Ansioso por elegir mal              | 😰 Nervioso por errores de envío       | 😡 Frustrado por incompatibilidades  |
+| **FEELING**              |  Confundido por términos técnicos    |  Ansioso por elegir mal              |  Nervioso por errores de envío       |  Frustrado por incompatibilidades  |
 
 ---
 
@@ -414,7 +414,7 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 |--------------------------|----------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|
 | **DOING**                | Analiza reportes de rendimiento        | Solicita presupuestos a proveedores  | Negocia contratos con garantías       | Configura PCs manualmente           |
 | **THINKING**             | "¿Cómo escalar nuestro hardware?"      | "¿Cumplirán los plazos de entrega?"  | "Necesitamos soporte técnico 24/7"    | "Esto nos tomará semanas"           |
-| **FEELING**              | 😣 Presionado por reducir costos       | 😠 Desconfianza en proveedores       | 😥 Preocupado por riesgos técnicos    | 😫 Agotado por procesos manuales    |
+| **FEELING**              |  Presionado por reducir costos       |  Desconfianza en proveedores       |  Preocupado por riesgos técnicos    |  Agotado por procesos manuales    |
 ### 2.4. Ubiquitous Language
 
 
