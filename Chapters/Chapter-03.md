@@ -31,11 +31,11 @@ Segmento Empresarial (Departamentos de TI)
 | US013 | Detección de cuellos de botella| Como usuario, quiero que el sistema me muestre si hay cuellos de botella en el rendimiento de la PC sugerida. | **Escenario 1: Cuello de botella detectado** <br> **Dado que** el usuario tiene una GPU muy potente con un procesador débil <br> **Entonces** el sistema muestra el % estimado de pérdida de rendimiento.	| EPIC003 |
 | EPIC004 | Búsqueda y Filtro de Componentes | Como usuario quiero tener a mi disposición de una barra de búsuqeda y filtros para encontrar de forma rápida los componentes | - | - |
 | US014 | Buscar componentes | Como usuario, quiero buscar un componente específico por nombre para encontrarlo rápidamente. | **Escenario 1: Resultado exitoso** <br>**Dado que** el usuario escribe “Ryzen 5”<br> **Cuando** presiona buscar <br> **Entonces** el sistema le muestra los resultados coincidentes | EPIC004 |
-| US015 | Filtrar por categoría	| Como usuario, quiero aplicar filtros por tipo (CPU, GPU, RAM) para facilitar la búsqueda de componentes.| **Escenario 1: Filtrado exitoso**<br> **Dado que** el usuario aplica un filtro por “GPU” <br> **Cuando** confirma el filtro <br> **Entonces** solo se muestran tarjetas gráficas.| EPIC004 |
+| US015 | Filtrar por categoría	| Como usuario, quiero aplicar filtros por tipo (CPU, GPU, RAM) para facilitar la búsqueda de componentes. | **Escenario 1: Filtrado exitoso**<br> **Dado que** el usuario aplica un filtro por “GPU” <br> **Cuando** confirma el filtro <br> **Entonces** solo se muestran tarjetas gráficas.| EPIC004 |
 | US016 | Ver detalles de un componente	| Como usuario, quiero ver los detalles técnicos de un componente para evaluarlo mejor.	| **Escenario 1: Acceso a detalles** <br> **Dado que** el usuario está viendo un componente <br> **Cuando** hace clic en “Ver más” <br> **Entonces** accede a la ficha técnica completa del componente. | EPIC004 |
 | EPIC005 |  Consulta de Precios y Tiendas | Como usuario tendré presente un precio aproximado de la build hecha y de cada componente que me redirigirá a su proveedor | - | - |
 | US017 | Mostrar precios de componente |	Como usuario, quiero ver el precio estimado de cada componente para evaluar si está dentro de mi presupuesto. | **Escenario 1: Visualización de precio** <br> **Dado que** el usuario está viendo un componente **Entonces** ve el precio estimado en soles o dólares junto al nombre. | EPIC005 |
-| US018 | Redirección a tienda externa	|Como usuario, quiero ser redirigido al proveedor para realizar la compra del componente.	| **Escenario 1: Redirección exitosa**   <br> **Dado que** el usuario desea comprar un componente <br> **Cuando** hace clic en el botón “Comprar” <br> **Entonces** es llevado al sitio web del proveedor.	|EPIC005 |
+| US018 | Redirección a tienda externa	| Como usuario, quiero ser redirigido al proveedor para realizar la compra del componente.	| **Escenario 1: Redirección exitosa**   <br> **Dado que** el usuario desea comprar un componente <br> **Cuando** hace clic en el botón “Comprar” <br> **Entonces** es llevado al sitio web del proveedor.	|EPIC005 |
 | EPIC006 | Guía Técnica y Glosario | Como usuario tendré acceso a guías e información adicional sobre los diferentes componentes para PC disponibles en la aplicación | - | - |
 | US019  |Acceder al glosario de términos	| Como usuario, quiero acceder a un glosario con definiciones de términos técnicos para entender mejor los componentes.	|**Escenario 1: Consulta exitosa <br> **Dado que** el usuario accede a la sección “Glosario”<br> **Cuando** selecciona un término <br>**Entonces** visualiza su definición y ejemplos relacionados. <br><br> **Escenario 2: Término no encontrado** **Dado que** el usuario busca un término que no está en el glosario <br> **Entonces** el sistema muestra un mensaje indicando que no se encontró información.	| EPIC006 |
 | US020 | Ver guía por categoría de componente	| Como usuario, quiero acceder a guías organizadas por tipo de componente (ej. CPU, GPU, RAM) para aprender cómo elegir.	| **Escenario 1: Visualización por categoría** <br> **Dado que** el usuario selecciona “Guías” <br> **Cuando** elige una categoría como “Tarjetas gráficas” <br> **Entonces** accede a un artículo o mini guía con información útil y recomendaciones.	| EPIC006 |
@@ -44,9 +44,12 @@ Segmento Empresarial (Departamentos de TI)
 | US022 | Ver builds populares	| Como usuario, quiero ver builds armadas por otros usuarios para inspirarme. |**Escenario 1: Lista de builds** <br> **Dado que** el usuario accede a la pestaña “Comunidad” <br> **Entonces** el sistema muestra una lista de builds populares ordenadas por puntuación.	| EPIC007 |
 | US023 | Calificar una build	| Como usuario, quiero poder dejar una puntuación para una build de la comunidad.	| **Escenario 1: Envío de calificación** <br> **Dado que** el usuario está viendo una build <br> **Cuando** selecciona 1 a 5 estrellas <br> **Entonces** su puntuación se guarda y se actualiza el promedio.	| EPIC007 |
 | EPIC008 | Soporte Básico | Como usuario mis builds se verán validadas su compatibilidad, se verificarán si necesito ser adevertido o si necesitaré ayuda con alguno de los componentes | - | - |
-| US024 | Acceder a ayuda rápida |	Como usuario, quiero acceder a preguntas frecuentes desde la app para resolver dudas comunes.	| **Escenario 1: Visualización de ayuda** <br> **Dado que** el usuario accede al menú de ayuda <br> **Cuando** hace clic en “FAQ” <br> **Entonces** visualiza una lista de preguntas frecuentes y sus respuestas.	| EPIC008 |
+| US024 |Acceder al glosario de términos	| Como usuario, quiero acceder a un glosario con definiciones de términos técnicos para entender mejor los componentes.	| Escenario 1: Consulta exitosa <br>**Dado que** el usuario accede a la sección “Glosario” <br> **Cuando** selecciona un término <br> **Entonces** visualiza su definición y ejemplos relacionados. <br> <br> **Escenario 2: Término no encontrado** <br> **Dado que** el usuario busca un término que no está en el glosario <br> **Entonces** el sistema muestra un mensaje indicando que no se encontró información. |	EPIC008 |
+| US025 | Ver guía por categoría de componente	| Como usuario, quiero acceder a guías organizadas por tipo de componente (ej. CPU, GPU, RAM) para aprender cómo elegir.	| **Escenario 1: Visualización por categoría** <br> **Dado que** el usuario selecciona “Guías” <br> **Cuando** elige una categoría como “Tarjetas gráficas” <br> **Entonces** accede a un artículo o mini guía con información útil y recomendaciones.	| EPIC008 |
+| US026 | Recomendaciones dentro del flujo de armado | Como usuario, quiero recibir tips relevantes sobre los componentes mientras armo mi build, sin tener que salir del flujo. | **Escenario 1: Tip contextual** <br> **Dado que** el usuario llega al paso de elegir CPU <br> **Entonces** el sistema muestra un consejo breve con link al glosario o guía completa.	| EPIC008 |
 
-|Historias ténicas| Título | Descripción | Criterios de Aceptación |
+
+|Historias técnicas| Título | Descripción | Criterios de Aceptación |
 |-----------------|--------|-------------|-------------------------|
 | TS001 |  Autenticación de usuarios | Como desarrollador, quiero implementar el sistema de login y registro para autenticar a los usuarios y permitirles guardar sus builds. |**Escenario 1: Registro exitoso** <br> **Dado que** un usuario envía un POST /api/register con datos válidos <br> **Entonces** se crea el usuario en la base de datos y se retorna un token JWT. <br><br> **Escenario 2: Login inválido** <br> **Dado que** un usuario envía credenciales incorrectas <br> **Entonces** se retorna un 401 Unauthorized.
 | TS002 | Autenticación de usuarios | Como desarrollador, quiero implementar el sistema de login y registro para autenticar a los usuarios y permitirles guardar sus builds. |	**Escenario 1: Registro exitoso** <br> **Dado que** un usuario envía un POST /api/register con datos válidos <br> **Entonces** se crea el usuario en la base de datos y se retorna un token JWT. <br><br>**Escenario 2: Login inválido** <br> **Dado que** un usuario envía credenciales incorrectas <br> **Entonces** se retorna un 401 Unauthorized.
@@ -63,7 +66,46 @@ Segmento Empresarial (Departamentos de TI)
 A continuación se cubrirán algunas User Story más importantes.
 
 
-
-
-
 ## 3.4. Product Backlog.
+
+| Orden | User Story ID | Título                              | Descripción                                                                                                 | Story Points |
+|-------|---------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------|
+| 1 | US001 |	Página de Inicio | Como desarrollador, quiero implementar el sistema de login y registro para autenticar a los usuarios y permitirles guardar sus builds. |1|
+| 2 | US002 |	Pestaña “Sobre” | Como visitante, quiero poder acceder a la pestaña "Sobre" para obtener más información sobre la aplicación móvil. |1|
+| 3 | US003 |	Pestaña “Contacto” |  Como visitante, quiero poder acceder a la pestaña “Contacto” para ponerme en contacto con el equipo de la aplicación móvil. |1|
+| 4 | US004 |	Pestaña de ayuda al usuario	| omo visitante, quiero contar con una sección de ayuda en el sitio web para poder resolver dudas frecuentes. |2|
+| 5 | US005 |	Registro de nuevo usuario |	Como visitante, quiero poder registrarme como usuario para acceder a todas las funcionalidades de la aplicación. |3|
+| 6 | US006 |	Iniciar sesión	| Como visitante, quiero poder acceder a mi cuenta de usuario existente para utilizar las funcionalidades de la aplicación. |3|
+| 7 | US007 |	Actualizar usuario	| Como usuario, quiero poder actualizar la información de mi cuenta existente en el sistema para corregir datos incorrectos o desactualizados.  |3|
+| 8 | US008 |	Ver builds favoritas | Como usuario, quiero poder ver mis builds favoritas en mi perfil de la aplicación.	|2|
+| 9 | US009	| Eliminar usuario | Como usuario, quiero poder eliminar mi cuenta del sistema para desvincularme de la aplicación. |3|
+| 10 | US010 |	Selección de tipo de uso	| Como usuario, quiero seleccionar el uso principal de mi PC (gaming, oficina, estudio) para obtener sugerencias personalizadas.  |2| 
+| 11 | US011 |	Ingreso de presupuesto | Como usuario, quiero ingresar el presupuesto que tengo para que el sistema sugiera componentes compatibles. |2|
+| 12 | US012 |	Análisis de compatibilidad | Como usuario, quiero que el sistema analice la compatibilidad entre los componentes que estoy armando. |5|
+| 13 | US013 |	Detección de cuellos de botella | Como usuario, quiero que el sistema me muestre si hay cuellos de botella en el rendimiento de la PC sugerida. |5|
+| 14 | US014 |	Buscar componentes | Como usuario, quiero buscar un componente específico por nombre para encontrarlo rápidamente. |2|
+| 15 | US015 |	Filtrar por categoría | Como usuario, quiero aplicar filtros por tipo (CPU, GPU, RAM) para facilitar la búsqueda de componentes. |2|
+| 16 | US016 |	Ver detalles de un componente | Como usuario, quiero ver los detalles técnicos de un componente para evaluarlo mejor. |2|
+| 17 | US017 |	Mostrar precios de componente | Como usuario, quiero ver el precio estimado de cada componente para evaluar si está dentro de mi presupuesto. |2|
+| 18 | US018 |	Redirección a tienda externa | Como usuario, quiero ser redirigido al proveedor para realizar la compra del componente. |2|
+| 19 | US019 |	Acceder al glosario | Como usuario, quiero acceder a un glosario con definiciones de términos técnicos para entender mejor los componentes. |3|
+| 20 | US020 |	Ver guía por categoría de componente | Como usuario, quiero acceder a guías organizadas por tipo de componente (ej. CPU, GPU, RAM) para aprender cómo elegir.	|2|
+| 21 | US021 |	Recomendaciones dentro del flujo de armado	| Como usuario, quiero recibir tips relevantes sobre los componentes mientras armo mi build, sin tener que salir del flujo. |3|
+| 22 | US022 |	Ver builds populares		| Como usuario, quiero ver builds armadas por otros usuarios para inspirarme. |3|
+| 23 | US023 |	Calificar una build | Como usuario, quiero poder dejar una puntuación para una build de la comunidad.	|1|
+| 24 | US024 |	Acceder al glosario	| Como usuario, quiero acceder a un glosario con definiciones de términos técnicos para entender mejor los componentes. |2|
+| 25 | US025 |	Soporte Básico	| Como usuario, quiero acceder a guías organizadas por tipo de componente (ej. CPU, GPU, RAM) para aprender cómo elegir. |3|
+| 26 | US026 |	Acceder a ayuda rápida	| Como usuario, quiero recibir tips relevantes sobre los componentes mientras armo mi build, sin tener que salir del flujo. |2|
+
+
+| Orden  | TS ID|	Título	| Descripcción |Story Points|
+|-------|---------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------|
+| 1 | TS001 |	Autenticación de usuarios	| Como desarrollador, quiero implementar el sistema de login y registro para autenticar a los usuarios y permitirles guardar sus builds. |5|
+| 2 | TS002 |	Armado de build y análisis técnico	| Como desarrollador, quiero implementar el sistema de login y registro para autenticar a los usuarios y permitirles guardar sus builds. |8|
+| 3 | TS003 |	Catálogo de componentes	| Como desarrollador, quiero crear un endpoint para obtener los componentes disponibles, organizados por categoría. |3|
+| 4 | TS004 |	Búsqueda y filtros	| Como desarrollador, quiero permitir filtrar y buscar componentes según parámetros (precio, marca, tipo, compatibilidad). |3|
+| 5 | TS005	| Guardado de builds favoritas	| Como desarrollador, quiero permitir a los usuarios guardar y consultar builds para que puedan verlas luego. |3|
+| 6 | TS006	| Glosario y guías técnicas	| Como desarrollador, quiero que las guías y glosario estén almacenadas en la base de datos y sean accesibles por categoría. |3|
+| 7 | TS007	| Publicación de builds|	Como desarrollador, quiero habilitar un endpoint para que los usuarios compartan sus builds con la comunidad. |3|
+| 8 | TS008 |	Calificación y comentarios	| Como desarrollador, quiero permitir que los usuarios califiquen y comenten builds comunitarias. |5|
+| 9 | TS009 |	Precios y links de tienda	| Como desarrollador, quiero integrar datos de precios y enlaces de compra desde una fuente externa o mock. |3|
