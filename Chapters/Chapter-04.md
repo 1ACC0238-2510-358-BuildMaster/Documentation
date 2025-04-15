@@ -183,6 +183,7 @@ Se eligieron dos **casos de uso principales** para modelar:
 En esta sección se presentan los diseños de los Candidate Bounded Contexts identificados durante el proceso de EventStorming y Candidate Context Discovery. Para cada contexto, se detalla su estructura y propósito siguiendo el formato del **Bounded Context Canvas**, de forma iterativa y por orden de importancia. A continuación, se presentan los pasos aplicados para cada contexto:
 
 ###### Pasos seguidos para cada Bounded Context:
+
 1. **Context Overview Definition**: Se define brevemente el propósito y alcance del contexto, así como su rol en el dominio general.
 2. **Business Rules Distillation & Ubiquitous Language Capture**: Se identifican las reglas de negocio propias del contexto, así como términos clave que deben ser consistentes en la comunicación con otros contextos.
 3. **Capability Analysis**: Se describen las funcionalidades que el contexto debe soportar y ofrecer.
@@ -284,6 +285,91 @@ En esta sección se presentan los diseños de los Candidate Bounded Contexts ide
 ---
 
 #### 4.1.2. Context Mapping
+
+
+Luego de definir los Bounded Contexts y modelar sus colaboraciones, se realizó una sesión de **Context Mapping** con el fin de visualizar las relaciones estructurales entre los contextos del dominio de *BuildMaster*. Este proceso permite identificar acoplamientos, dependencias y oportunidades de modularización para mejorar la escalabilidad y mantenibilidad del sistema.
+
+El equipo trabajó sobre el conjunto de Bounded Contexts definidos previamente, evaluando para cada uno:
+
+- Su nivel de criticidad (Core, Supporting, Generic)
+- Las funcionalidades clave (Capabilities)
+- Las dependencias cruzadas con otros contextos
+- Las oportunidades de aislamiento o colaboración
+- Posibles reorganizaciones para mejorar el diseño estratégico
+
+---
+
+### Preguntas clave consideradas
+
+Durante la sesión se exploraron diversas hipótesis para llegar a una mejor organización:
+
+- ¿Qué pasaría si movemos la validación de compatibilidad al catálogo de componentes?
+- ¿Qué pasaría si descomponemos “comunidad” en comentarios por un lado y puntuaciones por otro?
+- ¿Qué pasaría si creamos un servicio compartido para los perfiles de usuario y builds favoritas?
+- ¿Qué pasaría si duplicamos parte del glosario dentro del contexto de catálogo para evitar dependencias?
+- ¿Qué pasaría si los datos de precios y disponibilidad se encapsulan en un nuevo contexto externo “Proveedores”?
+
+---
+
+#### Alternativa 1: Fusionar Comunidad + Builds
+
+- **Pros**: Reduce comunicación entre contextos
+- **Contras**: Rompe el principio de separación de intereses
+
+**Decisión**: Rechazada. La comunidad debe poder operar sin alterar builds privadas.
+
+#### Alternativa 2: Extraer Proveedor como contexto separado
+
+- **Pros**: Aísla la lógica de scraping/API con tiendas externas
+- **Contras**: Agrega complejidad inicial
+
+**Decisión**: Aprobada. Se crea el contexto **Proveedores y Precios**.
+
+#### Alternativa 3: Duplicar parte del glosario en Catálogo
+
+- **Pros**: Mejora experiencia del usuario
+- **Contras**: Riesgo de inconsistencias si no se sincroniza
+
+**Decisión**: Rechazada. Se mantiene dependencia con ACL (Anti-Corruption Layer).
+
+#### Alternativa 4: Separar “Comentarios” como contexto propio
+
+- **Pros**: Facilita moderación, escalabilidad y métricas sociales
+- **Contras**: Aumenta complejidad de diseño
+
+**Decisión**: Rechazada por ahora. Se mantiene dentro de Comunidad para MVP.
+
+---
+
+### Relaciones entre Bounded Contexts
+
+| Source Context             | Target Context          | Tipo de Relación           |
+|----------------------------|--------------------------|-----------------------------|
+| Configuración Técnica      | Catálogo de Componentes  | Conformist                  |
+| Configuración Técnica      | Proveedores y Precios    | Anti-Corruption Layer       |
+| Gestión de Usuario         | Builds                   | Shared Kernel               |
+| Comunidad                  | Builds                   | Customer/Supplier           |
+| Comunidad                  | Gestión de Usuario       | Conformist                  |
+| Catálogo de Componentes    | Guías Técnicas           | Customer/Supplier           |
+| Gestión de Usuario         | Glosario                 | Conformist                  |
+
+---
+
+### Visualización del Context Map
+
+*(Aquí se debe insertar el diagrama del mapa de contextos, con líneas etiquetadas por tipo de relación. Se recomienda usar líneas sólidas para Customer/Supplier, punteadas para Conformist, flechas con sombreado para ACL, y doble borde para Shared Kernel).*
+
+---
+
+### Reflexión final
+
+El proceso de Context Mapping permitió:
+
+- Visualizar riesgos de acoplamientos innecesarios
+- Proponer estrategias de aislamiento y colaboración eficientes
+- Identificar qué partes del sistema podrían evolucionar hacia microservicios
+- Diseñar relaciones saludables entre contextos, usando patrones reconocidos de Domain-Driven Design
+
 #### 4.1.3. Software Architecture
 ##### 4.1.3.1. Software Architecture Context Level Diagrams
 ##### 4.1.3.2. Software Architecture Container Level Diagrams
