@@ -338,6 +338,24 @@ Objetivo: Identificar necesidades en gestión de hardware y validar el modelo em
 
 7. "¿Qué obstáculos ven para adoptar una solución como BuildMaster en los próximos 6 meses?"
 #### 2.2.2. Registro de entrevistas
+
+###### Segmento 1 - Entrevista 1
+###### Segmento 1 - Entrevista 2
+###### Segmento 1 - Entrevista 3
+
+###### Segmento 2 - Entrevista 1+
+
+[![entrevista.png](https://i.postimg.cc/jS0Qz8Mb/entrevista.png)](https://postimg.cc/VdgCwFyG)
+| Nombres | Apellidos | Edad | Inicio | Duración |
+|---------|-----------|------|--------|----------|
+| Alfredo | Medina | 24 | 0:00 | 05:39 |
+
+Descripción: En la entrevista realizada a Alfredo, un joven de 24 años que trabaja en una empresa con estructura jerárquica, se abordaron diversos aspectos relacionados con la gestión de hardware y tecnología. Alfredo explicó que utilizan laptops para supervisores y managers, mientras que los empleados operan con computadoras de escritorio. Todos los equipos funcionan principalmente con sistema operativo Windows, y los celulares utilizados en la empresa, mayormente de la marca Samsung (modelos A50 en adelante), operan con Android. La empresa gestiona sus dispositivos mediante un inventario que registra la fecha de compra, lo que les permite programar renovaciones según la antigüedad del hardware y el ingreso de nuevo personal. Uno de los principales desafíos técnicos que enfrentan es la pérdida de productividad cuando los equipos presentan configuraciones erróneas, por lo que se valora mucho la rapidez y eficiencia en la resolución de estos problemas. En cuanto a herramientas de gestión de hardware, Alfredo resaltó que lo más importante para ellos es el ahorro de tiempo, más que el costo. Para una posible integración con su ERP, considera fundamental la calidad del producto. En términos presupuestarios, la empresa destina una inversión considerablemente mayor al hardware (30 a 50 mil soles) que al software (5 a 10 mil soles). Finalmente, sobre la aplicación propuesta por la startup —que simula el comportamiento de diferentes combinaciones de componentes de PC—, Alfredo indicó que sería necesario evaluar su compatibilidad con los equipos actuales y su funcionalidad a mediano y largo plazo, aunque considera que podría implementarse en el futuro si responde adecuadamente a las necesidades de la empresa.
+
+###### Segmento 2 - Entrevista 2
+###### Segmento 2 - Entrevista 3
+
+
 #### 2.2.3. Análisis de entrevistas
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
