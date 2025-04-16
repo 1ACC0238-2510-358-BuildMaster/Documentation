@@ -405,7 +405,7 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 |--------------------------|----------------------------------------|----------------------------------------|---------------------------------------|--------------------------------------|
 | **DOING**                | Busca tutoriales en YouTube            | Compara precios en Amazon/Newegg      | Compra componentes en tiendas distintas | Sigue guías de ensamblaje en PDF     |
 | **THINKING**             | "¿Qué tarjeta gráfica necesito?"       | "¿Son compatibles estos componentes?" | "Ojalá lleguen todos los paquetes"    | "¿Por qué no enciende mi PC?"        |
-| **FEELING**              | 😕 Confundido por términos técnicos    | 😟 Ansioso por elegir mal              | 😰 Nervioso por errores de envío       | 😡 Frustrado por incompatibilidades  |
+| **FEELING**              | Confundido por términos técnicos    | Ansioso por elegir mal              | Nervioso por errores de envío       | Frustrado por incompatibilidades  |
 
 ---
 
@@ -415,7 +415,7 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 |--------------------------|----------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|
 | **DOING**                | Analiza reportes de rendimiento        | Solicita presupuestos a proveedores  | Negocia contratos con garantías       | Configura PCs manualmente           |
 | **THINKING**             | "¿Cómo escalar nuestro hardware?"      | "¿Cumplirán los plazos de entrega?"  | "Necesitamos soporte técnico 24/7"    | "Esto nos tomará semanas"           |
-| **FEELING**              | 😣 Presionado por reducir costos       | 😠 Desconfianza en proveedores       | 😥 Preocupado por riesgos técnicos    | 😫 Agotado por procesos manuales    |
+| **FEELING**              | Presionado por reducir costos       | Desconfianza en proveedores       | Preocupado por riesgos técnicos    | Agotado por procesos manuales    |
 ### 2.4. Ubiquitous Language
 
 
