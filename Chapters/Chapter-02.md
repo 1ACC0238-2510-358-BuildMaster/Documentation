@@ -4,20 +4,25 @@
 
 1. __BuildCores: Part Picker for PC [Disponible en iOS/Android]__
 
+
 Descripción:
 
 Aplicación nativa para crear builds de PCs personalizadas con comparación de precios en retailers como Amazon, Newegg y eBay. Incluye verificador de compatibilidad y benchmarks de componentes 8.
 
 Fortalezas:
 
-
-
-
+- Amplia base de datos de componentes: Permite explorar una gran variedad de hardware disponible en el mercado.
+- Comparación de precios integrada: Facilita la búsqueda de las mejores ofertas en múltiples plataformas.
+- Verificador de compatibilidad: Reduce significativamente el riesgo de seleccionar partes que no funcionen juntas.
+- Benchmarks de componentes: Ofrece una referencia del rendimiento esperado de las piezas seleccionadas.
+- Interfaz intuitiva (al ser nativa): Suele ofrecer una experiencia de usuario fluida y optimizada para cada plataforma.
 
 Debilidades:
 
-
-
+- Posible limitación en la disponibilidad regional de precios: La comparación podría no ser exhaustiva para todos los países.
+- Dependencia de la precisión de los datos de los retailers: Los precios y la disponibilidad podrían no estar siempre actualizados en tiempo real.
+- La profundidad de los benchmarks podría variar: No todos los componentes podrían tener información de rendimiento detallada.
+- Posible falta de filtros avanzados: La búsqueda y filtrado de componentes podría ser limitada en comparación con sitios web especializados.
 
 2. __PC Builder: Part Picker [Disponible en Android/iOS]__
 
@@ -27,10 +32,18 @@ App enfocada en builds automáticas según presupuesto, con estimador de consumo
 
 Fortalezas:
 
-
-
+- Generación automática de builds: Simplifica el proceso para usuarios con menos experiencia o que buscan sugerencias rápidas.
+- Estimador de consumo energético: Ayuda a elegir una fuente de poder adecuada y a prever el costo operativo.
+- Filtros por región: Permite acotar la búsqueda a componentes disponibles en la ubicación del usuario.
+- Ideal para presupuestos definidos: Facilita la creación de builds que se ajusten a las limitaciones económicas.
+- Puede ofrecer guías o recomendaciones adicionales: Podría incluir consejos sobre el montaje o la elección de periféricos.
 
 Debilidades:
+
+- Menor control sobre la selección de componentes individuales: La automatización podría limitar la personalización detallada.
+- Las sugerencias automáticas podrían no siempre ser óptimas: Podrían no considerar casos de uso específicos o preferencias particulares.
+- La precisión del estimador de consumo energético puede variar: Depende de la exactitud de los datos de los componentes.
+- La disponibilidad regional podría ser limitada: Los filtros por región dependen de la información disponible en la aplicación.
 
 
 
@@ -43,9 +56,19 @@ Nota: Esta app es un juego de simulación (no un asistente real para comprar PCs
 
 Fortalezas:
 
+- Entorno de aprendizaje interactivo: Permite familiarizarse con los diferentes componentes de una PC y su ensamblaje de forma virtual y sin riesgo.
+- Visualización del proceso de construcción: Ayuda a comprender cómo las piezas encajan físicamente.
+- Experimentación con diferentes configuraciones: Permite probar combinaciones de hardware para entender su funcionamiento teórico.
+- Puede despertar el interés en el hardware de PC: Resulta entretenido para aquellos que se inician en el mundo del ensamblaje.
+- Potencial para aprender conceptos básicos de compatibilidad (dentro de las limitaciones del juego): Aunque no es un verificador real, puede ilustrar la necesidad de elegir partes que encajen.
 
+Debilidades:
 
-Debilidades :
+- No ofrece información real sobre precios ni disponibilidad: Su utilidad para la compra real es nula.
+- La simulación de compatibilidad puede ser simplificada: No refleja todas las complejidades del mundo real.
+- No proporciona benchmarks reales: La "performance" virtual no se traduce directamente al rendimiento real.
+- Puede generar confusión si el usuario no comprende que es un juego: Es crucial entender su naturaleza simulada.
+- La experiencia de "construcción" virtual puede diferir significativamente del proceso físico real.
 
 
 
@@ -349,6 +372,8 @@ Objetivo: Identificar necesidades en gestión de hardware y validar el modelo em
 
 Descripción:
 
+En la entrevista, Orlando Romero Flores compartió su experiencia y frustraciones al comprar una PC, destacando la necesidad de adquirir licencias de software adicionales y el deseo de poder probarlas antes de la compra. Al considerar armar una PC, la ansiedad se centra en evaluar la calidad, el rendimiento y la relación costo-beneficio de los componentes para asegurar que se ajusten a sus necesidades. Relató una experiencia en la que compró un componente con la expectativa de que fuera útil, pero que finalmente no satisfizo sus necesidades. Para una aplicación ideal que ayude en la elección de componentes, Orlando valoraría información sobre la calidad, estadísticas del mercado de repuestos, accesibilidad de compra y compatibilidad de los accesorios, así como el costo de los equipos. Estaría dispuesto a pagar por una aplicación que le guíe en la elección de un equipo según sus usos específicos, ofreciéndole la máquina ideal sin excesos, y la recomendaría si cumple con sus expectativas y se mantiene actualizada. Tu proyecto de aplicación móvil busca precisamente simular la creación de una computadora a partir de un catálogo de componentes.
+
 Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EXs7hhg5fyNEkgE7zsls_fwB1Nz1nte7v8uJARDvp8JKJA?e=F86YBA
 
 ###### Segmento 1 - Entrevista 2
@@ -387,13 +412,44 @@ Descripción: En la entrevista realizada a Alfredo, un joven de 24 años que tra
 
 Link de la entrevista: https://acortar.link/gNe6XE
 
+###### Segmento 1 - Entrevista 1
+
+<a href="https://ibb.co/xSD0PMRV"><img src="https://i.ibb.co/5W6yt5fq/entrevista-1.png" alt="entrevista-1" border="0"></a>
+| Nombres | Apellidos | Edad | Inicio | Duración |
+|---------|-----------|------|--------|----------|
+| Renzo   | Silva     | 21   | 0:00   | 03:09    |
+
+Descripcion: 
+
+Se percibe la tensión inherente entre la libertad de elección y la complejidad técnica. Renzo articula la fatiga de navegar un mercado vasto y fragmentado, donde la promesa de personalización se topa con la amenaza latente de la incompatibilidad. Su mención de "cocinar un cuello de botella" no es solo jerga técnica; revela una preocupación por optimizar la inversión y evitar el desperdicio de recursos.
+
+La búsqueda de información se revela como un proceso activo y multifuente, donde la sabiduría colectiva de foros y la demostración visual de YouTube se complementan en un intento por mitigar la incertidumbre.
+
+La ansiedad ante una nueva construcción no radica en el costo económico solamente, sino en la carga cognitiva de tomar decisiones informadas y la duda persistente sobre si se están tomando las "mejores opciones". La ausencia de una experiencia negativa directa con componentes incompatibles subraya la importancia que Renzo le otorga a la investigación previa, casi como un ritual preventivo.
+
+Finalmente, su visión de una aplicación ideal encapsula necesidades pragmáticas (precios), funcionales (compatibilidad) y una disposición a invertir en una solución que alivie la fricción y el riesgo del proceso. Su recomendación a otros como él resalta la existencia de una comunidad que comparte estas frustraciones y que se beneficiaría de una herramienta que simplifique la experiencia de ensamblaje de PCs.
+
+
+link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b657_upc_edu_pe/EcwqmCWt3hFGvalrcsA05EsBpBt3CqWgwugDNlVHcqMYIg?e=7WGyft&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
+
 ###### Segmento 2 - Entrevista 2
-###### Segmento 2 - Entrevista 3
 
 
 #### 2.2.3. Análisis de entrevistas
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
+
+__Segmento 1:__
+
+
+<a href="https://ibb.co/fVVjJqP1"><img src="https://i.ibb.co/5XXbZGfM/Orlando-Romero-Flores-2.png" alt="Orlando-Romero-Flores-2" border="0"></a>
+
+
+__Segmento 2:__
+
+
+<a href="https://ibb.co/HfwBhwXc"><img src="https://i.ibb.co/hJQLYQCG/Alfredo-Medina.png" alt="Alfredo-Medina" border="0"></a>
+
 #### 2.3.2. User Task Matrix
 
 #### **Segmentos considerados:**  
@@ -428,29 +484,30 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 
 #### 2.3.3. User Journey Mapping
 
+<a href="https://ibb.co/rRg5fgfJ"><img src="https://i.ibb.co/C3qVsqsF/Mapa-de-viaje-del-cliente-para-la-compra-o-construcci-n-de-una-PC.png" alt="Mapa-de-viaje-del-cliente-para-la-compra-o-construcci-n-de-una-PC" border="0"></a>
+
 #### 2.3.4. Empathy Mapping
 
+__User Person 2: Segmento Domestico__ 
+
+<a href="https://ibb.co/ycbhPCG0"><img src="https://i.ibb.co/tTWZK6kB/emp2.png" alt="emp2" border="0"></a>
+
+__User Person 2: Segemento Empresarial__
+
+<a href="https://ibb.co/99GL8SWj"><img src="https://i.ibb.co/1fb5vjTx/Empathy-map-1.png" alt="Empathy-map-1" border="0"></a>
 
 #### 2.3.5. As-is Scenario Mapping
 
 
-#### As-Is Scenario Mapping: Segmento Doméstico (Usuarios que arman PCs)
+##### As-Is Scenario Mapping: Segmento Doméstico (Usuarios que arman PCs)
 
-| PHASES                  | INVESTIGACIÓN                          | SELECCIÓN DE COMPONENTES              | COMPRA                                | ENSAMBLAJE                           |
-|--------------------------|----------------------------------------|----------------------------------------|---------------------------------------|--------------------------------------|
-| **DOING**                | Busca tutoriales en YouTube            | Compara precios en Amazon/Newegg      | Compra componentes en tiendas distintas | Sigue guías de ensamblaje en PDF     |
-| **THINKING**             | "¿Qué tarjeta gráfica necesito?"       | "¿Son compatibles estos componentes?" | "Ojalá lleguen todos los paquetes"    | "¿Por qué no enciende mi PC?"        |
-| **FEELING**              | Confundido por términos técnicos    | Ansioso por elegir mal              | Nervioso por errores de envío       | Frustrado por incompatibilidades  |
+<a href="https://ibb.co/rKk01zdy"><img src="https://i.ibb.co/6cYwfTXs/Scenario-Mapping.jpg" alt="Scenario-Mapping" border="0"></a>
 
 ---
 
-#### As-Is Scenario Mapping: Segmento Empresarial (Departamentos de TI)
+##### As-Is Scenario Mapping: Segmento Empresarial (Departamentos de TI)
 
-| PHASES                  | DIAGNÓSTICO DE NECESIDADES             | COTIZACIÓN                          | ADQUISICIÓN                          | IMPLEMENTACIÓN                      |
-|--------------------------|----------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|
-| **DOING**                | Analiza reportes de rendimiento        | Solicita presupuestos a proveedores  | Negocia contratos con garantías       | Configura PCs manualmente           |
-| **THINKING**             | "¿Cómo escalar nuestro hardware?"      | "¿Cumplirán los plazos de entrega?"  | "Necesitamos soporte técnico 24/7"    | "Esto nos tomará semanas"           |
-| **FEELING**              | Presionado por reducir costos       | Desconfianza en proveedores       | Preocupado por riesgos técnicos    | Agotado por procesos manuales    |
+<a href="https://ibb.co/60P25DR4"><img src="https://i.ibb.co/hFWkv2RK/Scenario-Mapping-1.jpg" alt="Scenario-Mapping-1" border="0"></a>
 ### 2.4. Ubiquitous Language
 
 
