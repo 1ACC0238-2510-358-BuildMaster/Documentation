@@ -414,7 +414,7 @@ Link de la entrevista: https://acortar.link/gNe6XE
 
 ###### Segmento 1 - Entrevista 1
 
-<a href="https://ibb.co/xSD0PMRV"><img src="https://i.ibb.co/5W6yt5fq/entrevista-1.png" alt="entrevista-1" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2Fentrevista%201.PNG?alt=media&token=100c67e4-3f95-45a7-8c76-9847dcd2d535" alt="entrevista-1" border="0"></a>
 | Nombres | Apellidos | Edad | Inicio | Duración |
 |---------|-----------|------|--------|----------|
 | Renzo   | Silva     | 21   | 0:00   | 03:09    |
@@ -442,13 +442,13 @@ link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b
 __Segmento 1:__
 
 
-<a href="https://ibb.co/fVVjJqP1"><img src="https://i.ibb.co/5XXbZGfM/Orlando-Romero-Flores-2.png" alt="Orlando-Romero-Flores-2" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FOrlando%20Romero%20Flores%20(2).png?alt=media&token=00339d5a-6e13-4799-ab99-2ba8e42c6004" alt="Orlando-Romero-Flores-2" border="0"></a>
 
 
 __Segmento 2:__
 
 
-<a href="https://ibb.co/HfwBhwXc"><img src="https://i.ibb.co/hJQLYQCG/Alfredo-Medina.png" alt="Alfredo-Medina" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FAlfredo%20Medina.png?alt=media&token=6f501feb-6b81-41ba-bf54-0205b730fb41" alt="Alfredo-Medina" border="0"></a>
 
 #### 2.3.2. User Task Matrix
 
@@ -484,30 +484,30 @@ Las tareas empresariales requieren herramientas de **colaboración en equipo** y
 
 #### 2.3.3. User Journey Mapping
 
-<a href="https://ibb.co/rRg5fgfJ"><img src="https://i.ibb.co/C3qVsqsF/Mapa-de-viaje-del-cliente-para-la-compra-o-construcci-n-de-una-PC.png" alt="Mapa-de-viaje-del-cliente-para-la-compra-o-construcci-n-de-una-PC" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FMapa%20de%20viaje%20del%20cliente%20para%20la%20compra%20o%20construcci%C3%B3n%20de%20una%20PC.png?alt=media&token=c406e4dc-9198-453f-ba17-4e4a8879c10c" alt="Mapa-de-viaje-del-cliente-para-la-compra-o-construcci-n-de-una-PC" border="0"></a>
 
 #### 2.3.4. Empathy Mapping
 
-__User Person 2: Segmento Domestico__ 
+__User Person 1: Segmento Domestico__ 
 
-<a href="https://ibb.co/ycbhPCG0"><img src="https://i.ibb.co/tTWZK6kB/emp2.png" alt="emp2" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2Femp2.PNG?alt=media&token=b3848c0e-5367-49c4-aa36-6a1e70da81d0" alt="emp2" border="0"></a>
 
 __User Person 2: Segemento Empresarial__
 
-<a href="https://ibb.co/99GL8SWj"><img src="https://i.ibb.co/1fb5vjTx/Empathy-map-1.png" alt="Empathy-map-1" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FEmpathy%20map%20(1).png?alt=media&token=52748753-3fbe-4ce1-8676-970d8ebed40c" alt="Empathy-map-1" border="0"></a>
 
 #### 2.3.5. As-is Scenario Mapping
 
 
 ##### As-Is Scenario Mapping: Segmento Doméstico (Usuarios que arman PCs)
 
-<a href="https://ibb.co/rKk01zdy"><img src="https://i.ibb.co/6cYwfTXs/Scenario-Mapping.jpg" alt="Scenario-Mapping" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FScenario%20Mapping.jpg?alt=media&token=98ecd0ba-554b-4f3c-9021-194f93be3fc8" alt="Scenario-Mapping" border="0"></a>
 
 ---
 
 ##### As-Is Scenario Mapping: Segmento Empresarial (Departamentos de TI)
 
-<a href="https://ibb.co/60P25DR4"><img src="https://i.ibb.co/hFWkv2RK/Scenario-Mapping-1.jpg" alt="Scenario-Mapping-1" border="0"></a>
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2FScenario%20Mapping%20(1).jpg?alt=media&token=08688f44-5fbb-4907-8152-560a37a9aaf5" alt="Scenario-Mapping-1" border="0"></a>
 ### 2.4. Ubiquitous Language
 
 
