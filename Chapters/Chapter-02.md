@@ -340,10 +340,42 @@ Objetivo: Identificar necesidades en gestión de hardware y validar el modelo em
 #### 2.2.2. Registro de entrevistas
 
 ###### Segmento 1 - Entrevista 1
+
+[![image.png](https://i.postimg.cc/DfCMY4kH/image.png)](https://postimg.cc/14qB8tzr)
+
+| Nombres | Apellidos | Edad | Inicio | Duración |
+|---------|-----------|------|--------|----------|
+| Orlando | Romero Flores | 59 | 0:00 | 07:11 |
+
+Descripción:
+
+Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EXs7hhg5fyNEkgE7zsls_fwB1Nz1nte7v8uJARDvp8JKJA?e=F86YBA
+
 ###### Segmento 1 - Entrevista 2
+
+[![image.png](https://i.postimg.cc/Jzd7rzk2/image.png)](https://postimg.cc/sM7CKyKY)
+
+| Nombres | Apellidos     | Edad | Inicio | Duración |
+|---------|---------------|------|--------|----------|
+| Jordan  | Carranza | 33 | 0:00 | 10:33    |
+
+Descripción:
+
+Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EXH1Kt7PH9lMiirtmODIWAUB1yM15LNEAhovd21LgGQwtA?e=DS3bpw
+
 ###### Segmento 1 - Entrevista 3
 
-###### Segmento 2 - Entrevista 1+
+[![image.png](https://i.postimg.cc/Y2mWTTJ7/image.png)](https://postimg.cc/t7pJxvqv)
+
+| Nombres | Apellidos | Edad | Inicio | Duración |
+|---------|-----------|------|--------|----------|
+| Mauricio | Sanchez Honorio | 20 | 0:00 | 07:20 |
+
+Descripción:
+
+Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EUi6klIzH3xEmqF4gFTlIoEB9FySnqewK8QxMCVPA1XVlA?e=KEVH5e
+
+###### Segmento 2 - Entrevista 1
 
 [![entrevista.png](https://i.postimg.cc/jS0Qz8Mb/entrevista.png)](https://postimg.cc/VdgCwFyG)
 
