@@ -114,12 +114,20 @@ Ciclo 2025-01
 ## Student Outcome  
 | **Criterio Específico**                     | **Acciones Realizadas**                                                                                       | **Conclusiones**                                                                                          |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y conocimientos...      | [Detalles de las acciones realizadas]                                                                       | [Conclusión basada en las acciones realizadas]                                                            |
-| Reconoce la necesidad del aprendizaje...    | [Detalles de las acciones realizadas]                                                                       | [Conclusión basada en las acciones realizadas]                                                            |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.    | - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: | Conclusión basada en las acciones realizadas <br> TB1:|
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1:| Conclusión basada en las acciones realizadas <br> TB1:|
 
 ---
 
 ## Objetivos SMART  
+
+###### Alexander Alberto Cantoral Sedamano
+Objetivo 1:
+Conseguir una carrera como programador analista posterior a un contrato de prácticas o postulando al puesto a tiempo completo para forjar experiencia laboral sólida y aplicar lo aprendido en cursos anteriores
+
+Objetivo 2:
+Publicar al menos 2 proyectos personales en GitHub con documentación completa y arquitectura modular para fortalecer mi portafolio profesional y visibilidad.
+
 
 ---
 
