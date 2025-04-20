@@ -440,7 +440,17 @@ link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b
 |---------|-----------|------|--------|----------|
 | Octavio  | Torralva  | 54   | 0:00   |  5.13    |
 
+
+
+Descripcion:
+
+La entrevista con el empresario revela una organización que gestiona su hardware mediante procesos manuales basados en hojas de cálculo, enfrentando importantes desafíos con configuraciones incorrectas que ocasionan pérdidas de 2-3 días laborables por incidente y frustración entre los empleados; el entrevistado prioriza la estandarización como característica principal para una herramienta de gestión de hardware, seguida por la reducción de costos, y requiere integración con su sistema SAP Business One; su presupuesto de TI se divide en 40% para hardware y 60% para software y servicios cloud, mientras que los principales obstáculos para adoptar BuildMaster incluyen limitaciones presupuestarias al estar a mitad del ciclo fiscal, preocupaciones sobre el tiempo de implementación y capacitación, y la necesidad de validar la compatibilidad con sus procesos actuales y políticas de seguridad, información valiosa para refinar el modelo de negocio y enfocarse en las necesidades reales del mercado.
 link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b657_upc_edu_pe/EWKxrLonMKJGnMKXfOWMz8EBWcKH8HHIUe91Bix_VCQCXg?e=0D7CIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+#### 2.2.3. Análisis de entrevistas
+
+
+
 #### 2.2.3. Análisis de entrevistas
 
 
