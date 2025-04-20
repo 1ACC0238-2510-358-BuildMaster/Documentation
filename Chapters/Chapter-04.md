@@ -9,7 +9,7 @@ El foco de esta sesión fue descomponer el dominio de una aplicación móvil que
 
 ###### Herramientas utilizadas
 
-- Herramienta visual: **Miro**
+- Herramienta visual: **Figma**
 - Herramienta para la reunión virtual: **Discord**
 - Participantes: 3 miembros del equipo
 - Duración: 1 hora y 30 minutos
@@ -132,7 +132,8 @@ Se eligieron dos **casos de uso principales** para modelar:
 ###### Enfoque y herramientas
 
 - **Técnica aplicada**: Domain Storytelling (Level 2: Domain Message Flows)  
-- **Herramienta visual**: Miro (puede ser también Lucidchart, Figma o DomainStoryTelling.org)  
+- Herramienta visual: **Figma**
+- Herramienta para la reunión virtual: **Discord**
 - **Duración de la sesión**: 1 hora  
 - **Participantes**: 3 miembros del equipo
 
@@ -299,7 +300,7 @@ El equipo trabajó sobre el conjunto de Bounded Contexts definidos previamente, 
 
 ---
 
-### Preguntas clave consideradas
+ Preguntas clave consideradas
 
 Durante la sesión se exploraron diversas hipótesis para llegar a una mejor organización:
 
@@ -311,28 +312,28 @@ Durante la sesión se exploraron diversas hipótesis para llegar a una mejor org
 
 ---
 
-#### Alternativa 1: Fusionar Comunidad + Builds
+###### Alternativa 1: Fusionar Comunidad + Builds
 
 - **Pros**: Reduce comunicación entre contextos
 - **Contras**: Rompe el principio de separación de intereses
 
 **Decisión**: Rechazada. La comunidad debe poder operar sin alterar builds privadas.
 
-#### Alternativa 2: Extraer Proveedor como contexto separado
+###### Alternativa 2: Extraer Proveedor como contexto separado
 
 - **Pros**: Aísla la lógica de scraping/API con tiendas externas
 - **Contras**: Agrega complejidad inicial
 
 **Decisión**: Aprobada. Se crea el contexto **Proveedores y Precios**.
 
-#### Alternativa 3: Duplicar parte del glosario en Catálogo
+###### Alternativa 3: Duplicar parte del glosario en Catálogo
 
 - **Pros**: Mejora experiencia del usuario
 - **Contras**: Riesgo de inconsistencias si no se sincroniza
 
 **Decisión**: Rechazada. Se mantiene dependencia con ACL (Anti-Corruption Layer).
 
-#### Alternativa 4: Separar “Comentarios” como contexto propio
+###### Alternativa 4: Separar “Comentarios” como contexto propio
 
 - **Pros**: Facilita moderación, escalabilidad y métricas sociales
 - **Contras**: Aumenta complejidad de diseño
@@ -341,7 +342,7 @@ Durante la sesión se exploraron diversas hipótesis para llegar a una mejor org
 
 ---
 
-### Relaciones entre Bounded Contexts
+###### Relaciones entre Bounded Contexts
 
 | Source Context             | Target Context          | Tipo de Relación           |
 |----------------------------|--------------------------|-----------------------------|
@@ -355,13 +356,13 @@ Durante la sesión se exploraron diversas hipótesis para llegar a una mejor org
 
 ---
 
-### Visualización del Context Map
+###### Visualización del Context Map
 
 *(Aquí se debe insertar el diagrama del mapa de contextos, con líneas etiquetadas por tipo de relación. Se recomienda usar líneas sólidas para Customer/Supplier, punteadas para Conformist, flechas con sombreado para ACL, y doble borde para Shared Kernel).*
 
 ---
 
-### Reflexión final
+###### Reflexión final
 
 El proceso de Context Mapping permitió:
 
@@ -372,9 +373,126 @@ El proceso de Context Mapping permitió:
 
 #### 4.1.3. Software Architecture
 ##### 4.1.3.1. Software Architecture Context Level Diagrams
+
+En esta sección se presenta el **Context Level Diagram** del sistema **BuildMaster**, el cual representa una vista de alto nivel de su arquitectura. El propósito de este diagrama es identificar el sistema como una caja negra, mostrando los actores externos y sistemas con los que se comunica, así como el tipo de interacción que ocurre.
+
+Este nivel de abstracción permite visualizar el alcance del sistema, sus límites y sus principales entradas y salidas de información, siendo útil tanto para equipos técnicos como para stakeholders no técnicos.
+
+###### Explicación del diagrama
+
+El sistema **BuildMaster** está ubicado en el centro del diagrama, rodeado por los siguientes elementos externos:
+
+###### Actores humanos
+- **Usuario Registrado**: Interactúa con la aplicación para crear, guardar y compartir builds personalizadas. Consulta componentes, valida compatibilidad y participa en la comunidad.
+- **Usuario Visitante**: Puede navegar por la landing page, ver builds públicas y explorar el catálogo, sin crear una cuenta.
+
+###### Sistemas externos
+- **Proveedor de precios (API externa)**: Sistema de terceros (como Amazon, MercadoLibre, etc.) del que BuildMaster consulta precios actualizados y disponibilidad de componentes.
+- **Sistema de autenticación de terceros (opcional)**: Si se usa un sistema como Firebase Auth o Auth0 para gestionar usuarios.
+- **Servicio de base de datos**: Backend que almacena información de builds, usuarios, componentes, comentarios, etc.
+
+Cada flecha entre elementos representa una interacción relevante, como la creación de builds, consultas de catálogo, recuperación de precios o publicación de comentarios.
+
+[![structurizr-101461-System-Context-001.png](https://i.postimg.cc/WbhWxqP4/structurizr-101461-System-Context-001.png)](https://postimg.cc/KRhDMzjX)
+
 ##### 4.1.3.2. Software Architecture Container Level Diagrams
+
+El **Container Level Diagram** muestra los elementos de alto nivel de la arquitectura del software de **BuildMaster** y cómo se distribuyen las responsabilidades entre los diferentes contenedores. Este diagrama proporciona una vista más detallada de los componentes de la arquitectura y cómo interactúan entre sí. Además, presenta las decisiones tecnológicas clave y las tecnologías utilizadas en la implementación de cada contenedor.
+
+###### Descripción de los contenedores
+
+- **Aplicación Web (Frontend)**: 
+  - **Responsabilidad**: Interfaz de usuario donde los usuarios registrados y visitantes pueden interactuar con el sistema. Permite la creación de builds, la visualización de componentes y la consulta de precios.
+  - **Tecnología**: Angular (como framework frontend), HTML, CSS, JavaScript.
+  - **Comunicación**: Se comunica con el backend a través de APIs RESTful.
+
+- **API Backend (Backend)**:
+  - **Responsabilidad**: Gestiona las peticiones de la aplicación web, incluyendo la creación, actualización y consulta de builds. También maneja la integración con sistemas de terceros (API de precios y autenticación).
+  - **Tecnología**: Node.js con Express (para las API RESTful).
+  - **Comunicación**: Se comunica con el frontend y con los sistemas externos (API de precios y sistema de autenticación) a través de llamadas HTTP.
+
+- **Base de Datos (DB)**:
+  - **Responsabilidad**: Almacena los datos persistentes del sistema, como los builds, los usuarios, los componentes, los precios y las sesiones.
+  - **Tecnología**: MySQL o PostgreSQL.
+  - **Comunicación**: Se comunica con el backend para almacenar y recuperar datos.
+
+- **Sistema de Precios (Proveedor de Precios)**:
+  - **Responsabilidad**: API externa que proporciona información sobre precios y disponibilidad de componentes.
+  - **Tecnología**: Servicio de terceros (por ejemplo, Amazon API, MercadoLibre API).
+  - **Comunicación**: El backend consulta esta API para obtener datos sobre componentes.
+
+- **Sistema de Autenticación (Auth)**:
+  - **Responsabilidad**: Gestiona el registro e inicio de sesión de usuarios, manteniendo sesiones activas.
+  - **Tecnología**: Firebase Auth, Auth0, o implementación propia de JWT.
+  - **Comunicación**: El backend interactúa con este sistema para autenticar a los usuarios.
+
+###### Flujo de Comunicación Entre Contenedores
+
+1. **Frontend (Aplicación Web)**:
+   - Los usuarios registrados y visitantes interactúan con el frontend a través de su navegador.
+   - El frontend realiza peticiones al **Backend API** para obtener información sobre builds y componentes, y para registrar o autenticar usuarios.
+   
+2. **Backend API**:
+   - El **Backend API** se comunica con la **Base de Datos** para guardar y recuperar información relacionada con builds, usuarios, y componentes.
+   - Realiza peticiones a la **API de Precios** para obtener la información actualizada de precios de componentes.
+   - Se comunica con el **Sistema de Autenticación** para validar la identidad de los usuarios y gestionar sesiones.
+
+3. **Base de Datos**:
+   - La base de datos almacena la información de builds, usuarios, y otros datos persistentes del sistema.
+   
+4. **Sistema de Precios**:
+   - El backend realiza consultas a la API externa para obtener información sobre la disponibilidad y los precios de los componentes.
+
+5. **Sistema de Autenticación**:
+   - El backend interactúa con el sistema de autenticación para validar a los usuarios al inicio de sesión y registrar nuevos usuarios.
+
+[![structurizr-101463-Container-001.png](https://i.postimg.cc/Tw2vZjxs/structurizr-101463-Container-001.png)](https://postimg.cc/f3PPd9J7)
+
 ##### 4.1.3.3. Software Architecture Deployment Diagrams
-///////////////
+
+El **Deployment Diagram** muestra la distribución física del sistema **BuildMaster**, destacando cómo los componentes del software se despliegan sobre el hardware y otros entornos. Este diagrama visualiza las máquinas, servidores, redes y otros dispositivos físicos que alojan el software, así como las relaciones y dependencias entre los distintos nodos. Su objetivo es describir cómo se implementa el sistema en la infraestructura de hardware.
+
+###### Descripción del Diagrama de Despliegue
+
+El diagrama de despliegue representa la infraestructura física sobre la que se ejecuta el sistema **BuildMaster** y cómo se distribuyen los contenedores de software sobre el hardware. Este diagrama está diseñado para ser comprendido tanto por el equipo de desarrollo como por los equipos de infraestructura y operaciones.
+
+###### Elementos del Diagrama
+
+- **Servidor Web (Frontend)**:
+  - **Responsabilidad**: Alojamiento de la aplicación web (frontend) que interactúa con los usuarios. Este servidor maneja las peticiones del navegador y las envía al backend para su procesamiento.
+  - **Tecnología**: Nginx o Apache como servidor web.
+  - **Comunicación**: Recibe las peticiones de los usuarios a través de HTTP/HTTPS y las pasa al backend.
+
+- **Servidor de Aplicaciones (Backend)**:
+  - **Responsabilidad**: Alojamiento de la API backend que maneja la lógica del sistema y las comunicaciones con la base de datos y otros servicios externos.
+  - **Tecnología**: Node.js, Express.
+  - **Comunicación**: Se comunica con el servidor web a través de HTTP/HTTPS y con la base de datos y otros servicios mediante APIs internas.
+
+- **Base de Datos**:
+  - **Responsabilidad**: Alojamiento de la base de datos que almacena la información persistente del sistema.
+  - **Tecnología**: MySQL o PostgreSQL.
+  - **Comunicación**: Se comunica con el servidor de aplicaciones para almacenar y recuperar datos.
+
+- **API Externa (Proveedor de Precios)**:
+  - **Responsabilidad**: Sistema de terceros que proporciona datos sobre precios y disponibilidad de componentes. Se puede alojar en una infraestructura de nube o en un servidor externo.
+  - **Tecnología**: API RESTful, Amazon API, MercadoLibre API.
+  - **Comunicación**: El servidor de aplicaciones realiza peticiones HTTP/HTTPS a esta API.
+
+- **Sistema de Autenticación (Auth)**:
+  - **Responsabilidad**: Alojamiento del sistema que gestiona el registro e inicio de sesión de usuarios.
+  - **Tecnología**: Firebase Auth, Auth0.
+  - **Comunicación**: El servidor de aplicaciones realiza peticiones HTTP/HTTPS a esta API para autenticar usuarios.
+
+###### Flujo de Despliegue
+
+1. **Usuarios** acceden a la **Aplicación Web** (servidor web) a través de sus navegadores.
+2. Las **peticiones del frontend** se envían al **Backend (servidor de aplicaciones)** para ser procesadas.
+3. El **Backend** se comunica con la **Base de Datos** para almacenar o recuperar información relacionada con builds, usuarios y componentes.
+4. El **Backend** también interactúa con el **Proveedor de Precios** para obtener información sobre precios de componentes.
+5. El **Backend** consulta el **Sistema de Autenticación** para autenticar a los usuarios y gestionar sesiones.
+
+
+
 ### 4.2. Tactical-Level Domain-Driven Design
 #### 4.2.X. Bounded Context: <Bounded Context Name>
 ##### 4.2.X.1. Domain Layer
@@ -386,7 +504,7 @@ El proceso de Context Mapping permitió:
 ###### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
 ###### 2.6.x.6.2. Bounded Context Database Design Diagram
 
-//Como solo avanzaremos hasta este capitulo esto quedará aquí y luego lo pasaremos al capitulo 5 en su rama respectiva
+
 
 ## Conclusiones
 Conclusiones y recomendaciones.
