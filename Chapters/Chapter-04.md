@@ -491,7 +491,7 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 4. El **Backend** también interactúa con el **Proveedor de Precios** para obtener información sobre precios de componentes.
 5. El **Backend** consulta el **Sistema de Autenticación** para autenticar a los usuarios y gestionar sesiones.
 
-
+[![structurizr-101464-System-Context-001.png](https://i.postimg.cc/rpnhbFTB/structurizr-101464-System-Context-001.png)](https://postimg.cc/XZ5cBWpL)
 
 ### 4.2. Tactical-Level Domain-Driven Design
 #### 4.2.X. Bounded Context: <Bounded Context Name>
