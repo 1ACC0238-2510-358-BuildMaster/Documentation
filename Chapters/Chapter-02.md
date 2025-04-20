@@ -434,8 +434,16 @@ link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b
 
 ###### Segmento 2 - Entrevista 2
 
+<img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/octavio_entrevista.PNG?alt=media&token=2726a69c-cfd2-494b-9c37-010c48a62603" alt="entrevista-1" border="0"></a>
 
+| Nombres | Apellidos | Edad | Inicio | Duración |
+|---------|-----------|------|--------|----------|
+| Octavio  | Torralva  | 54   | 0:00   |  5.13    |
+
+link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b657_upc_edu_pe/EWKxrLonMKJGnMKXfOWMz8EBWcKH8HHIUe91Bix_VCQCXg?e=0D7CIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 #### 2.2.3. Análisis de entrevistas
+
+
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
 
