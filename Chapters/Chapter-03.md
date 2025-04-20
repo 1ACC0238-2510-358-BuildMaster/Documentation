@@ -65,6 +65,13 @@ Segmento Empresarial (Departamentos de TI)
 
 A continuación se cubrirán algunas User Story más importantes.
 
+###### Impact Mapping – Segmento 1: Usuario doméstico
+[![Impact-Mapping-s1.png](https://i.postimg.cc/dtNQVh0p/Impact-Mapping-s1.png)](https://postimg.cc/vc9wPHft)
+
+
+
+###### Impact Mapping – Segmento 2: Usuario técnico / empresarial
+[![Impact-map-s2.png](https://i.postimg.cc/gkxF4NYt/Impact-map-s2.png)](https://postimg.cc/CzpQxCnb)
 
 ## 3.4. Product Backlog.
 
