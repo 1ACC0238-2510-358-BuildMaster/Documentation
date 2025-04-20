@@ -53,7 +53,7 @@ Durante la sesión se siguieron los siguientes pasos:
 
 ###### Evidencias del EventStorming
 
-//////
+[![evidencia-reunion.png](https://i.postimg.cc/3w86Wpqs/evidencia-reunion.png)](https://postimg.cc/YvP8s4MR)
 
 ---
 
@@ -105,10 +105,6 @@ A partir de la organización de eventos, comandos y entidades del EventStorming,
 | **Comunidad** | Publicación de builds, comentarios y votaciones. | Generic |
 | **Proveedor / Tienda Externa** | Obtención de precios y disponibilidad por región. | Supporting |
 | **Guías y Glosario** | Acceso a información educativa sobre componentes y tips. | Generic |
-
----
-
-###### Evidencias visuales
 
 ---
 
@@ -502,7 +498,7 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 ##### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-###### 2.6.x.6.2. Bounded Context Database Design Diagram
+###### 4.2.x.6.2. Bounded Context Database Design Diagram
 
 
 
@@ -512,15 +508,15 @@ Video About-the-team
 
 
 ## Bibliografía
-https://www.techtarget.com/searchenterprisedesktop/tip/How-to-choose-the-right-PC-for-business
 
-https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
+TechTarget. (s.f.). How to choose the right PC for business. SearchEnterpriseDesktop. Recuperado el 20 de abril de 2025, de https://www.techtarget.com/searchenterprisedesktop/tip/How-to-choose-the-right-PC-for-business
 
-https://www.linkedin.com/pulse/top-7-things-consider-when-buying-new-computer-avoid-
+ZDNet. (s.f.). How to choose the right PC: Everything you need to know about picking the right computer for work. Recuperado el 20 de abril de 2025, de https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
 
+Shapiro, J. (s.f.). Top 7 things to consider when buying a new computer to avoid disappointment. LinkedIn. Recuperado el 20 de abril de 2025, de https://www.linkedin.com/pulse/top-7-things-consider-when-buying-new-computer-avoid-
 
-https://www.kingston.com/en/blog/gaming/top-10-pc-build-mistakes-beginners-make
+Kingston Technology. (s.f.). Top 10 PC build mistakes beginners make. Recuperado el 20 de abril de 2025, de https://www.kingston.com/en/blog/gaming/top-10-pc-build-mistakes-beginners-make
 
+Justice IT Consulting. (s.f.). Justice IT Consulting. Recuperado el 20 de abril de 2025, de http://www.justiceitc.com/?trk=article-ssr-frontend-pulse_little-text-block
 
-http://www.justiceitc.com/?trk=article-ssr-frontend-pulse_little-text-block 
 ## Anexos
