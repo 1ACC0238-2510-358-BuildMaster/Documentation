@@ -597,6 +597,8 @@ Se utilizaron las siguientes decisiones de modelado:
 **Tecnología objetivo:**  
 La base de datos utilizada será **PostgreSQL**, por su robustez y compatibilidad con UUIDs y relaciones complejas. Las claves primarias y foráneas están correctamente tipadas y normalizadas para mantener integridad referencial.
 
+[![Database-Design-Diagram-Configuracion-tecnica.png](https://i.postimg.cc/bNyxWj11/Database-Design-Diagram-Configuracion-tecnica.png)](https://postimg.cc/vDKxxkqm)
+
 #### 4.2.2. Bounded Context: Gestión de usuario
 ##### 4.2.2.1. Domain Layer
 ##### 4.2.2.2. Interface Layer
