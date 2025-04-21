@@ -360,6 +360,7 @@ Objetivo: Identificar necesidades en gestión de hardware y validar el modelo em
 *Aquí le mencionamos nuestra propuesta de BuilMaster*
 
 7. "¿Qué obstáculos ven para adoptar una solución como BuildMaster en los próximos 6 meses?"
+
 #### 2.2.2. Registro de entrevistas
 
 ###### Segmento 1 - Entrevista 1
@@ -374,7 +375,6 @@ Descripción:
 
 Orlando Romero Flores es un técnico de 59 años con experiencia comprando equipos y componentes para instalar y configurar, entre ellos computadoras. El nos explicara los problemas que tiene con encontrar tales productos y su opinión en cómo la applicación de nuestro proyecto le podría servir en su trabajo regularmente.
 
-Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EXs7hhg5fyNEkgE7zsls_fwB1Nz1nte7v8uJARDvp8JKJA?e=F86YBA
 
 ###### Segmento 1 - Entrevista 2
 
@@ -382,13 +382,12 @@ Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211
 
 | Nombres | Apellidos     | Edad | Inicio | Duración |
 |---------|---------------|------|--------|----------|
-| Jordan  | Carranza | 33 | 0:00 | 10:33    |
+| Jordan  | Carranza | 33 | 07:11 | 17:43    |
 
 Descripción:
 
 Jordan Carranza, un ingeriero de sistemas de 33 años comparte su experiencia comprando y armando computadoras, cuales fueron sus mayores desafios en el proceso y cómo una app le ayudaría a facilitar su trabajo al momento de indagar, invertir y configurar una PC.
 
-Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EXH1Kt7PH9lMiirtmODIWAUB1yM15LNEAhovd21LgGQwtA?e=DS3bpw
 
 ###### Segmento 1 - Entrevista 3
 
@@ -396,13 +395,12 @@ Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211
 
 | Nombres | Apellidos | Edad | Inicio | Duración |
 |---------|-----------|------|--------|----------|
-| Mauricio | Sanchez Honorio | 20 | 0:00 | 07:20 |
+| Mauricio | Sanchez Honorio | 20 | 17:43  | 25:02 |
 
 Descripción:
 
 Mauricio Sanchez Honorio es universitario de la Universidad Cesar Vallejo el cual ha estado armando su PC por ya un tiempo, explicandonos cuáles fueron sus dificultades para poder elegir los componentes correctos para su setup y los errores que cometió en el proceso, buscando ayuda ahora en una app que sea tanto simple y fácil de usar como detallada en su catalogo.
 
-Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EUi6klIzH3xEmqF4gFTlIoEB9FySnqewK8QxMCVPA1XVlA?e=KEVH5e
 
 ###### Segmento 2 - Entrevista 1
 
@@ -410,26 +408,23 @@ Link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211
 
 | Nombres | Apellidos | Edad | Inicio | Duración |
 |---------|-----------|------|--------|----------|
-| Alfredo | Medina | 24 | 0:00 | 05:39 |
+| Alfredo | Medina | 24 |  25:02 | 30:40 |
 
 Descripción: 
 
 En la entrevista realizada a Alfredo, un joven de 24 años que trabaja en una empresa con estructura jerárquica, se abordaron diversos aspectos relacionados con la gestión de hardware y tecnología. 
 
-Link de la entrevista: https://acortar.link/gNe6XE
 
 ###### Segmento 2 - Entrevista 2
 
 <img src="https://firebasestorage.googleapis.com/v0/b/imagenes-da298.appspot.com/o/imagenes%2Fentrevista%201.PNG?alt=media&token=100c67e4-3f95-45a7-8c76-9847dcd2d535" alt="entrevista-1" border="0"></a>
 | Nombres | Apellidos | Edad | Inicio | Duración |
 |---------|-----------|------|--------|----------|
-| Renzo   | Silva     | 21   | 0:00   | 03:09    |
+| Renzo   | Silva     | 21   | 30:40   | 33:49    |
 
 Descripcion: 
 
 Renzo Silva de 21 años expresa su fatiga de enfrentar un mercado desordenado y lleno de limientantes que dificultan la toma de decisiones informadas y de optimizar su inversión miestras evita equivocarse en el proceso. También revela su idea de una app ideal, siendo una que reúna funciones clave y revele una necesidad compartida por una comunidad que busce simplificar una experiencia técnica y mentalmente demandante.
-
-link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b657_upc_edu_pe/EcwqmCWt3hFGvalrcsA05EsBpBt3CqWgwugDNlVHcqMYIg?e=7WGyft&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
 
 ###### Segmento 2 - Entrevista 3
 
@@ -437,7 +432,7 @@ link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b
 
 | Nombres | Apellidos | Edad | Inicio | Duración |
 |---------|-----------|------|--------|----------|
-| Octavio  | Torralva  | 54   | 0:00   |  5.13    |
+| Octavio  | Torralva  | 54   | 33:49    |  39:01   |
 
 
 
@@ -445,7 +440,8 @@ Descripcion:
 
 Octavio Torralva es un empresario de 54 años interesado en nuestra aplicación, pues encuentra frustrante el proceso de renovación de hardware en su compañia debido a la reducción de costos e integridad con los sistemas de la empresa. 
 
-link de la entrevista: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b657_upc_edu_pe/EWKxrLonMKJGnMKXfOWMz8EBWcKH8HHIUe91Bix_VCQCXg?e=0D7CIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+##### Link de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/ETMFmE0nge1NuRqiI8CVzkgBBL6CnoRFqmi7SIQezfg1-g?e=LM8VC2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 #### 2.2.3. Análisis de entrevistas
 
