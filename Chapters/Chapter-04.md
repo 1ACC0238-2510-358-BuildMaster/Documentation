@@ -490,11 +490,58 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 [![structurizr-101464-System-Context-001.png](https://i.postimg.cc/rpnhbFTB/structurizr-101464-System-Context-001.png)](https://postimg.cc/XZ5cBWpL)
 
 ### 4.2. Tactical-Level Domain-Driven Design
-#### 4.2.1. Bounded Context: Configuración técnica
-##### 4.2.1.1. Domain Layer
-##### 4.2.1.2. Interface Layer
-##### 4.2.1.3. Application Layer
-##### 4.2.1.4. Infrastructure Layer
+### 4.2.1. Bounded Context: Configuración Técnica
+
+En esta sección, se detallan las clases y componentes identificados en el bounded context de **Configuración Técnica**, que abarca el análisis de compatibilidad entre componentes, recomendaciones, y detección de cuellos de botella.
+
+---
+
+#### 4.2.1.1. Domain Layer
+
+Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
+
+| Clase                    | Tipo               | Propósito                                                             | Atributos / Métodos                                  |
+|--------------------------|--------------------|-----------------------------------------------------------------------|------------------------------------------------------|
+| `Build`                  | Entity             | Representa una configuración completa de componentes.                 | `componentes: Componente[]`, `validarCompatibilidad()` |
+| `Componente`             | Value Object       | Componente individual con atributos técnicos.                         | `tipo`, `modelo`, `socket`, `consumoEnergia`         |
+| `BuildFactory`           | Factory            | Encargada de crear builds válidas.                                    | `crearBuild(componentes: Componente[]): Build`       |
+| `CompatibilidadService` | Domain Service     | Valida compatibilidad entre componentes.                              | `validarCPU_RAM()`, `validarMotherboardGPU()`        |
+| `BuildRepository`        | Repository Interface | Abstracción para el acceso a datos de builds.                        | `guardar(Build)`, `obtenerPorId(id)`                |
+
+---
+
+#### 4.2.1.2. Interface Layer
+
+Encargada de exponer funcionalidades al usuario o consumidores externos.
+
+| Clase              | Tipo       | Propósito                                                             | Métodos                             |
+|--------------------|------------|-----------------------------------------------------------------------|-------------------------------------|
+| `BuildController`  | Controller | Gestiona las peticiones relacionadas con builds.                      | `postNuevaBuild()`, `getBuildPorId()` |
+| `BuildAPIConsumer` | Consumer   | Interfaz para APIs externas que devuelvan sugerencias de configuración. | `obtenerSugerencias(componentes)`   |
+
+---
+
+#### 4.2.1.3. Application Layer
+
+Define los flujos de negocio mediante comandos y eventos.
+
+| Clase                     | Tipo            | Propósito                                                  | Métodos                                |
+|---------------------------|-----------------|------------------------------------------------------------|----------------------------------------|
+| `CrearBuildCommandHandler`| Command Handler | Ejecuta la lógica para crear una nueva build.              | `handle(command: CrearBuildCommand)`   |
+| `BuildCreadaEventHandler` | Event Handler   | Gestiona acciones posteriores a la creación de una build.  | `handle(event: BuildCreada)`           |
+
+---
+
+#### 4.2.1.4. Infrastructure Layer
+
+Provee la implementación concreta de servicios como base de datos, brokers, etc.
+
+| Clase                    | Tipo          | Propósito                                                                 | Tecnologías  |
+|--------------------------|---------------|---------------------------------------------------------------------------|--------------|
+| `BuildRepositoryImpl`    | Repository    | Implementación de `BuildRepository` con acceso a base de datos.           | MongoDB      |
+| `CompatibilidadExternalAPI` | External Service | Llama a API externa para validaciones.                             | REST API     |
+| `BuildMessageBroker`     | Message Broker| Publica eventos de builds para otros contextos.                          | RabbitMQ     |
+
 ##### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 ##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
