@@ -538,15 +538,64 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 
 | Clase                    | Tipo          | Propósito                                                                 | Tecnologías  |
 |--------------------------|---------------|---------------------------------------------------------------------------|--------------|
-| `BuildRepositoryImpl`    | Repository    | Implementación de `BuildRepository` con acceso a base de datos.           | MongoDB      |
+| `BuildRepositoryImpl`    | Repository    | Implementación de `BuildRepository` con acceso a base de datos.           | PostgreSQL      |
 | `CompatibilidadExternalAPI` | External Service | Llama a API externa para validaciones.                             | REST API     |
 | `BuildMessageBroker`     | Message Broker| Publica eventos de builds para otros contextos.                          | RabbitMQ     |
 
 ##### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+- Este Component Diagram descompone el container Configuración Técnica API (el backend del bounded context) en:
+
+- Controller: punto de entrada HTTP.
+
+- Command Handler: maneja la lógica principal.
+
+- Domain Service y Factory: lógica de dominio para crear y validar builds.
+
+- Repository: persistencia de datos en PostgreSQL.
+
+- External API: cliente para validaciones externas.
+
+[![structurizr-101490-Component-001.png](https://i.postimg.cc/nrH6649G/structurizr-101490-Component-001.png)](https://postimg.cc/njPRmQkX)
+
 ##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de **Configuración Técnica**. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
+
 ###### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+| Clase                  | Tipo               | Descripción                                           |
+|------------------------|--------------------|-------------------------------------------------------|
+| Build                  | Entity             | Representa un ensamble completo de PC                 |
+| Componente             | Value Object       | Describe un componente individual                     |
+| BuildFactory           | Factory            | Se encarga de construir una Build válida              |
+| CompatibilidadService  | Domain Service     | Valida que una Build no tenga cuellos de botella      |
+| BuildRepository        | Repository (interface) | Abstracción para almacenar y recuperar builds     |
+
+
+
+[![Domain-Layer-Configuraci-n-T-cnica.png](https://i.postimg.cc/Ls6nDHPb/Domain-Layer-Configuraci-n-T-cnica.png)](https://postimg.cc/yDt1YCvm)
+
 ###### 4.2.1.6.2. Bounded Context Database Design Diagram
 
+Este diagrama representa el modelo relacional que da soporte a la persistencia de datos del bounded context **Configuración Técnica**.
+
+El diseño se alinea con el dominio previamente modelado en las secciones anteriores, asegurando que cada build pueda ser construida, validada y recuperada eficientemente con sus respectivos componentes.
+
+Se utilizaron las siguientes decisiones de modelado:
+
+- Se modela la entidad `builds` como una tabla principal, la cual contiene un identificador único (`id`), el `nombre` de la configuración y el `usuario_id` que la creó (relacionado desde otro contexto).
+- La entidad `components` representa cada parte de hardware (CPU, GPU, RAM, etc.) con atributos como `tipo`, `modelo`, `socket` y `consumo_w`.
+- La tabla `build_components` implementa la relación **muchos a muchos** entre `builds` y `components`, permitiendo reutilización de componentes y manteniendo trazabilidad.
+- Se incluye un atributo `orden` para indicar la posición o relevancia del componente dentro del ensamble.
+
+**Relaciones clave:**
+- Una build puede tener múltiples componentes asociados.
+- Un mismo componente puede formar parte de múltiples builds.
+- Cada build pertenece a un usuario (modelado en otro bounded context).
+
+**Tecnología objetivo:**  
+La base de datos utilizada será **PostgreSQL**, por su robustez y compatibilidad con UUIDs y relaciones complejas. Las claves primarias y foráneas están correctamente tipadas y normalizadas para mantener integridad referencial.
 
 #### 4.2.2. Bounded Context: Gestión de usuario
 ##### 4.2.2.1. Domain Layer
