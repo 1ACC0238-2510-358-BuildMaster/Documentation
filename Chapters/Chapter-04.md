@@ -490,17 +490,66 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 [![structurizr-101464-System-Context-001.png](https://i.postimg.cc/rpnhbFTB/structurizr-101464-System-Context-001.png)](https://postimg.cc/XZ5cBWpL)
 
 ### 4.2. Tactical-Level Domain-Driven Design
-#### 4.2.X. Bounded Context: <Bounded Context Name>
-##### 4.2.X.1. Domain Layer
-##### 4.2.X.2. Interface Layer
-##### 4.2.X.3. Application Layer
-##### 4.2.X.4. Infrastructure Layer
-##### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-##### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-###### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-###### 4.2.x.6.2. Bounded Context Database Design Diagram
+#### 4.2.1. Bounded Context: Configuración técnica
+##### 4.2.1.1. Domain Layer
+##### 4.2.1.2. Interface Layer
+##### 4.2.1.3. Application Layer
+##### 4.2.1.4. Infrastructure Layer
+##### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.1.6.2. Bounded Context Database Design Diagram
 
 
+#### 4.2.2. Bounded Context: Gestión de usuario
+##### 4.2.2.1. Domain Layer
+##### 4.2.2.2. Interface Layer
+##### 4.2.2.3. Application Layer
+##### 4.2.2.4. Infrastructure Layer
+##### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+#### 4.2.3. Bounded Context: Catálogo de componentes
+##### 4.2.3.1. Domain Layer
+##### 4.2.3.2. Interface Layer
+##### 4.2.3.3. Application Layer
+##### 4.2.3.4. Infrastructure Layer
+##### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+#### 4.2.4. Bounded Context: Comunidad
+##### 4.2.4.1. Domain Layer
+##### 4.2.4.2. Interface Layer
+##### 4.2.4.3. Application Layer
+##### 4.2.4.4. Infrastructure Layer
+##### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+#### 4.2.5. Bounded Context: Proveedor / Tienda
+##### 4.2.5.1. Domain Layer
+##### 4.2.5.2. Interface Layer
+##### 4.2.5.3. Application Layer
+##### 4.2.5.4. Infrastructure Layer
+##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+#### 4.2.6. Bounded Context: Glosario
+##### 4.2.6.1. Domain Layer
+##### 4.2.6.2. Interface Layer
+##### 4.2.6.3. Application Layer
+##### 4.2.6.4. Infrastructure Layer
+##### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+##### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+###### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 ## Conclusiones
 Conclusiones y recomendaciones.
@@ -509,14 +558,16 @@ Video About-the-team
 
 ## Bibliografía
 
-TechTarget. (s.f.). How to choose the right PC for business. SearchEnterpriseDesktop. Recuperado el 20 de abril de 2025, de https://www.techtarget.com/searchenterprisedesktop/tip/How-to-choose-the-right-PC-for-business
+- TechTarget. (s.f.). How to choose the right PC for business. SearchEnterpriseDesktop. Recuperado el 20 de abril de 2025, de https://www.techtarget.com/searchenterprisedesktop/tip/How-to-choose-the-right-PC-for-business
 
-ZDNet. (s.f.). How to choose the right PC: Everything you need to know about picking the right computer for work. Recuperado el 20 de abril de 2025, de https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
+- ZDNet. (s.f.). How to choose the right PC: Everything you need to know about picking the right computer for work. Recuperado el 20 de abril de 2025, de https://www.zdnet.com/article/how-to-chose-the-right-pc-everything-you-need-to-know-about-picking-the-right-computer-for-work/
 
-Shapiro, J. (s.f.). Top 7 things to consider when buying a new computer to avoid disappointment. LinkedIn. Recuperado el 20 de abril de 2025, de https://www.linkedin.com/pulse/top-7-things-consider-when-buying-new-computer-avoid-
+- Shapiro, J. (s.f.). Top 7 things to consider when buying a new computer to avoid disappointment. LinkedIn. Recuperado el 20 de abril de 2025, de https://www.linkedin.com/pulse/top-7-things-consider-when-buying-new-computer-avoid-
 
-Kingston Technology. (s.f.). Top 10 PC build mistakes beginners make. Recuperado el 20 de abril de 2025, de https://www.kingston.com/en/blog/gaming/top-10-pc-build-mistakes-beginners-make
+- Kingston Technology. (s.f.). Top 10 PC build mistakes beginners make. Recuperado el 20 de abril de 2025, de https://www.kingston.com/en/blog/gaming/top-10-pc-build-mistakes-beginners-make
 
-Justice IT Consulting. (s.f.). Justice IT Consulting. Recuperado el 20 de abril de 2025, de http://www.justiceitc.com/?trk=article-ssr-frontend-pulse_little-text-block
+- Justice IT Consulting. (s.f.). Justice IT Consulting. Recuperado el 20 de abril de 2025, de http://www.justiceitc.com/?trk=article-ssr-frontend-pulse_little-text-block
 
 ## Anexos
+
+- To-be Scenario Mapping: https://miro.com/app/board/uXjVIE_P0Bw=/?share_link_id=102963333287 
