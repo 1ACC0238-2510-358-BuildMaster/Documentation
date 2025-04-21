@@ -131,6 +131,31 @@ Publicar al menos 2 proyectos personales en GitHub con documentación completa y
 
 ---
 
+###### Ernesto David Casaverde De La Cruz
+
+1. Específico: Desarrollar un prototipo funcional de la aplicación móvil "Build Master" que permita a los usuarios seleccionar al menos 5 categorías de uso (gaming, diseño gráfico, programación, etc.) y recibir 3 configuraciones de PC personalizadas en base a estas necesidades.
+
+- Medible: El prototipo debe incluir una interfaz de usuario completa y un algoritmo de recomendación básico.
+
+- Alcanzable: Utilizando frameworks de desarrollo móvil actuales como React Native o Flutter.
+
+- Relevante: Directamente vinculado a la propuesta de valor principal de la aplicación.
+
+- Temporal: Completar en 3 meses desde la fecha de inicio del proyecto.
+
+2. Específico: Realizar una fase de pruebas beta con 50 usuarios reales que evalúen la precisión y utilidad de las recomendaciones de componentes de PC generadas por la aplicación.
+
+- Medible: Obtener una puntuación media de satisfacción del usuario de al menos 4/5 estrellas y recopilar al menos 30 comentarios detallados sobre la experiencia de uso.
+
+- Alcanzable: Mediante el reclutamiento de usuarios a través de foros de 
+tecnología y grupos en redes sociales.
+
+- Relevante: Permitirá mejorar la calidad de las recomendaciones antes del lanzamiento oficial.
+
+- Temporal: Completar la fase de pruebas beta y el análisis de resultados en un plazo de 6 semanas tras finalizar el prototipo.ReintentarClaude puede cometer errores. Verifique las respuestas.
+
+
+
 ## Capítulo I: Presentación  
 
 ### 1.1. Startup Profile  
