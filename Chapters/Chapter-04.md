@@ -600,10 +600,12 @@ La base de datos utilizada será **PostgreSQL**, por su robustez y compatibilida
 [![Database-Design-Diagram-Configuracion-tecnica.png](https://i.postimg.cc/bNyxWj11/Database-Design-Diagram-Configuracion-tecnica.png)](https://postimg.cc/vDKxxkqm)
 
 #### 4.2.2. Bounded Context: Gestión de usuario
+
 En esta sección, se detallan las clases y componentes identificados en el bounded context de Gestión de Usuario, que abarca la configuración y personalización de la cuenta del usuario en nuestra plataforma.  
+
 ---
 
-##### 4.2.1.1. Domain Layer
+##### 4.2.2.1. Domain Layer
 
 Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
 
@@ -618,7 +620,7 @@ Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
 
 ---
 
-##### 4.2.1.2. Interface Layer
+##### 4.2.2.2. Interface Layer
 
 Encargada de exponer funcionalidades al usuario o consumidores externos.
 
@@ -630,7 +632,7 @@ Encargada de exponer funcionalidades al usuario o consumidores externos.
 
 ---
 
-##### 4.2.1.3. Application Layer
+##### 4.2.2.3. Application Layer
 
 Define los flujos de negocio mediante comandos y eventos.
 
@@ -651,7 +653,7 @@ Define los flujos de negocio mediante comandos y eventos.
 
 ---
 
-##### 4.2.1.4. Infrastructure Layer
+##### 4.2.2.4. Infrastructure Layer
 
 Provee la implementación concreta de servicios como base de datos, brokers, etc.
 
@@ -665,7 +667,7 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 | CloudFunctionsClient | External Service | Ejecutar lógica backend adicional como verificación de datos o auditoría. | Retrofit (API REST) |
 | EventLogger | Observer / Logger | Registrar eventos importantes del sistema (ej. errores, sesiones, cambios). | Firebase Analytics, Crashlytics, Logcat, Timber |
 
-###### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+###### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 * Este Component Diagram descompone el container Gestión de Usuario API (el backend del bounded context) en:  
 * Controller: punto de entrada HTTP.  
