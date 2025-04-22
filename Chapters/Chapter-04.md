@@ -688,25 +688,277 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 ###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ###### 4.2.2.6.2. Bounded Context Database Design Diagram
 
-#### 4.2.3. Bounded Context: Catálogo de componentes
-##### 4.2.3.1. Domain Layer
-##### 4.2.3.2. Interface Layer
-##### 4.2.3.3. Application Layer
-##### 4.2.3.4. Infrastructure Layer
-##### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-##### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-###### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-###### 4.2.3.6.2. Bounded Context Database Design Diagram
-
 #### 4.2.4. Bounded Context: Comunidad
+
+En esta sección, se detallan las clases y componentes identificados en el bounded de comunidad encargada de generar un ambien coloborativo entre los usuarios sus opiniones o recomendaciones
+
 ##### 4.2.4.1. Domain Layer
+Esta capa representa el sistema central y las reglas comerciales del dominio de la comunidad.
+
+| Class               | Type             | Purpose                                                                 | Attributes / Methods                     |
+|---------------------|------------------|-------------------------------------------------------------------------|------------------------------------------|
+| Post                | Entity           | Represents a user post in the community                                | title, content, authorId, likes, comments, addComment(), like() |
+| Comment             | Value Object     | A comment on a post                                                    | content, authorId, timestamp             |
+| Rating              | Entity           | User rating for hardware components                                    | componentId, userId, score, review       |
+| CommunityFactory    | Factory          | Creates valid community interactions                                   | createPost(), createComment(), createRating() |
+| ValidationService   | Domain Service   | Validates community content                                            | validatePostContent(), filterProfanity() |
+| PostRepository      | Repository Interface | Abstraction for post data access                                      | save(Post), findById(id), findByAuthor(userId) |
 ##### 4.2.4.2. Interface Layer
+
+Responsable de exponer la funcionalidad a los usuarios o consumidores externos.
+
+| Class               | Type       | Purpose                                                                 | Methods                                  |
+|---------------------|------------|-------------------------------------------------------------------------|------------------------------------------|
+| CommunityController | Controller | Manages community-related requests                                     | createPost(), getPosts(), addComment()   |
+| RatingController    | Controller | Handles hardware component ratings                                     | submitRating(), getComponentRatings()    |
+| ExternalModerationAPI | Consumer  | Interface for external content moderation services                     | checkContentSafety(content)              |
+
+
 ##### 4.2.4.3. Application Layer
+
+Define flujos de trabajo mediante comandos y eventos.
+
+| Class                     | Type             | Purpose                                                                 | Methods                                  |
+|---------------------------|------------------|-------------------------------------------------------------------------|------------------------------------------|
+| CreatePostCommandHandler  | Command Handler  | Executes logic for creating a new post                                 | handle(command: CreatePostCommand)       |
+| PostCreatedEventHandler   | Event Handler    | Manages actions after post creation (notifications, etc.)              | handle(event: PostCreated)               |
+| RateComponentCommandHandler | Command Handler | Handles component rating submissions                                  | handle(command: RateComponentCommand)    |
+
 ##### 4.2.4.4. Infrastructure Layer
+
+Proporciona la implementación concreta de servicios como bases de datos, intermediarios, etc.
+
+| Class                   | Type              | Purpose                                                                 | Technologies                             |
+|-------------------------|-------------------|-------------------------------------------------------------------------|------------------------------------------|
+| PostRepositoryImpl      | Repository        | MySQL implementation of PostRepository                            | PostgreSQL                               |
+| ModerationServiceImpl   | External Service  | Calls external content moderation API                                  | REST API                                 |
+| CommunityEventBroker    | Message Broker    | Publishes community events for other contexts                          | RabbitMQ                                 |
+| CacheService            | Infrastructure    | Caches popular posts and ratings                                       | Redis                                    |
+
 ##### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+En esta seccion explicaramos el bounded context comunidad 
+
+1. __App Móvil Comunidad__
+
+Tipo : Container (Flutter)
+Función : Aplicación móvil usada por los usuarios para interactuar con la API.
+Interacción : Realiza llamadas HTTP a la API.
+
+2. ComunidadController
+Tipo : REST Controller
+Función : Recibe peticiones HTTP/JSON del frontend (App Móvil Comunidad).
+Interacción :
+Invoca comandos (CrearPost, ComentarPost) a los handlers correspondientes.
+
+3. CrearPostCommandHandler
+Tipo : Application Service
+Función : Orquesta la creación de un nuevo post.
+Interacción :
+Valida el contenido del post mediante ModeracionService.
+Construye una instancia válida de Post usando PostFactory.
+Guarda el post en la base de datos mediante PostRepository.
+Envía notificaciones a seguidores mediante NotificacionService.
+
+4. ModeracionService
+Tipo : Domain Service
+Función : Valida el contenido de los posts.
+Interacción : Recibe solicitudes de validación desde CrearPostCommandHandler.
+
+5. PostRepository
+Tipo : Repository
+Función : Guarda y recupera posts en la base de datos.
+Interacción : Recibe solicitudes de guardar posts desde CrearPostCommandHandler.
+
+6. PostFactory
+Tipo : Domain Factory
+Función : Construye una instancia válida de Post.
+Interacción : Recibe solicitudes de construcción desde CrearPostCommandHandler.
+
+7. NotificacionService
+Tipo : Infrastructure Service
+Función : Envía notificaciones a seguidores.
+Interacción : Recibe solicitudes de envío de notificaciones desde CrearPostCommandHandler.
+
+8. ComentarPostCommandHandler
+Tipo : Application Service
+Función : Orquesta la creación de un comentario.
+Interacción :
+Valida el contenido del comentario mediante ModeracionComentariosService.
+Construye una instancia válida de Comentario usando ComentarioFactory.
+Guarda el comentario en la base de datos mediante ComentarioRepository.
+
+9. ModeracionComentariosService
+Tipo : Domain Service
+Función : Valida el contenido de los comentarios.
+Interacción : Recibe solicitudes de validación desde ComentarPostCommandHandler.
+
+10. ComentarioRepository
+Tipo : Repository
+Función : Guarda y recupera comentarios en la base de datos.
+Interacción : Recibe solicitudes de guardar comentarios desde ComentarPostCommandHandler.
+
+11. ComentarioFactory
+Tipo : Domain Factory
+Función : Construye una instancia válida de Comentario.
+Interacción : Recibe solicitudes de construcción desde ComentarPostCommandHandler.
+
+
+[![structurizr-101532-Component-001-002.png](https://i.postimg.cc/Gt5kmcc3/structurizr-101532-Component-001-002.png)](https://postimg.cc/H8bJS1cF)
 ##### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Configuración Técnica. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
 ###### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+Capa de Dominio : Contiene las entidades (Post, Valuation) y objetos de valor (PostPayload).
+
+Capa de Repositorio : Maneja la persistencia de datos (PostRepository, ValuationRepository).
+
+Capa de Servicio : Coordina las operaciones de negocio (PostServiceInterface).
+
+Capa de Comandos : Encapsula acciones específicas (CreatePostCommand, RateBuildCommand).
+[![Diagrama-en-blanco-2.png](https://i.postimg.cc/fy9PcW8y/Diagrama-en-blanco-2.png)](https://postimg.cc/64BzwKJx)
 ###### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+Users :
+Almacena usuarios (UserId, Username, Email).
+
+Publicaciones :
+Publicaciones de usuarios (PublicacionId, UserId, Titulo, Contenido, LikeCount).
+Relacionada con Users, Comentarios, y Valoraciones.
+
+Comentarios :
+Comentarios en publicaciones (ComentarioId, PublicacionId, UserId, Contenido).
+Relacionada con Publicaciones y Users.
+
+Valoraciones :
+Puntuaciones a publicaciones (ValoracionId, PublicacionId, UserId, Score).
+Relacionada con Publicaciones y Users.
+
+Notificaciones :
+Notificaciones para usuarios (NotificacionId, UserId, Tipo, Mensaje, IsRead).
+
+Temas :
+Categorías o temas (Temaid, Nombre, IsTrending).
+
+Builds :
+Registra builds o versiones (BuildId, UserId, CreationDate).
+
+
+[![Diagrama-en-blanco-3.png](https://i.postimg.cc/BQdSftrY/Diagrama-en-blanco-3.png)](https://postimg.cc/8jmQhkPM)
+
+#### 4.2.5. Bounded Context: Catalogo de Componentes
+
+En esta seccion ira todo lo relacioano con el bounded context catalago.
+
+##### 4.2.5.1. Domain Layer
+
+| Class                 | Type             | Purpose                                                                 | Attributes / Methods                     |
+|-----------------------|------------------|-------------------------------------------------------------------------|------------------------------------------|
+| Component             | Entity           | Represents a hardware component                                        | id, name, type, specs, price, compatibilityList |
+| Category              | Entity           | Component classification hierarchy                                     | name, parentCategory, childrenCategories |
+| Manufacturer          | Entity           | Hardware component manufacturer                                        | name, website, supportContacts           |
+| ComponentSpecs        | Value Object     | Technical specifications of a component                                | socket, tdp, dimensions, interface       |
+| ComponentFactory      | Factory          | Creates validated component instances                                  | createComponent(), validateSpecs()       |
+| CompatibilityService  | Domain Service   | Manages component compatibility rules                                  | checkCompatibility(), updateCompatibilityMatrix() |
+| ComponentRepository   | Repository Interface | Component persistence operations                                     | save(), findByType(), search()           |
+
+
+##### 4.2.5.2. Interface Layer
+
+| Class                 | Type       | Purpose                                                                 | Methods                                  |
+|-----------------------|------------|-------------------------------------------------------------------------|------------------------------------------|
+| CatalogController     | Controller | Handles component search and details                                   | searchComponents(), getComponentDetails() |
+| AdminController       | Controller | Manages component administration                                      | addComponent(), updatePrices(), importBatch() |
+| ComponentAPI          | Consumer   | Integrates with external component databases                           | fetchExternalSpecs(), syncInventory()    |
+
+##### 4.2.5.3. Application Layer
+
+| Class                       | Type             | Purpose                                                                 | Methods                                  |
+|-----------------------------|------------------|-------------------------------------------------------------------------|------------------------------------------|
+| AddComponentCommandHandler  | Command Handler  | Handles new component additions                                        | handle(command: AddComponentCommand)     |
+| PriceUpdateCommandHandler   | Command Handler  | Manages component price updates                                        | handle(command: PriceUpdateCommand)      |
+| ComponentUpdatedEventHandler| Event Handler    | Notifies about component changes                                       | handle(event: ComponentUpdated)          |
+
+
+##### 4.2.5.4. Infrastructure Layer
+
+
+| Class                     | Type              | Purpose                                                                 | Technologies                             |
+|---------------------------|-------------------|-------------------------------------------------------------------------|------------------------------------------|
+| ComponentRepositoryImpl   | Repository        | MySQL implementation for components                                 | MySQL                                  |
+| CategoryRepositoryImpl    | Repository        | MySQL implementation for categories                              | MySQL                              |
+| ExternalComponentService  | External Service  | Integrates with manufacturer APIs                                     | GraphQL                                  |
+| SearchService             | Infrastructure    | Full-text component search                                            | Elasticsearch                            |
+| CatalogCache              | Infrastructure    | Caches frequent component queries                                      | Redis                                    |
+| CatalogMessageBroker      | Message Broker    | Publishes catalog updates                                             | Kafka                                    |
+
+##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+Estructura del Diagrama
+
+Consulta de Componentes :
+App Móvil → CatalogController → SearchService → ComponentRepositoryImpl.
+
+Administración de Componentes :
+App Móvil → AdminController → AddComponentCommandHandler PriceUpdateCommandHandler → Repositorios.
+
+Sincronización de Datos Externos :
+ExternalComponentService → ComponentAPI → Repositorios.
+
+Notificaciones de Cambios :
+Comandos → CatalogMessageBroker → Suscriptores (ComponentUpdatedEventHandler).
+
+[![structurizr-101532-Component-001.png](https://i.postimg.cc/PqdMXW92/structurizr-101532-Component-001.png)](https://postimg.cc/VJHt4CYC)
+
+##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Configuración Técnica. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
+###### 4.2.5.6.1. 
+
+Component :
+Representa un componente con atributos como id, name, type, price, compatibility, Category y Manufacturer.
+
+ComponentFactory :
+Crea y valida componentes.
+
+DomainService :
+Verifica compatibilidad entre componentes.
+
+Category :
+Clasifica componentes en jerarquías (padre-hijo).
+
+SpecificationsComponent :
+Almacena detalles técnicos del componente.
+
+Manufacturer :
+Información del fabricante y contactos de soporte.
+
+Contact :
+Detalles de contacto (teléfono, email).
+
+ComponentRepository :
+Guarda y recupera componentes.
+
+[![Diagrama-en-blanco-4.png](https://i.postimg.cc/FHw7GNgc/Diagrama-en-blanco-4.png)](https://postimg.cc/3kC8xMqJ)
+###### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+COMPONENTS :
+Almacena componentes (id, name, type, specs, price).
+Relacionada con CATEGORIES y MANUFACTURERS.
+
+COMPONENT_COMPATIBILITY :
+Registra pares de componentes compatibles.
+CATEGORIES :
+Clasifica componentes en jerarquías (id, name, parent_id).
+
+MANUFACTURERS :
+Almacena fabricantes y contactos de soporte.
+
+Relaciones:
+Componentes → Categorías y Fabricantes.
+Categorías → Jerarquía (padre-hijo).
+Compatibilidad → Pares de componentes.
+
+[![Diagrama-en-blanco-5.png](https://i.postimg.cc/W4JSfpRP/Diagrama-en-blanco-5.png)](https://postimg.cc/jWtzDbd8)
 
 #### 4.2.5. Bounded Context: Proveedor / Tienda
 ##### 4.2.5.1. Domain Layer
