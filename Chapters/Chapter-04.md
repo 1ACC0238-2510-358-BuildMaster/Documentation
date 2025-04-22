@@ -600,11 +600,85 @@ La base de datos utilizada será **PostgreSQL**, por su robustez y compatibilida
 [![Database-Design-Diagram-Configuracion-tecnica.png](https://i.postimg.cc/bNyxWj11/Database-Design-Diagram-Configuracion-tecnica.png)](https://postimg.cc/vDKxxkqm)
 
 #### 4.2.2. Bounded Context: Gestión de usuario
-##### 4.2.2.1. Domain Layer
-##### 4.2.2.2. Interface Layer
-##### 4.2.2.3. Application Layer
-##### 4.2.2.4. Infrastructure Layer
-##### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+En esta sección, se detallan las clases y componentes identificados en el bounded context de Gestión de Usuario, que abarca la configuración y personalización de la cuenta del usuario en nuestra plataforma.  
+---
+
+##### 4.2.1.1. Domain Layer
+
+Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
+
+| Clase | Tipo | Propósito | Atributos/Métodos |
+| :---- | :---- | :---- | :---- |
+| Usuario | Entidad | Representar al usuario del sistema y gestionar su ciclo de vida. | id, nombre, email, contraseña, perfil, buildsFavoritas registrar(), login(), editarPerfil(), eliminarCuenta() |
+| Perfil | Value Object | Contener la información editable del usuario. | nombreCompleto, imagenPerfil, biografia, redesSociales actualizarInfo() |
+| Credenciales | Value Object | Validar el acceso del usuario con email y contraseña. | email, contraseña validar() |
+| Build | Entidad | Representar una build que puede ser marcada como favorita. | id, titulo, descripcion, elementos, autor |
+| Favorito | Entidad | Relacionar a un usuario con sus builds favoritas. | usuarioId, buildId agregarFavorito(), removerFavorito() |
+| MensajeSistema | Value Object | Proveer feedback al usuario después de acciones (éxito, error, confirmación). | tipo, contenido |
+
+---
+
+##### 4.2.1.2. Interface Layer
+
+Encargada de exponer funcionalidades al usuario o consumidores externos.
+
+| Clase | Tipo | Propósito | Atributos/Métodos |
+| :---- | :---- | :---- | :---- |
+| UsuarioController | Controller | Controlar todas las interacciones del usuario con la aplicación: registro, login, perfil y favoritos.	 | mostrarFormularioRegistro() registrarUsuario(datosFormulario) mostrarFormularioLogin() iniciarSesion(email, contraseña) mostrarPerfil() editarPerfil(datosActualizados) mostrarBuildsFavoritas(usuarioId) confirmarEliminacion() cancelarEliminacion() eliminarUsuario(usuarioId) mostrarMensajeSistema(tipo, texto) |
+| UsuarioDTO | DTO (Data Transfer Object) | Transferir los datos del usuario entre UI y casos de uso. | nombre, email, imagenPerfil, biografia, redesSociales, buildsFavoritas |
+| UsuarioView | View | Mostrar pantallas e interfaces relacionadas al usuario. | renderFormularioRegistro() renderFormularioLogin() renderPerfil(usuarioDTO) renderEdicionPerfil() renderBuildsFavoritas(listaBuilds) mostrarMensaje(tipo, texto) mostrarModalConfirmacion() |
+
+---
+
+##### 4.2.1.3. Application Layer
+
+Define los flujos de negocio mediante comandos y eventos.
+
+| Clase | Tipo | Propósito | Atributos/Métodos |
+| :---- | :---- | :---- | :---- |
+| RegistrarUsuarioCommand | Comand Handler | Solicitar el registro de un nuevo usuario. | nombre, email, contraseña execute() |
+| UsuarioRegistradoEvent | Event Handler | Notificar que un usuario fue registrado exitosamente. | usuarioId, timestamp |
+| IniciarSesionCommand | Comand Handler | Solicitar el inicio de sesión con credenciales. | email, contraseña execute() |
+| SesionIniciadaEvent | Event Handler | Confirmar que el usuario inició sesión con éxito. | usuarioId, timestamp |
+| EditarPerfilCommand | Comand Handler | Solicitar actualización de datos del perfil. | usuarioId, datosActualizados execute() |
+| PerfilActualizadoEvent | Event Handler | Confirmar que los datos del usuario fueron actualizados correctamente. | usuarioId, timestamp |
+| VerBuildsFavoritasCommand | Comand Handler | Solicitar las builds favoritas del usuario. | usuarioId execute() |
+| BuildsFavoritasMostradasEvent | Event Handler | Indicar que se han cargado correctamente las builds favoritas. | usuarioId, listaBuilds |
+| EliminarUsuarioCommand | Comand Handler | Solicitar la eliminación de una cuenta de usuario. | usuarioId execute() |
+| UsuarioEliminadoEvent | Event Handler | Confirmar que la cuenta fue eliminada del sistema. | usuarioId, timestamp |
+| CancelarEliminacionCommand | Comand Handler | Solicitar la cancelación del proceso de eliminación de cuenta. | usuarioId execute() |
+| EliminacionCanceladaEvent | Event Handler | Indicar que se canceló el proceso de eliminación de cuenta. | usuarioId, timestamp |
+
+---
+
+##### 4.2.1.4. Infrastructure Layer
+
+Provee la implementación concreta de servicios como base de datos, brokers, etc.
+
+| Clase | Tipo | Propósito | Tecnologías (Jetpack Compose stack) |
+| :---- | :---- | :---- | :---- |
+| FirebaseAuthService | Service | Gestionar autenticación de usuarios (registro, login, logout). | Firebase Authentication, Google Play Services |
+| FirebaseFirestoreUserRepository | Repository | Persistir y recuperar información del usuario. | PostgreSQL |
+| FirebaseBuildRepository | Repository | Gestionar las builds y builds favoritas del usuario. | PostgreSQL |
+| LocalUserPreferences | Storage | Manejar almacenamiento local de sesión, tema, idioma, etc. | Jetpack DataStore (o SharedPreferences) |
+| FirebaseMessagingService | Message Broker | Enviar y recibir notificaciones push relacionadas a eventos de usuario. | RabbitMQ |
+| CloudFunctionsClient | External Service | Ejecutar lógica backend adicional como verificación de datos o auditoría. | Retrofit (API REST) |
+| EventLogger | Observer / Logger | Registrar eventos importantes del sistema (ej. errores, sesiones, cambios). | Firebase Analytics, Crashlytics, Logcat, Timber |
+
+###### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+* Este Component Diagram descompone el container Gestión de Usuario API (el backend del bounded context) en:  
+* Controller: punto de entrada HTTP.  
+* Command Handler: maneja la lógica principal.  
+* Domain Service y Factory: lógica de dominio para crear y validar builds.  
+* Repository: persistencia de datos en PostgreSQL.  
+* External API: cliente para validaciones externas.
+
+
+[![image.png](https://i.postimg.cc/G3Ftk0WT/image.png)](https://postimg.cc/Z0qJSQKJ)
+[![image.png](https://i.postimg.cc/DyCXXkGd/image.png)](https://postimg.cc/VdC6xhDd)
+
+
 ##### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ###### 4.2.2.6.2. Bounded Context Database Design Diagram
