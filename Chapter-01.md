@@ -39,6 +39,7 @@ Producto: BuildMaster
 
 
 <div align="center">
+
 Ciclo 2025-01
 
 </div>
@@ -115,8 +116,8 @@ Ciclo 2025-01
 ## Student Outcome  
 | **Criterio Específico**                     | **Acciones Realizadas**                                                                                       | **Conclusiones**                                                                                          |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.    | - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: <br><br> - Machuca García, Celso Eduardo <br> TB1: | Conclusión basada en las acciones realizadas <br> TB1:|
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1:<br><br> - Machuca García, Celso Eduardo <br> TB1:| Conclusión basada en las acciones realizadas <br> TB1:|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.    | - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: <br><br> - Machuca García, Celso Eduardo <br> TB1: Participación en la creación y desarrollo de la presentación del proyecto "Build Master", analizando toda la documentación relevante para el desarrollo de la aplicación. | Conclusión basada en las acciones realizadas <br> TB1:|
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| - Cantoral Sedamano, Alexander Alberto. <br> TB1: <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1:<br><br> - Machuca García, Celso Eduardo <br> TB1: Participación activa en la revisión de la documentación del proyecto, destacando la importancia de la actualización constante de conocimientos en el campo del desarrollo de software.Creación y desarrollo de la presentación.| Conclusión basada en las acciones realizadas <br> TB1:|
 
 ---
 
@@ -155,6 +156,27 @@ tecnología y grupos en redes sociales.
 
 - Temporal: Completar la fase de pruebas beta y el análisis de resultados en un plazo de 6 semanas tras finalizar el prototipo.ReintentarClaude puede cometer errores. Verifique las respuestas.
 
+###### Machuca García Celso Eduardo
+
+1. Específico: Analizar y comprender completamente la arquitectura del proyecto y los requisitos funcionales de la aplicación móvil "Build Master" para asegurar que puedas contribuir activamente en el desarrollo.
+
+- Medible: Completar un documento de análisis con una lista de características clave y aspectos técnicos del proyecto.
+
+- Alcanzable: Estudiando la documentación existente y participando en reuniones con el equipo para aclarar dudas.
+
+- Relevante: Fundamental para poder integrarte de manera efectiva al desarrollo y tomar decisiones informadas.
+
+- Temporal: Completar el análisis en 1 semana.
+
+2. Específico: Participar activamente en la definición y discusión de los requisitos técnicos y funcionalidades del prototipo de la aplicación móvil.
+
+- Medible: Aportar al menos 3 sugerencias o mejoras durante las reuniones del equipo.
+
+- Alcanzable: Revisión de la documentación y colaboración con el equipo de desarrollo.
+
+- Relevante: Contribuir a la toma de decisiones y asegurar que el proyecto esté alineado con los objetivos del equipo.
+
+- Temporal: Aportar sugerencias durante la próxima reunión del equipo (en 1 semana).
 
 
 ## Capítulo I: Presentación  
