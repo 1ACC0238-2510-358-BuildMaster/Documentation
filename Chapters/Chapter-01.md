@@ -154,7 +154,13 @@ tecnología y grupos en redes sociales.
 
 - Temporal: Completar la fase de pruebas beta y el análisis de resultados en un plazo de 6 semanas tras finalizar el prototipo.ReintentarClaude puede cometer errores. Verifique las respuestas.
 
+---
 
+###### Russell Stephen Romero Qwistgaard
+
+1er Objetivo: Generar una aplicación móvil que ayude a cualquiera que este o quiera meterse en el mundo del PC a poder elegir sabiamente los equipos y componentes que mejor les convega comprar, logrando aprender el cómo mantener un negocio de este tipo y cómo tratar a mi público objetivo en caso de que tengan complicaciones usandola, formando mi futuro en la industrias ya sea por medio de los llamados Kickstarters o trabajando en las grandes corparaciones de esta industria.
+
+2do Objetivo: Aprender a codificar en entornos móviles por medio de programas como Android Studio o Xcode, logrando aumentar mis opciones al momento de trabajar en un proyecto y tener que elegir las plataformas en donde el aplicativo será disponible.
 
 ## Capítulo I: Presentación  
 
@@ -183,7 +189,7 @@ Estudio la carrera de ingeniería de software en la universidad de Ciencias Apli
 
 ---
 
-Cantoral Sedamano, Alexander Alberto - U20181B152
+**Cantoral Sedamano, Alexander Alberto - U20181B152**
 
 <div align="center"> <img src="https://raw.githubusercontent.com/AlexlmL/ImagesforOpenSource/main/foto%20alexander%5B797%5D.jpg" width="250" height="250"> </div>
 Estudiante de Ingeniería de Software con sólidos conocimientos en programación de aplicaciones web, manejo intermedio de bases de datos con SQL y experiencia en el uso de herramientas tecnológicas de diversos rubros.
@@ -191,6 +197,16 @@ Estudiante de Ingeniería de Software con sólidos conocimientos en programació
 Destaco por mi capacidad para presentar y analizar información mediante Excel y Power BI, así como por mi participación activa en el desarrollo y despliegue de soluciones de software.
 
 Además, cuento con habilidades versátiles en el uso de herramientas comunes para el trabajo universitario. En el ámbito de las habilidades blandas, me caracterizo por ser organizado, comprometido con la calidad de las entregas y por saber trabajar eficientemente en equipo.
+
+---
+
+**Romero Qwistgaard Russell Stephen - U202211043**
+
+<div align="center"> ![Captura de pantalla 2024-08-15 121605](https://hackmd.io/_uploads/ByWzO2icC.png)  </div>
+  
+Estudio la carrera de ingeniería de software, actualmente en el 7 ciclo de esta. Me apasiona crear programas en entornos distintos para poder ampliar mi conocimiento en las muchas áreas que dependen de mi formación. Estoy dispuesto a cooperar y ser puntual en mis trabajos individuales y grupales.
+
+Destaco por innovar con los proyectos que trabajo, dandoles una mejor presentación y funcionalidad según el problema que quiera solucionar. Además me abro facilmente a las opiniones de mis compañeros sin menospreciar el aporte de uno.
 
 ### 1.2. Solution Profile  
 
