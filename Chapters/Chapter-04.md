@@ -912,7 +912,7 @@ Comandos → CatalogMessageBroker → Suscriptores (ComponentUpdatedEventHandler
 ##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Configuración Técnica. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
-###### 4.2.5.6.1. 
+###### 4.2.5.6.1.  Bounded Context Domain Layer Class Diagrams
 
 Component :
 Representa un componente con atributos como id, name, type, price, compatibility, Category y Manufacturer.
