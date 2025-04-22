@@ -193,6 +193,18 @@ Destaco por mi capacidad para presentar y analizar información mediante Excel y
 
 Además, cuento con habilidades versátiles en el uso de herramientas comunes para el trabajo universitario. En el ámbito de las habilidades blandas, me caracterizo por ser organizado, comprometido con la calidad de las entregas y por saber trabajar eficientemente en equipo.
 
+**Machuca García Celso Eduardo - U202513698**  
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Chelso2911/FotosGitHub/refs/heads/main/fotouno.jpg" alt="Imagen centrada" width="200"/>
+</div>
+
+Estudiante de Ingeniería de Software con sólidos conocimientos en el desarrollo de programas en R Studio y en la creación de proyectos de inteligencia artificial usando Python. Poseo un nivel intermedio de manejo de bases de datos y me destaco por mi capacidad para desarrollar soluciones efectivas y eficientes en el ámbito de la programación y análisis de datos.
+
+Además de mis habilidades técnicas, tengo un fuerte enfoque en el desarrollo de habilidades blandas, lo que me permite ser un líder efectivo y un organizador de grupos. 
+
+---
+
 ### 1.2. Solution Profile  
 
 #### 1.2.1. Antecedentes y problemática  
