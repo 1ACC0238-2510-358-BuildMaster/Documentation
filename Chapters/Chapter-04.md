@@ -397,13 +397,13 @@ El **Container Level Diagram** muestra los elementos de alto nivel de la arquite
 
 ###### Descripción de los contenedores
 
-- **Aplicación Web (Frontend)**: 
+- **Aplicación Movil (Frontend)**: 
   - **Responsabilidad**: Interfaz de usuario donde los usuarios registrados y visitantes pueden interactuar con el sistema. Permite la creación de builds, la visualización de componentes y la consulta de precios.
-  - **Tecnología**: Angular (como framework frontend), HTML, CSS, JavaScript.
+  - **Tecnología**: Flutter.
   - **Comunicación**: Se comunica con el backend a través de APIs RESTful.
 
 - **API Backend (Backend)**:
-  - **Responsabilidad**: Gestiona las peticiones de la aplicación web, incluyendo la creación, actualización y consulta de builds. También maneja la integración con sistemas de terceros (API de precios y autenticación).
+  - **Responsabilidad**: Gestiona las peticiones de la aplicación movil, incluyendo la creación, actualización y consulta de builds. También maneja la integración con sistemas de terceros (API de precios y autenticación).
   - **Tecnología**: Node.js con Express (para las API RESTful).
   - **Comunicación**: Se comunica con el frontend y con los sistemas externos (API de precios y sistema de autenticación) a través de llamadas HTTP.
 
@@ -424,8 +424,8 @@ El **Container Level Diagram** muestra los elementos de alto nivel de la arquite
 
 ###### Flujo de Comunicación Entre Contenedores
 
-1. **Frontend (Aplicación Web)**:
-   - Los usuarios registrados y visitantes interactúan con el frontend a través de su navegador.
+1. **Frontend (Aplicación Movil)**:
+   - Los usuarios registrados y visitantes interactúan con el frontend a través de su celular.
    - El frontend realiza peticiones al **Backend API** para obtener información sobre builds y componentes, y para registrar o autenticar usuarios.
    
 2. **Backend API**:
@@ -442,7 +442,7 @@ El **Container Level Diagram** muestra los elementos de alto nivel de la arquite
 5. **Sistema de Autenticación**:
    - El backend interactúa con el sistema de autenticación para validar a los usuarios al inicio de sesión y registrar nuevos usuarios.
 
-[![structurizr-101463-Container-001.png](https://i.postimg.cc/Tw2vZjxs/structurizr-101463-Container-001.png)](https://postimg.cc/f3PPd9J7)
+[![structurizr-101463-Container-001.png](https://i.postimg.cc/13K26hhB/structurizr-101463-Container-001.png)](https://postimg.cc/YvhdKPSL)
 
 ##### 4.1.3.3. Software Architecture Deployment Diagrams
 
@@ -454,10 +454,13 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 
 ###### Elementos del Diagrama
 
-- **Servidor Web (Frontend)**:
-  - **Responsabilidad**: Alojamiento de la aplicación web (frontend) que interactúa con los usuarios. Este servidor maneja las peticiones del navegador y las envía al backend para su procesamiento.
-  - **Tecnología**: Nginx o Apache como servidor web.
-  - **Comunicación**: Recibe las peticiones de los usuarios a través de HTTP/HTTPS y las pasa al backend.
+- **Dispositivo del Usuario (Smartphone):**
+
+  - **Responsabilidad:** Ejecutar la aplicación móvil (frontend nativo) instalada desde la tienda.
+
+  - **Tecnología:** Flutter (Android/iOS)
+
+  - **Comunicación:** Se conecta al backend a través de   internet mediante HTTP/HTTPS.
 
 - **Servidor de Aplicaciones (Backend)**:
   - **Responsabilidad**: Alojamiento de la API backend que maneja la lógica del sistema y las comunicaciones con la base de datos y otros servicios externos.
@@ -481,13 +484,13 @@ El diagrama de despliegue representa la infraestructura física sobre la que se 
 
 ###### Flujo de Despliegue
 
-1. **Usuarios** acceden a la **Aplicación Web** (servidor web) a través de sus navegadores.
+1. El **usuario** instala y ejecuta la **aplicación móvil** en su celular (Flutter).
 2. Las **peticiones del frontend** se envían al **Backend (servidor de aplicaciones)** para ser procesadas.
 3. El **Backend** se comunica con la **Base de Datos** para almacenar o recuperar información relacionada con builds, usuarios y componentes.
 4. El **Backend** también interactúa con el **Proveedor de Precios** para obtener información sobre precios de componentes.
 5. El **Backend** consulta el **Sistema de Autenticación** para autenticar a los usuarios y gestionar sesiones.
 
-[![structurizr-101464-System-Context-001.png](https://i.postimg.cc/rpnhbFTB/structurizr-101464-System-Context-001.png)](https://postimg.cc/XZ5cBWpL)
+[![structurizr-101464-Container-001.png](https://i.postimg.cc/W30H2Qn0/structurizr-101464-Container-001.png)](https://postimg.cc/phXZCc3d)
 
 ### 4.2. Tactical-Level Domain-Driven Design
 ### 4.2.1. Bounded Context: Configuración Técnica
@@ -556,7 +559,7 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 
 - External API: cliente para validaciones externas.
 
-[![structurizr-101490-Component-001.png](https://i.postimg.cc/nrH6649G/structurizr-101490-Component-001.png)](https://postimg.cc/njPRmQkX)
+[![structurizr-101490-Component-001.png](https://i.postimg.cc/GtzhXNvF/structurizr-101490-Component-001.png)](https://postimg.cc/1VnQtvCX)
 
 ##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
