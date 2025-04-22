@@ -35,6 +35,7 @@ Producto: BuildMaster
 | Casaverde De La Cruz, Ernesto David      | U20221B657    |
 | Cantoral Sedamano, Alexander Alberto | U20181B152 |
 | Romero Qwistgaard, Russell Stephen | U202211043 |
+| Machuca García, Celso Eduardo | U202513698  |
 
 
 <div align="center">
@@ -45,7 +46,7 @@ Ciclo 2025-01
 ## Registro de Versiones  
 | **Versión** | **Fecha**   | **Autor/es**         | **Descripción y Modificación**       |
 |-------------|-------------|----------------------|--------------------------------------|
-| 1.0         | /04/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen      |    Se redactó la descripción de la startup, los antecedentes y la problemática. Además, se desarrolló el Lean UX Process y se delimitó el segmento objetivo.<br><br> Se completó la sección de Competidores (Incluyendo un análisis competitivo y tácticas frente a competidores). <br><br> Se realizó el diseño de entrevistas, el to-be scenario mapping y el impact mapping. <br><br> Se realizó el Needfinding para obtener las user personas, los user task matrix y el user journey mapping. <br><br> Se completó el Needfinding para obtener el emphaty mapping, el as-is scenario mapping y el lenguaje ubicuo.<br><br> Se realizaron los diagramas C4, el DDD, diagramas de clase y de base de datos para cada bounded context.        |
+| 1.0         | /04/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen  <br> - Machuca García, Celso Eduardo    |    Se redactó la descripción de la startup, los antecedentes y la problemática. Además, se desarrolló el Lean UX Process y se delimitó el segmento objetivo.<br><br> Se completó la sección de Competidores (Incluyendo un análisis competitivo y tácticas frente a competidores). <br><br> Se realizó el diseño de entrevistas, el to-be scenario mapping y el impact mapping. <br><br> Se realizó el Needfinding para obtener las user personas, los user task matrix y el user journey mapping. <br><br> Se completó el Needfinding para obtener el emphaty mapping, el as-is scenario mapping y el lenguaje ubicuo.<br><br> Se realizaron los diagramas C4, el DDD, diagramas de clase y de base de datos para cada bounded context.        |
 
 ## Project Report Collaboration Insights  
 [URL del Repositorio]  
@@ -114,8 +115,8 @@ Ciclo 2025-01
 ## Student Outcome  
 | **Criterio Específico**                     | **Acciones Realizadas**                                                                                       | **Conclusiones**                                                                                          |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.    | - Cantoral Sedamano, Alexander Alberto. <br> TB1: En esta entrega apoyé con la organización del grupo, elaboraré mis responsabilidades designadas, actualizando en mi manera y conocimientos para desarrollar las mismas. <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: realize el capitulo 1 y 2 menos las entrevistas tambien 2 bc del capitulo 4 cumpli con todas mis activades siempre dando una buena calidad leyendo todo y asegurandome que este bien   <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: En esta entrega fundé el proyecto que ibamos a trabajar y de realizar la investigación necesaria para comprender la problematica que queremos solucionar con nuestra app | Conclusión basada en las acciones realizadas <br> TB1:hemos demostrado comprender que el desarrollo profesional en la creación de soluciones de software requiere un aprendizaje constante. Alexander reconoce explícitamente la importancia de mantenerse actualizado con las últimas tendencias en el campo. Russell demuestra este principio al enfatizar la necesidad de investigar para comprender los problemas de los usuarios antes de proponer soluciones. En el caso de Ernesto, aunque su reflexión es más descriptiva de sus actividades completadas, menciona su compromiso con la calidad al revisar y asegurarse de que el trabajo esté bien ejecutado, lo que implica un proceso de verificación y mejora continua. Este reconocimiento colectivo indica que los estudiantes están desarrollando una mentalidad profesional que valora la adquisición de conocimientos como base para el desarrollo efectivo de software. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| - Cantoral Sedamano, Alexander Alberto. <br> TB1: Con los constantes cambios en este rubro pues se sabe que necesitamos estar actualizados a las últimas tendencias. Por ejemplo, para este proyecto tuvimos que tener en cuenta las necesidades actuales para cada segmento objetivo, sus objetivos y como podemos nosotros, como startup, entrar como papel de herramienta. <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1:  realize el capitulo 1 y 2 menos las entrevistas tambien 2 bc del capitulo 4 cumpli con todas mis activades siempre dando una buena calidad leyendo todo y asegurandome que este bien <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: Comprendí que se necesita saber rimero cuáles son los mayores desafios que presentan los usuarios antes de proponer funcionalidades que pueden o no ser utiles al moemnto de ser implementadas y que solo demoran más el desarrollo del trabajo. En cambio, tener una perspectiva de lo que ellos se quejan más nos permite centrar nuestro trabajo en lo que más debemos priorizar y evita que malgastemos nuestro esfuerzo en ideas creativas, pero no innovadoras y utiles al final del día, | Conclusión basada en las acciones realizadas <br> TB1:Reconocemos que las soluciones efectivas surgen de comprender a fondo las necesidades del usuario en lugar de implementar funcionalidades basadas en suposiciones. La reflexión de Russell destaca particularmente esto con su visión sobre centrarse en los desafíos del usuario antes de proponer funcionalidades. Ernesto contribuye a esta perspectiva al haber desarrollado los capítulos iniciales del proyecto (capítulos 1 y 2) que presumiblemente establecen el contexto y la comprensión del problema, además de haber trabajado en business cases del capítulo 4, lo que sugiere una aplicación práctica de los conocimientos para resolver problemas específicos. Esto demuestra su progresión colectiva hacia una práctica profesional basada en evidencia en lugar de confiar únicamente en la ideación creativa sin validación.|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.    | - Cantoral Sedamano, Alexander Alberto. <br> TB1: En esta entrega apoyé con la organización del grupo, elaboraré mis responsabilidades designadas, actualizando en mi manera y conocimientos para desarrollar las mismas. <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1: realize el capitulo 1 y 2 menos las entrevistas tambien 2 bc del capitulo 4 cumpli con todas mis activades siempre dando una buena calidad leyendo todo y asegurandome que este bien   <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: En esta entrega fundé el proyecto que ibamos a trabajar y de realizar la investigación necesaria para comprender la problematica que queremos solucionar con nuestra app. <br><br> - Machuca García, Celso Eduardo <br> TB1: Participación en la creación y desarrollo de la presentación del proyecto "Build Master", analizando toda la documentación relevante para el desarrollo de la aplicación. | Conclusión basada en las acciones realizadas <br> TB1:hemos demostrado comprender que el desarrollo profesional en la creación de soluciones de software requiere un aprendizaje constante. Alexander reconoce explícitamente la importancia de mantenerse actualizado con las últimas tendencias en el campo. Russell demuestra este principio al enfatizar la necesidad de investigar para comprender los problemas de los usuarios antes de proponer soluciones. En el caso de Ernesto, aunque su reflexión es más descriptiva de sus actividades completadas, menciona su compromiso con la calidad al revisar y asegurarse de que el trabajo esté bien ejecutado, lo que implica un proceso de verificación y mejora continua. Este reconocimiento colectivo indica que los estudiantes están desarrollando una mentalidad profesional que valora la adquisición de conocimientos como base para el desarrollo efectivo de software. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.| - Cantoral Sedamano, Alexander Alberto. <br> TB1: Con los constantes cambios en este rubro pues se sabe que necesitamos estar actualizados a las últimas tendencias. Por ejemplo, para este proyecto tuvimos que tener en cuenta las necesidades actuales para cada segmento objetivo, sus objetivos y como podemos nosotros, como startup, entrar como papel de herramienta. <br><br> - Casaverde De La Cruz, Ernesto David <br> TB1:  realize el capitulo 1 y 2 menos las entrevistas tambien 2 bc del capitulo 4 cumpli con todas mis activades siempre dando una buena calidad leyendo todo y asegurandome que este bien <br><br> - Romero Qwistgaard, Russell Stephen <br> TB1: Comprendí que se necesita saber rimero cuáles son los mayores desafios que presentan los usuarios antes de proponer funcionalidades que pueden o no ser utiles al moemnto de ser implementadas y que solo demoran más el desarrollo del trabajo. En cambio, tener una perspectiva de lo que ellos se quejan más nos permite centrar nuestro trabajo en lo que más debemos priorizar y evita que malgastemos nuestro esfuerzo en ideas creativas, pero no innovadoras y utiles al final del día, <br><br> - Machuca García, Celso Eduardo <br> TB1: Participación activa en la revisión de la documentación del proyecto, destacando la importancia de la actualización constante de conocimientos en el campo del desarrollo de software.Creación y desarrollo de la presentación. | Conclusión basada en las acciones realizadas <br> TB1:Reconocemos que las soluciones efectivas surgen de comprender a fondo las necesidades del usuario en lugar de implementar funcionalidades basadas en suposiciones. La reflexión de Russell destaca particularmente esto con su visión sobre centrarse en los desafíos del usuario antes de proponer funcionalidades. Ernesto contribuye a esta perspectiva al haber desarrollado los capítulos iniciales del proyecto (capítulos 1 y 2) que presumiblemente establecen el contexto y la comprensión del problema, además de haber trabajado en business cases del capítulo 4, lo que sugiere una aplicación práctica de los conocimientos para resolver problemas específicos. Esto demuestra su progresión colectiva hacia una práctica profesional basada en evidencia en lugar de confiar únicamente en la ideación creativa sin validación.|
 
 ---
 
@@ -160,6 +161,30 @@ tecnología y grupos en redes sociales.
 1er Objetivo: Generar una aplicación móvil que ayude a cualquiera que este o quiera meterse en el mundo del PC a poder elegir sabiamente los equipos y componentes que mejor les convega comprar, logrando aprender el cómo mantener un negocio de este tipo y cómo tratar a mi público objetivo en caso de que tengan complicaciones usandola, formando mi futuro en la industrias ya sea por medio de los llamados Kickstarters o trabajando en las grandes corparaciones de esta industria.
 
 2do Objetivo: Aprender a codificar en entornos móviles por medio de programas como Android Studio o Xcode, logrando aumentar mis opciones al momento de trabajar en un proyecto y tener que elegir las plataformas en donde el aplicativo será disponible.
+
+---
+
+###### Machuca García Celso Eduardo
+
+1. Específico: Analizar y comprender completamente la arquitectura del proyecto y los requisitos funcionales de la aplicación móvil "Build Master" para asegurar que puedas contribuir activamente en el desarrollo.
+
+- Medible: Completar un documento de análisis con una lista de características clave y aspectos técnicos del proyecto.
+
+- Alcanzable: Estudiando la documentación existente y participando en reuniones con el equipo para aclarar dudas.
+
+- Relevante: Fundamental para poder integrarte de manera efectiva al desarrollo y tomar decisiones informadas.
+
+- Temporal: Completar el análisis en 1 semana.
+
+2. Específico: Participar activamente en la definición y discusión de los requisitos técnicos y funcionalidades del prototipo de la aplicación móvil.
+
+- Medible: Aportar al menos 3 sugerencias o mejoras durante las reuniones del equipo.
+
+- Alcanzable: Revisión de la documentación y colaboración con el equipo de desarrollo.
+
+- Relevante: Contribuir a la toma de decisiones y asegurar que el proyecto esté alineado con los objetivos del equipo.
+
+- Temporal: Aportar sugerencias durante la próxima reunión del equipo (en 1 semana).
 
 ## Capítulo I: Presentación  
 
@@ -206,6 +231,16 @@ Además, cuento con habilidades versátiles en el uso de herramientas comunes pa
 Estudio la carrera de ingeniería de software, actualmente en el 7 ciclo de esta. Me apasiona crear programas en entornos distintos para poder ampliar mi conocimiento en las muchas áreas que dependen de mi formación. Estoy dispuesto a cooperar y ser puntual en mis trabajos individuales y grupales.
 
 Destaco por innovar con los proyectos que trabajo, dandoles una mejor presentación y funcionalidad según el problema que quiera solucionar. Además me abro facilmente a las opiniones de mis compañeros sin menospreciar el aporte de uno.
+
+**Machuca García Celso Eduardo - U202513698**  
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Chelso2911/FotosGitHub/refs/heads/main/fotouno.jpg" alt="Imagen centrada" width="200"/>
+</div>
+
+Estudiante de Ingeniería de Software con sólidos conocimientos en el desarrollo de programas en R Studio y en la creación de proyectos de inteligencia artificial usando Python. Poseo un nivel intermedio de manejo de bases de datos y me destaco por mi capacidad para desarrollar soluciones efectivas y eficientes en el ámbito de la programación y análisis de datos.
+
+Además de mis habilidades técnicas, tengo un fuerte enfoque en el desarrollo de habilidades blandas, lo que me permite ser un líder efectivo y un organizador de grupos. 
 
 ### 1.2. Solution Profile  
 
