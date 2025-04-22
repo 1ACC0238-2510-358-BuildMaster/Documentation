@@ -441,7 +441,7 @@ Descripcion:
 Octavio Torralva es un empresario de 54 años interesado en nuestra aplicación, pues encuentra frustrante el proceso de renovación de hardware en su compañia debido a la reducción de costos e integridad con los sistemas de la empresa. 
 
 
-##### Link de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/ETMFmE0nge1NuRqiI8CVzkgBBL6CnoRFqmi7SIQezfg1-g?e=LM8VC2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+##### Link de las entrevistas: https://acortar.link/zmgHGg 
 
 #### 2.2.3. Análisis de entrevistas
 

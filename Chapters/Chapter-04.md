@@ -999,4 +999,5 @@ Video About-the-team
 
 ## Anexos
 
+- Entrevistas de segmentos objetivo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/ETMFmE0nge1NuRqiI8CVzkgBBL6CnoRFqmi7SIQezfg1-g?e=LM8VC2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
 - To-be Scenario Mapping: https://miro.com/app/board/uXjVIE_P0Bw=/?share_link_id=102963333287 
