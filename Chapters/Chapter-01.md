@@ -34,7 +34,7 @@ Producto: BuildMaster
 |-----------------------------|---------------|
 | Casaverde De La Cruz, Ernesto David      | U20221B657    |
 | Cantoral Sedamano, Alexander Alberto | U20181B152 |
-| Romero Qwistgaard, Russell Stephen ||
+| Romero Qwistgaard, Russell Stephen | U202211043 |
 
 
 <div align="center">
