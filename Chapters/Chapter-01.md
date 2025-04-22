@@ -201,8 +201,8 @@ Además, cuento con habilidades versátiles en el uso de herramientas comunes pa
 
 **Romero Qwistgaard Russell Stephen - U202211043**
 
-<div align="center"> ![Captura de pantalla 2024-08-15 121605](https://hackmd.io/_uploads/ByWzO2icC.png)  </div>
-  
+<div align="center"> <img src="https://i.postimg.cc/bwfvjFQh/Captura-de-pantalla-2024-05-22-175606.png" > </div>
+
 Estudio la carrera de ingeniería de software, actualmente en el 7 ciclo de esta. Me apasiona crear programas en entornos distintos para poder ampliar mi conocimiento en las muchas áreas que dependen de mi formación. Estoy dispuesto a cooperar y ser puntual en mis trabajos individuales y grupales.
 
 Destaco por innovar con los proyectos que trabajo, dandoles una mejor presentación y funcionalidad según el problema que quiera solucionar. Además me abro facilmente a las opiniones de mis compañeros sin menospreciar el aporte de uno.
