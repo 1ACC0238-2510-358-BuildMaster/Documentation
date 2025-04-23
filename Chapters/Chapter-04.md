@@ -681,12 +681,44 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 
 
 [![image.png](https://i.postimg.cc/G3Ftk0WT/image.png)](https://postimg.cc/Z0qJSQKJ)
-[![image.png](https://i.postimg.cc/DyCXXkGd/image.png)](https://postimg.cc/VdC6xhDd)
+[![structurizr-Component-001.png](https://i.postimg.cc/9M6HyfZp/structurizr-Component-001.png)](https://postimg.cc/hz1YBcCz)
 
 
-##### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
-###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
-###### 4.2.2.6.2. Bounded Context Database Design Diagram
+###### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Gestión de Usuario. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
+
+####### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+| Clase | Tipo | Descripción |
+| :---- | :---- | :---- |
+| Usuario | Entidad | Representa al usuario del sistema, con su identidad, perfil y builds favoritas. Contiene comportamiento relevante para su ciclo de vida. |
+| Perfil | Value Object | Información editable del usuario, como nombre, biografía o foto. Se encarga de encapsular y validar esa información. |
+| Credenciales | Value Object | Correo y contraseña del usuario, usado para autenticación. Puede incluir reglas de validación o hashing. |
+| Favorito | Entidad | Representa una relación entre un usuario y una build marcada como favorita. Contiene información como fecha de marcado o metadatos de la build. |
+
+[![Captura-de-pantalla-2025-04-22-173559.png](https://i.postimg.cc/SKYQVZV3/Captura-de-pantalla-2025-04-22-173559.png)](https://postimg.cc/B8sGnBrB)
+
+####### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+Este diagrama representa el modelo relacional que da soporte a la persistencia de datos del bounded context Gestión de Usuario.  
+El diseño se alinea con el dominio previamente modelado en las secciones anteriores, asegurando que cada build pueda ser construida, validada y recuperada eficientemente con sus respectivos componentes.  
+Se utilizaron las siguientes decisiones de modelado:
+
+* Se modela la entidad usuarios como una tabla principal, la cual contiene un identificador único (id), el nombre del usuario, su biografía, su foto, email y contraseña para validar.  
+* La entidad favoritos tiene el usuario\_id , el build\_id que es favorito y la fecha\_marcado de la fecha que se marcó la build como favorito.  
+* Adicionalmente, se muestran las relaciones que usuario tiene con las clases Perfil y Credensiales
+
+
+Relaciones clave:
+
+* Usuarios tiene una relación 1:N con favoritos.  
+* Credenciales y perfil están embebidos dentro de usuarios como atributos directos (no se separan en tablas, por simplicidad y performance).
+
+[![Captura-de-pantalla-2025-04-22-173944.png](https://i.postimg.cc/050ktKdk/Captura-de-pantalla-2025-04-22-173944.png)](https://postimg.cc/G99nt25V)
+
+Tecnología objetivo:  
+La base de datos utilizada será PostgreSQL, por su robustez y compatibilidad con UUIDs y relaciones complejas. Las claves primarias y foráneas están correctamente tipadas y normalizadas para mantener integridad referencial.  
 
 #### 4.2.4. Bounded Context: Comunidad
 
@@ -961,24 +993,261 @@ Compatibilidad → Pares de componentes.
 [![Diagrama-en-blanco-5.png](https://i.postimg.cc/W4JSfpRP/Diagrama-en-blanco-5.png)](https://postimg.cc/jWtzDbd8)
 
 #### 4.2.5. Bounded Context: Proveedor / Tienda
-##### 4.2.5.1. Domain Layer
-##### 4.2.5.2. Interface Layer
-##### 4.2.5.3. Application Layer
+
+En esta sección, se detallan las clases y componentes identificados en el bounded context de Proveedor/Tienda, que abarca lo que es la obtención de los datos de los componentes para PC  
+---
+
+###### 4.2.5.1. Domain Layer
+
+Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| ComponenteProveedor | Entidad | Representa un componente que un proveedor ofrece, incluyendo precio, detalles y enlace de compra. | \- id: String \- proveedor: Proveedor \- detalle: DetalleComponente \- precio: Precio \- stock: Stock? \- urlCompra: String \+ esDisponible(): boolean |
+| Proveedor | Entidad | Representa una tienda externa o proveedor asociado a un componente. | \- id: String \- nombre: String \- sitioWeb: String |
+| Precio | Value Object | Encapsula el valor monetario en una divisa específica. | \- monto: Double \- moneda: String (e.g. "USD", "PEN") |
+| DetalleComponente | Value Object | Describe las características técnicas de un componente de PC. | \- modelo: String \- marca: String \- velocidad: String \- capacidad: String? \- imagenUrl: String |
+| Stock | Value Object | Representa la cantidad disponible estimada. Opcional. | \- cantidad: Int \+ hayStock(): boolean |
+
+---
+
+###### 4.2.5.2. Interface Layer
+
+Encargada de exponer funcionalidades al usuario o consumidores externos.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| ProveedorTiendaController | Controller | Maneja las peticiones relacionadas con componentes disponibles en tiendas externas, incluyendo precios y redirección. | \+ obtenerPrecioComponente(id: String): ComponenteProveedorDTO \+ redirigirAProveedor(id: String): void |
+| ProveedorTiendaView | View | Vista unificada que presenta los precios estimados y botón para redirigir al proveedor externo. | \- componenteId: String \- nombre: String \- precio: String \- moneda: String \- urlCompra: String \- imagenUrl: String \+ mostrarInformacion() \+ mostrarBotonComprar() |
+
+---
+
+#### 4.2.5.3. Application Layer
+
+Define los flujos de negocio mediante comandos y eventos.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| ConsultarPrecioComponenteCommand | Command | Solicita la información de precio y detalles del componente desde una fuente externa o base de datos. | \- componenteId: String |
+| RedirigirAProveedorCommand | Command | Dispara el flujo de redirección hacia el proveedor externo asociado al componente. | \- componenteId: String |
+| PrecioConsultadoEvent | Event | Evento lanzado cuando se ha consultado exitosamente el precio del componente. | \- componenteId: String \- precio: Double \- moneda: String |
+| ProveedorRedireccionadoEvent | Event | Evento lanzado cuando un usuario ha sido redirigido correctamente al sitio del proveedor. | \- componenteId: String \- urlProveedor: String |
+| ProveedorTiendaService | Application Service | Orquesta los casos de uso principales: consulta de precio y redirección. | \+ manejar(cmd: ConsultarPrecioComponenteCommand): PrecioConsultadoEvent \+ manejar(cmd: RedirigirAProveedorCommand): ProveedorRedireccionadoEvent |
+
+---
+
 ##### 4.2.5.4. Infrastructure Layer
-##### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-##### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
-###### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
-###### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+Provee la implementación concreta de servicios como base de datos, brokers, etc.
+
+| Clase | Tipo | Propósito | Tecnologías |
+| :---- | :---- | :---- | :---- |
+| ComponenteProveedorRepositoryImpl | Repository Implementation | Implementación concreta para acceder a los datos de componentes ofrecidos por tiendas/proveedores. | Room (Jetpack Compose), PostgreSQL |
+| ProveedorExternalRedirector | External Service | Servicio responsable de generar la redirección del usuario al sitio del proveedor. | Intents (Android), URL Schemes |
+| ProveedorApiAdapter | External API Adapter | Adaptador para consumir APIs externas de tiendas (scraping o REST) y obtener detalles como precios, stock o imágenes. | Retrofit  |
+| ProveedorEventPublisher | Event Publisher | Publica eventos relacionados con interacciones de tienda (consulta de precios, redirección). | Kotlin Coroutines / EventBus (opcional) |
+| ProveedorDTOMapper | Mapper | Convierte entre entidades de dominio y DTOs usados en la capa Interface. | Kotlin, Manual Mapping o MapStruct (si Java interop) |
+
+###### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+* Este Component Diagram descompone el container Configuración Técnica API (el backend del bounded context) en:  
+* Controller: punto de entrada HTTP.  
+* Command Handler: maneja la lógica principal.  
+* Domain Service y Factory: lógica de dominio para obtener información de los componentes.  
+* Repository: persistencia de datos en PostgreSQL.  
+* External API: cliente para validaciones externas.
+
+[![image.png](https://i.postimg.cc/L6mjgR55/image.png)](https://postimg.cc/HjPrFqQ1)
+[![image.png](https://i.postimg.cc/tgsc0FGK/image.png)](https://postimg.cc/06qnDMQn)
+
+##### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Proveedor/Tienda. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
+
+###### *4.2.1.6.1. Bounded Context Domain Layer Class Diagrams*
+
+| Clase | Tipo | Descripción |
+| :---- | :---- | :---- |
+| ComponenteProveedor | Entidad | Representa un componente que un proveedor ofrece, incluyendo información sobre el precio, detalles técnicos y el enlace para comprar el componente. |
+| Proveedor | Entidad | Representa una tienda o proveedor asociado a un componente. |
+| Precio | Value Object | Encapsula el valor monetario en una divisa específica, utilizado para el precio de los componentes. |
+| DetalleComponente | Value Object | Describe las características técnicas de un componente de PC (modelo, marca, velocidad, capacidad, etc.). |
+| Stock | Value Object | Representa la cantidad disponible estimada de un componente. Opcional, puede no estar presente para algunos componentes. |
+
+[![image.png](https://i.postimg.cc/BvsnvZMQ/image.png)](https://postimg.cc/9D8h8h6v)
+
+###### *4.2.1.6.2. Bounded Context Database Design Diagram*
+
+Este diagrama representa el modelo relacional que da soporte a la persistencia de datos del bounded context Proveedor/Tienda.  
+El diseño se alinea con el dominio previamente modelado en las secciones anteriores, asegurando que se obtengan los datos requeridos para poder ser utilizados en comparativa.  
+Se utilizaron las siguientes decisiones de modelado:
+
+* Tabla Proveedor:
+
+  * Contiene información sobre el proveedor de los componentes.
+
+  * Atributos: id, nombre, sitioWeb.
+
+* Tabla ComponenteProveedor:
+
+  * Representa la información de los componentes que los proveedores ofrecen. Incluye atributos como el urlCompra y hace referencia a las tablas Proveedor, Precio, DetalleComponente y Stock (este último es opcional).
+
+  * Atributos: id, proveedor\_id (relacionado con Proveedor), detalle\_id (relacionado con DetalleComponente), precio\_id (relacionado con Precio), stock\_id (relacionado con Stock), urlCompra.
+
+* Tabla Precio:
+
+  * Contiene la información del precio de un componente con su monto y moneda.
+
+  * Atributos: id, monto, moneda.
+
+* Tabla DetalleComponente:
+
+  * Describe las características técnicas de cada componente (modelo, marca, velocidad, etc.).
+
+  * Atributos: id, modelo, marca, velocidad, capacidad, imagenUrl.
+
+* Tabla Stock:
+
+  * Representa la cantidad disponible de un componente en stock. Es opcional en caso de que no se maneje stock.
+
+  * Atributos: id, cantidad.
+
+Relaciones claves:
+
+* Un **ComponenteProveedor** pertenece a un **Proveedor**.
+
+* Un **ComponenteProveedor** tiene un **Precio**, un **DetalleComponente** y opcionalmente un **Stock**.
+
+* Las claves primarias son representadas por `PK(id)` y las claves foráneas son representadas por `FK`.  
+
+
+[![image.png](https://i.postimg.cc/fb277P3X/image.png)](https://postimg.cc/McBjqdmK)
+
+Tecnología objetivo:  
+La base de datos utilizada será PostgreSQL, por su robustez y compatibilidad con UUIDs y relaciones complejas. Las claves primarias y foráneas están correctamente tipadas y normalizadas para mantener integridad referencial.  
 
 #### 4.2.6. Bounded Context: Glosario
+En esta sección, se detallan las clases y componentes identificados en el bounded context de Glosario, que abarca lo que son terminos, consejos para cada componente e información adicional para utilizar la aplicación  
+---
+
 ##### 4.2.6.1. Domain Layer
+
+Esta capa representa el núcleo del sistema y las reglas de negocio del dominio.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| TerminoGlosario | Entidad | Representa un término técnico con definición y ejemplos. | \- id: String \- termino: String \- definicion: String \- ejemplos: List\<String\> |
+| GuiaTecnica | Entidad | Representa una guía agrupada por tipo de componente. | \- id: String \- categoria: String (ej. CPU, GPU) \- contenido: String |
+| TipContextual | Value Object | Representa un consejo breve mostrado en el flujo de armado. | \- paso: String (ej. "CPU") \- mensaje: String \- linkGuia: String? \- linkGlosario: String? |
+| CategoriaComponente | Value Object | Representa una categoría válida de componentes para organizar guías. | \- nombre: String |
+
+---
+
 ##### 4.2.6.2. Interface Layer
+
+Encargada de exponer funcionalidades al usuario o consumidores externos.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| GlosarioController | Controller | Maneja peticiones para obtener términos, guías o tips contextualizados. | \+ obtenerTermino(id: String): TerminoGlosarioDTO \+ buscarTermino(texto: String): TerminoGlosarioDTO? \+ obtenerGuiaPorCategoria(categoria: String): GuiaTecnicaDTO \+ obtenerTipContextual(paso: String): TipContextualDTO |
+| GlosarioView | View | Vista que muestra el glosario, las guías por categoría o los tips contextuales. | \- termino: String \- definicion: String \- ejemplos: List\<String\> \- categoria: String \- contenido: String \- tip: String \+ mostrarTermino() \+ mostrarGuia() \+ mostrarTip() |
+
+---
+
 ##### 4.2.6.3. Application Layer
+
+Define los flujos de negocio mediante comandos y eventos.
+
+| Clase | Tipo | Propósito | Atributos / Métodos |
+| :---- | :---- | :---- | :---- |
+| ConsultarTerminoCommand | Command | Solicita información de un término técnico. | \- terminoId: String |
+| BuscarTerminoCommand | Command | Permite buscar un término por texto ingresado. | \- texto: String |
+| ConsultarGuiaPorCategoriaCommand | Command | Recupera una guía por tipo de componente. | \- categoria: String |
+| ObtenerTipContextualCommand | Command | Solicita un tip según el paso del flujo de armado. | \- paso: String |
+| TerminoConsultadoEvent | Event | Evento emitido al consultar un término con éxito. | \- terminoId: String |
+| GuiaConsultadaEvent | Event | Evento emitido al visualizar una guía. | \- categoria: String |
+| TipMostradoEvent | Event | Evento emitido al mostrar un tip contextual. | \- paso: String |
+| GlosarioService | ApplicationService | Servicio que maneja los casos de uso del glosario. | \+ manejar(cmd: ConsultarTerminoCommand): TerminoConsultadoEvent \+ manejar(cmd: BuscarTerminoCommand): TerminoConsultadoEvent? \+ manejar(cmd: ConsultarGuiaPorCategoriaCommand): GuiaConsultadaEvent \+ manejar(cmd: ObtenerTipContextualCommand): TipMostradoEvent |
+
+---
+
 ##### 4.2.6.4. Infrastructure Layer
+
+Provee la implementación concreta de servicios como base de datos, brokers, etc.
+
+| Clase | Tipo (en inglés) | Propósito | Tecnologías |
+| :---- | :---- | :---- | :---- |
+| TerminoGlosarioRepositoryImpl | Repository Implementation | Accede a la base de datos para términos del glosario. | Room / SQLite / Firestore |
+| GuiaTecnicaRepositoryImpl | Repository Implementation | Accede a la base de datos o archivos estáticos de guías. | Firestore / Assets |
+| TipContextualProvider | External Service | Proveedor de tips para pasos del armado. | Local DB / Embedded Logic |
+| GlosarioEventPublisher | Event Publisher | Publica eventos cuando se visualiza contenido del glosario. | EventBus / Kotlin Coroutines |
+| GlosarioDTOMapper | Mapper | Convierte entidades del dominio a DTOs para la vista. | Manual Mapping / Kotlin |
+| Clase | Tipo (en inglés) | Propósito | Tecnologías |
+| TerminoGlosarioRepositoryImpl | Repository Implementation | Accede a la base de datos para términos del glosario. | Room / SQLite / Firestore |
+| GuiaTecnicaRepositoryImpl | Repository Implementation | Accede a la base de datos o archivos estáticos de guías. | Firestore / Assets |
+
 ##### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+* Este Component Diagram descompone el container Configuración Técnica API (el backend del bounded context) en:  
+* Controller: punto de entrada HTTP.  
+* Command Handler: maneja la lógica principal.  
+* Domain Service y Factory: lógica de dominio para dar información de los componentes.  
+* Repository: persistencia de datos en PostgreSQL.  
+* External API: cliente para validaciones externas.
+
+[![structurizr-Component-001-1.png](https://i.postimg.cc/MH2gvFJ3/structurizr-Component-001-1.png)](https://postimg.cc/BLpmzN62)
+
 ##### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
-###### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
-###### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Glosario. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
+
+###### *4.2.6.6.1. Bounded Context Domain Layer Class Diagrams*
+
+| Clase | Tipo | Descripción |
+| :---- | :---- | :---- |
+| TerminoGlosario | Entidad | Representa un término técnico con su definición y ejemplos. |
+| GuiaTecnica | Entidad | Representa una guía técnica asociada a una categoría de componente. |
+| TipContextual | Value Object | Representa un consejo o recomendación mostrado en un paso del flujo. |
+| CategoriaComponente | Value Object | Representa las categorías válidas de componentes (CPU, GPU, etc.). |
+
+[![image.png](https://i.postimg.cc/cHYbyBtR/image.png)](https://postimg.cc/LY9TjfT5)
+
+###### *4.2.6.6.2. Bounded Context Database Design Diagram*
+
+Este diagrama representa el modelo relacional que da soporte a la persistencia de datos del Bounded Context Glosario.  
+El diseño se alinea con el dominio previamente modelado, asegurando que los usuarios puedan acceder a definiciones, guías y tips relevantes durante la construcción de sus builds.
+
+Se utilizaron las siguientes decisiones de modelado:
+
+Tabla TerminoGlosario:
+
+* Contiene los términos técnicos con su definición y ejemplos.
+
+* Atributos: id, termino, definicion, ejemplos.
+
+Tabla GuiaTecnica:
+
+* Representa guías detalladas por categoría de componente.
+
+* Atributos: id, titulo, contenido, categoria.
+
+Tabla TipContextual:
+
+* Almacena tips o consejos contextuales mostrados durante el armado de builds.
+
+* Atributos: id, mensaje, linkRelacionado.
+
+Relaciones clave:
+
+* Cada TipContextual puede estar relacionado a una categoría de componente, pero no es obligatorio.
+
+* Las categorías están predefinidas como enum o dominio controlado.
+
+Tecnología objetivo:  
+Se utilizará PostgreSQL por su robustez, manejo de tipos como UUID, y capacidades para relaciones complejas.  
+Las claves primarias (PK) y foráneas (FK) están correctamente normalizadas para garantizar la integridad referencial.
+  
+[![image.png](https://i.postimg.cc/9Fx1knN3/image.png)](https://postimg.cc/tYxhZ2jD)
 
 ## Conclusiones
 Conclusiones y recomendaciones.
