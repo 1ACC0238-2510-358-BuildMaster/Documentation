@@ -389,7 +389,9 @@ El sistema **BuildMaster** está ubicado en el centro del diagrama, rodeado por 
 
 Cada flecha entre elementos representa una interacción relevante, como la creación de builds, consultas de catálogo, recuperación de precios o publicación de comentarios.
 
-[![structurizr-101461-System-Context-001.png](https://i.postimg.cc/WbhWxqP4/structurizr-101461-System-Context-001.png)](https://postimg.cc/KRhDMzjX)
+[![structurizr-101461-System-Context-001.png](https://i.postimg.cc/mr6hJ1Dx/structurizr-101461-System-Context-001.png)](https://postimg.cc/v1fQ6BfX)
+
+[![structurizr-101461-Container-001.png](https://i.postimg.cc/vTw8wrwK/structurizr-101461-Container-001.png)](https://postimg.cc/xJgVKbCG)
 
 ##### 4.1.3.2. Software Architecture Container Level Diagrams
 
@@ -442,7 +444,7 @@ El **Container Level Diagram** muestra los elementos de alto nivel de la arquite
 5. **Sistema de Autenticación**:
    - El backend interactúa con el sistema de autenticación para validar a los usuarios al inicio de sesión y registrar nuevos usuarios.
 
-[![structurizr-101463-Container-001.png](https://i.postimg.cc/13K26hhB/structurizr-101463-Container-001.png)](https://postimg.cc/YvhdKPSL)
+[![structurizr-101463-Container-001.png](https://i.postimg.cc/NMv39qwF/structurizr-101463-Container-001.png)](https://postimg.cc/yJnQtGxC)
 
 ##### 4.1.3.3. Software Architecture Deployment Diagrams
 
