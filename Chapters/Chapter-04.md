@@ -5,14 +5,16 @@
 
 Con el objetivo de realizar un modelado colaborativo y estratégico del dominio de *BuildMaster*, se llevó a cabo una sesión de **EventStorming**, una técnica visual centrada en eventos del dominio que permite identificar flujos de negocio, entidades relevantes, actores y límites naturales del sistema.
 
+[![Eventstorming.jpg](https://i.postimg.cc/wxP8CK3Q/Eventstorming.jpg)](https://postimg.cc/XXwz5zfr)
+
 El foco de esta sesión fue descomponer el dominio de una aplicación móvil que permite a usuarios configurar PCs según su presupuesto y necesidades, revisar precios y disponibilidad de componentes, y compartir builds con la comunidad. 
 
 ###### Herramientas utilizadas
 
-- Herramienta visual: **Figma**
+- Herramienta visual: **Miro**
 - Herramienta para la reunión virtual: **Discord**
 - Participantes: 3 miembros del equipo
-- Duración: 1 hora y 30 minutos
+- Duración: 30 minutos
 
 ---
 ###### Actividades realizadas
@@ -690,7 +692,7 @@ Provee la implementación concreta de servicios como base de datos, brokers, etc
 
 A continuación, se detallan los diagramas de arquitectura de código que brindan mayor profundidad sobre la implementación interna del bounded context de Gestión de Usuario. Esta vista se enfoca en clases, métodos, atributos y relaciones a nivel de código fuente.
 
-####### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+###### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 | Clase | Tipo | Descripción |
 | :---- | :---- | :---- |
@@ -701,7 +703,7 @@ A continuación, se detallan los diagramas de arquitectura de código que brinda
 
 [![Captura-de-pantalla-2025-04-22-173559.png](https://i.postimg.cc/SKYQVZV3/Captura-de-pantalla-2025-04-22-173559.png)](https://postimg.cc/B8sGnBrB)
 
-####### 4.2.2.6.2. Bounded Context Database Design Diagram
+###### 4.2.2.6.2. Bounded Context Database Design Diagram
 
 Este diagrama representa el modelo relacional que da soporte a la persistencia de datos del bounded context Gestión de Usuario.  
 El diseño se alinea con el dominio previamente modelado en las secciones anteriores, asegurando que cada build pueda ser construida, validada y recuperada eficientemente con sus respectivos componentes.  
