@@ -5,97 +5,50 @@
 
 Con el objetivo de realizar un modelado colaborativo y estratégico del dominio de *BuildMaster*, se llevó a cabo una sesión de **EventStorming**, una técnica visual centrada en eventos del dominio que permite identificar flujos de negocio, entidades relevantes, actores y límites naturales del sistema.
 
-[![Eventstorming.jpg](https://i.postimg.cc/wxP8CK3Q/Eventstorming.jpg)](https://postimg.cc/XXwz5zfr)
+**Objetivo:** Comprender cómo los usuarios interactúan con el sistema desde una perspectiva orientada a eventos.
 
-El foco de esta sesión fue descomponer el dominio de una aplicación móvil que permite a usuarios configurar PCs según su presupuesto y necesidades, revisar precios y disponibilidad de componentes, y compartir builds con la comunidad. 
-
-###### Herramientas utilizadas
-
-- Herramienta visual: **Miro**
-- Herramienta para la reunión virtual: **Discord**
+**Herramientas utilizadas:**
+- Herramienta visual: Miro
+- Plataforma de reunión: Discord
+- Duración: 1 hora
 - Participantes: 3 miembros del equipo
-- Duración: 30 minutos
 
----
-###### Actividades realizadas
+#### Actividades realizadas
 
-Durante la sesión se siguieron los siguientes pasos:
+1. **Identificación de eventos de dominio**  
+   Se mapearon acciones significativas como “Usuario registra cultivo”, “Sistema valida información”, “Usuario realiza compra”, etc.
 
-1. **Identificación de Dominio Principal**  
-   - Dominio central: *Armado de PC personalizado*
-   - Subdominios auxiliares: *Gestión de usuarios*, *Catálogo de componentes*, *Comunidad y feedback*
+2. **Agrupación de eventos por flujo de valor**  
+   Se estructuraron happy paths (flujos ideales) y unhappy paths (errores o desviaciones) agrupando eventos similares para clarificar procesos clave.
 
-2. **Registro de Eventos del Dominio (Orange Sticky Notes)**  
-   - “Usuario solicita sugerencia de build”  
-   - “Sistema analiza compatibilidad entre componentes”  
-   - “Usuario guarda build”  
-   - “Usuario publica build en comunidad”  
-   - “Usuario califica build de otro usuario”  
-   - “Usuario registra una nueva cuenta”  
-   - “Sistema consulta precios en tienda externa”
+3. **Identificación de puntos críticos (Pivotal Points)**  
+   Se marcaron eventos de alta relevancia que definen momentos clave en la experiencia de usuario o comportamiento del sistema.
 
-3. **Identificación de Comandos (Blue Notes)**  
-   - “Solicitar análisis de compatibilidad”  
-   - “Guardar build favorita”  
-   - “Publicar build”  
-   - “Enviar comentario”
+4. **Detección de puntos de dolor (Pain Points)**  
+   Se localizaron fricciones potenciales que podrían afectar negativamente la usabilidad o eficiencia.
 
-4. **Agregados/Entidades Clave (Yellow Notes)**  
-   - `Usuario`  
-   - `Build`  
-   - `Componente`  
-   - `Comentario`  
-   - `Tienda`
+5. **Asignación de comandos y actores**  
+   Cada evento fue vinculado con un comando desencadenante y un actor responsable.
 
-5. **Descubrimiento de problemas y mejoras**  
-   - Se detectaron decisiones clave de negocio como las reglas de validación técnica para compatibilidad.  
-   - Se propuso separar el análisis técnico como un contexto independiente.
+6. **Políticas del sistema**  
+   Se documentaron restricciones y reglas de negocio relevantes para cada contexto, tales como validaciones de roles, autenticación, o restricciones comerciales.
 
----
+7. **Modelos de lectura (Read Models)**  
+   Se diseñaron modelos optimizados para las consultas necesarias dentro de cada contexto.
 
-###### Evidencias del EventStorming
+8. **Sistemas externos**  
+   Se identificaron integraciones necesarias como pasarelas de pago, servicios de mensajería o APIs IoT.
 
-[![evidencia-reunion.png](https://i.postimg.cc/3w86Wpqs/evidencia-reunion.png)](https://postimg.cc/YvP8s4MR)
+9. **Identificación de Aggregates**  
+   Se definieron entidades raíz que encapsulan la lógica de consistencia para operaciones complejas.
 
----
-
-###### Principales aprendizajes
-
-- Identificamos múltiples flujos principales del usuario desde una perspectiva centrada en eventos.
-- Se diferenciaron claramente los contextos de **usuario**, **configuración técnica** y **comunidad**, lo que facilita la división futura del sistema en microservicios o módulos separados.
+[![Eventstorming.jpg](https://i.postimg.cc/wxP8CK3Q/Eventstorming.jpg)](https://postimg.cc/XXwz5zfr)
 
 ##### 4.1.1.1. Candidate Context Discovery
 
-Luego de la sesión de EventStorming, se llevó a cabo una sesión de **Candidate Context Discovery**, con el fin de identificar **Bounded Contexts** naturales dentro del dominio de la aplicación móvil *BuildMaster*. Esta actividad permite separar el dominio en subconjuntos lógicos con responsabilidades bien delimitadas y coherencia interna, lo que facilita el diseño modular y distribuido del sistema.
+Durante esta etapa se aplicó la técnica Start With Value, con el objetivo de identificar primero el valor principal que la aplicación debe ofrecer a los usuarios. Esta estrategia permite al equipo mantener un enfoque centrado en el impacto funcional más relevante para el negocio, facilitando así una delimitación más precisa de los futuros Bounded Contexts dentro del sistema.
 
-La sesión tuvo una duración aproximada de **1 hora y 45 minutos** y se utilizó la herramienta **Miro** para mapear los cambios de contexto sobre el canvas inicial del EventStorming.
-
-
-###### Técnica Aplicada: Start-With-Value
-
-El equipo optó por el enfoque **Start-With-Value**, priorizando las partes del dominio que generan **mayor valor directo al usuario** final, como el asistente de configuración técnica y la validación de builds. Esto nos permitió identificar claramente qué partes del sistema debían ser consideradas como contextos centrales, y cuáles eran contextos de soporte.
-
----
-
-###### Proceso realizado
-
-A partir de la organización de eventos, comandos y entidades del EventStorming, se siguieron estos pasos:
-
-1. **Identificación del flujo principal (Core Flow)**  
-   - Inicio desde “Usuario solicita sugerencia de build”  
-   - Finaliza con “Usuario guarda la build” o “Usuario publica la build”  
-   - Se delimitó el flujo en pasos: entrada → análisis → resultado → persistencia
-
-2. **Agrupación de eventos y acciones por cambio de estado**  
-   - Se identificaron eventos pivote como:  
-     - “Sistema analiza compatibilidad”  
-     - “Usuario publica build”  
-     - “Sistema consulta tienda externa”
-
-3. **Delimitación de áreas de responsabilidad**  
-   - Se trazaron límites lógicos sobre el canvas de EventStorming original, agrupando entidades, eventos y comandos por dominio coherente.
-
----
+La aplicación está orientada a brindar soporte integral en el diseño, optimización y compra de configuraciones técnicas (builds), y por ello los contextos fueron detectados en torno a los flujos de valor prioritarios, tales como la compatibilidad técnica, la personalización de componentes y la interacción con la comunidad.
 
 ###### Candidate Bounded Contexts Identificados
 
@@ -109,13 +62,6 @@ A partir de la organización de eventos, comandos y entidades del EventStorming,
 | **Guías y Glosario** | Acceso a información educativa sobre componentes y tips. | Generic |
 
 ---
-
-######  Reflexiones del equipo
-
-- La separación por valor nos ayudó a distinguir claramente el **dominio técnico central** (donde se diferencia BuildMaster) del resto del sistema.
-- Varios eventos de negocio sirvieron como puntos de transición natural entre contextos.
-- Este ejercicio también ayudó a visualizar qué áreas podrán escalar como **microservicios independientes** más adelante.
-
 ##### 4.1.1.2. Domain Message Flows Modeling
 
 Con la finalidad de visualizar la **colaboración entre los Bounded Contexts identificados**, el equipo llevó a cabo una sesión de modelado utilizando la técnica de **Domain Storytelling**. Esta técnica permite ilustrar, de manera narrativa y visual, cómo distintos contextos y actores interactúan mediante mensajes, para satisfacer los flujos principales del negocio.
