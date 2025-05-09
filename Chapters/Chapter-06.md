@@ -7,6 +7,22 @@
 ### 6.2. Landing Page, Services & Applications Implementation.
 #### 6.2.1. Sprint 1
 #### 6.2.1.1. Sprint Planning 1.
+
+| **Aspecto**                      | **Detalles**                                                                                                           |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**   |                                                                                                                        |
+| **Date**                         | 8/05/2025                                                                                                             |
+| **Time**                         | 4:00 pm                                                                                                                |
+| **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
+| **Prepared By**                  | NovaPeak                                                                                                              |
+| **Attendees (to planning meeting)** | Casaverde De La Cruz, Ernesto David / Cantoral Sedamano, Alexander Alberto / Romero Qwistgaard, Russell Stephen / Machuca García, Celso Eduardo |
+| **Sprint n – 1 Review Summary**  | Antes de este sprint se lograron avances significativos en la creación de la estructura de la Landing Page y mobile app, incluyendo la definición de los elementos visuales clave y la arquitectura del sitio. Se identificaron mejoras que serán implementadas en futuros sprints                           |
+| **Sprint n – 1 Retrospective Summary** | En el sprint anterior, los miembros del equipo destacaron la importancia de mantener una comunicación clara y efectiva. Se resaltó el buen flujo de trabajo, pero se sugirió dedicar más tiempo a la revisión de cada módulo antes de integrarlo para evitar posibles problemas en la fase de desarrollo posterior. |
+| **Sprint Goal & User Stories**   |         **Our focus is on** *completar el desarrollo de la Landing Page y version protitpo de la mobile app.* **We believe it delivers** *un impacto significativo en la presentación inicial del producto*  **to**  *usuarios potenciales, mejorando la experiencia de descubrimiento y generando interés en nuestros servicios.* **This will be confirmed when** *la página esté completamente funcional y recibamos retroalimentación positiva de los usuarios durante las primeras pruebas de usabilidad.*                                                             |
+| **Sprint 1 Goal**                | Terminar de desarrollar la Landing Page y propocionar una primera version de la mobile app|
+| **Sprint 1 Velocity**            | Velocidad estimada de puntos. La velocidad del equipo se calculó considerando la capacidad del equipo y los puntos de historia completados en sprints anteriores.                                                                             |
+| **Sum of Story Points**          | Se asignaron  puntos de historia a las tareas completadas, lo que refleja el trabajo realizado sobre la Landing Page y para el frontend y backend de la aplicación móvil.|
+
 ##### 6.2.1.2. Sprint Backlog 1.
 ##### 6.2.1.3. Development Evidence for Sprint Review.
 ##### 6.2.1.4. Execution Evidence for Sprint Review.
