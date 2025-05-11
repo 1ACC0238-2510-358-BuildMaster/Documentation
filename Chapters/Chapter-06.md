@@ -114,7 +114,7 @@ El objetivo principal de este Sprint es concretar el desarrollo de una primera v
           	<td> Registro de nuevo usuario </td>
           	<td> 05 </td>
           	<td> Desarrollo de la sección de registro para el usuario </td>
-            <td> Esta tarea se enfoca en desarrollar la sección interna de la aplicación web que permite al usuario registrarse. </td>
+            <td> Esta tarea se enfoca en desarrollar la sección interna de la aplicación móvil que permite al usuario registrarse. </td>
             <td> 02 </td>
             <td> Romero Qwistgaard, Russell Stephen </td>
             <td> Done </td>
@@ -128,7 +128,7 @@ El objetivo principal de este Sprint es concretar el desarrollo de una primera v
           	<td> Iniciar sesión en la aplicación móvil </td>
           	<td> 06 </td>
           	<td> Desarrollo del inicio de sesisón para el usuario </td>
-            <td> Esta tarea se enfoca en desarrollar la sección interna de la aplicación web que permite al usuario iniciar sesión con un token. </td>
+            <td> Esta tarea se enfoca en desarrollar la sección interna de la aplicación móvil que permite al usuario iniciar sesión con un token. </td>
             <td> 03 </td>
             <td> Romero Qwistgaard, Russell Stephen </td>
             <td> Done </td>
@@ -156,7 +156,7 @@ El objetivo principal de este Sprint es concretar el desarrollo de una primera v
           	<td> Filtrar por categoría  </td>
           	<td> 15 </td>
           	<td> Desarrollo del filtro de categoría </td>
-            <td> Esta tarea se enfoca en desarrollar la característica que permite usar filtros para seleccionar componentes en la aplicación web </td>
+            <td> Esta tarea se enfoca en desarrollar la característica que permite usar filtros para seleccionar componentes en la aplicación móvil </td>
             <td> 02 </td>
             <td> Cantoral Sedamano, Alexander Alberto </td>
             <td> Done </td>
@@ -170,7 +170,7 @@ El objetivo principal de este Sprint es concretar el desarrollo de una primera v
           	<td> Ver detalles de un componente  </td>
           	<td> 16 </td>
           	<td> Visualización de detalles del componente </td>
-            <td> Esta tarea se enfoca en desarrollar la característica que permite usar filtros para seleccionar componentes en la aplicación web </td>
+            <td> Esta tarea se enfoca en desarrollar la característica que permite usar filtros para seleccionar componentes en la aplicación móvil </td>
             <td> 02 </td>
             <td> Cantoral Sedamano, Alexander Alberto </td>
             <td> Done </td>
@@ -266,14 +266,36 @@ TODO: *Imagen del board*
 Anexo #
 
 ##### 6.2.1.3. Development Evidence for Sprint Review.
+
+En estos commits se puede observar los últimos updates y merge a la rama main que se hizo en el repositorio de la Landing Page, Frontend y Backend.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
 ##### 6.2.1.4. Execution Evidence for Sprint Review.
+
+En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas. 
+TODO: Vídeo con la ejecución de lp y front
+
 ##### 6.2.1.5. Services Documentation Evidence for Sprint Review.
+
+En esta sección se evidenciará los endpoints del backend de la aplicación móvil
+TODO: Endpoints del backend
+
 ##### 6.2.1.6. Software Deployment Evidence for Sprint Review.
+
+Para el deploy de este sprint solo se hizo deploy de la aplicación móvil y Landing Page:
+
+Link de deploy de LP: https://1acc0238-2510-358-buildmaster.github.io/buildmaster-landing/ 
+Link de deploy de la Aplicación móvil: 
+
 ##### 6.2.1.7. Team Collaboration Insights during Sprint.
 
+TODO: Imagenes de los insights de cada repositorio
+
 ## Conclusiones
-Conclusiones y recomendaciones.
-Video About-the-team
+
+
+## Video About-the-team
 
 
 ## Bibliografía
