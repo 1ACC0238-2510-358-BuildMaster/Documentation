@@ -89,7 +89,7 @@ En esta sección se detallan las decisiones, convenciones y configuraciones adop
 
 | Producto | Plataforma | URL | Comentarios |
 |----------|------------|-----|-------------|
-| **Landing Page** | GitHub Pages | `https://<usuario>.github.io/buildmaster-landing/` | Página estática generada con HTML/CSS |
+| **Landing Page** | GitHub Pages | https://1acc0238-2510-358-buildmaster.github.io/buildmaster-landing/` | Página estática generada con HTML/CSS |
 | **Backend (API REST)** | Firebase Hosting + Cloud Functions (Temporal) | `https://buildmaster-backend.firebaseapp.com/` | Adaptado para ejecutarse como función en Firebase |
 | **Frontend Móvil** | Firebase Hosting (APK o WebView) | `https://buildmaster-app.firebaseapp.com/` | Para fines de validación rápida, podría usarse web móvil o APK descargable desde Firebase Hosting |
 
