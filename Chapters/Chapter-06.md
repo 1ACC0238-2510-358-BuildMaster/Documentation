@@ -1,9 +1,107 @@
 ## Capítulo VI: Product Implementation, Validation & Deployment
-### 6.1. Software Configuration Management.
+### 6.1. Software Configuration Management
+
+En esta sección se detallan las decisiones, convenciones y configuraciones adoptadas para mantener la consistencia del desarrollo de software durante todo el ciclo de vida del proyecto. Las subsecciones cubren la configuración del entorno de desarrollo, el control de versiones del código fuente, las convenciones de codificación y la configuración de despliegue de los productos digitales.
+
+
 #### 6.1.1. Software Development Environment Configuration.
+| Herramienta / Producto | Propósito | Tipo | Enlace de Referencia |
+|------------------------|----------|------|----------------------|
+| GitHub | Gestión del código fuente | SaaS | [https://github.com/](https://github.com/) |
+| IntelliJ IDEA Ultimate | Backend (Web Services con Spring Boot) | Local | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| Android Studio | Desarrollo de Aplicación Móvil (Frontend) | Local | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| PostgreSQL + PgAdmin | Base de datos relacional | Local | [https://www.pgadmin.org/](https://www.pgadmin.org/) |
+| Visual Studio Code |Editor de código para documentación y landing page |Local (o SaaS con extensión GitHub Codespaces)|[https://code.visualstudio.com/](https://code.visualstudio.com/)|
+| Figma | Diseño UX/UI de la solución | SaaS | [https://www.figma.com/](https://www.figma.com/) |
+| Trello | Gestión del proyecto y backlog | SaaS | [https://trello.com/](https://trello.com/) |
+| Postman | Pruebas de endpoints de la API | Local | [https://www.postman.com/](https://www.postman.com/) |
+| Swagger UI | Documentación y prueba de API REST | Local | [https://swagger.io/](https://swagger.io/) |
+
+**Repositorios GitHub:**
+- Web Services (Backend):https://github.com/1ACC0238-2510-358-BuildMaster/Backend
+- Mobile App (Frontend):https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterApp
+
+**GitFlow Strategy Adoptada:**
+- `main`: Rama principal de producción.
+- `develop`: Rama de integración para desarrollo.
+- `feature/*`: Ramas por cada nueva funcionalidad. Ejemplo: `feature/component-creation`.
+- `release/*`: Ramas para preparación de releases. Ejemplo: `release/v1.0.0`.
+- `hotfix/*`: Ramas para solucionar errores en producción. Ejemplo: `hotfix/login-crash`.
+
+**Semantic Versioning:**
+- Se utilizará el formato `MAJOR.MINOR.PATCH`. Ejemplo: `v1.0.0`, `v1.1.0`, `v1.1.1`.
+
+**Conventional Commits:**
+- `feat:` para nuevas funcionalidades.
+- `fix:` para correcciones de bugs.
+- `docs:` para documentación.
+- `style:` para cambios de estilo (espacios, formatos, etc.).
+- `refactor:` para cambios internos que no modifican funcionalidad.
+- `test:` para agregar o actualizar pruebas.
+- `chore:` para mantenimiento general.
+
 #### 6.1.2. Source Code Management.
+
+- Todos los miembros deben usar Git con GitHub como repositorio remoto.
+- Cada tarea del backlog se realiza en una rama `feature/`, vinculada a su User Story.
+- Las ramas se integran a `develop` mediante Pull Requests, luego de una revisión de código.
+- Las versiones finales se fusionan de `develop` a `main` al completar una release.
+- Se usarán etiquetas (`tags`) para identificar cada versión estable.
+
 #### 6.1.3. Source Code Style Guide & Conventions.
+
+| Lenguaje / Framework | Convención Adoptada |
+|----------------------|----------------------|
+| Java / Spring Boot | [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) |
+| Kotlin | [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html) |
+| HTML / CSS | [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html) |
+| TypeScript | [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) |
+| Gherkin | [Gherkin Syntax](https://cucumber.io/docs/gherkin/reference/) |
+
+**Buenas Prácticas:**
+- Todo el código debe estar comentado en inglés.
+- Se deben usar nombres claros, semánticos y consistentes para variables y métodos.
+- Seguir arquitectura limpia en backend y separación de capas en frontend.
+- Usar linters y formateadores en ambos entornos.
+
 #### 6.1.4. Software Deployment Configuration.
+
+**Backend (Spring Boot):**
+- Construcción con Gradle Kotlin DSL.
+- Base de datos PostgreSQL, configurada en `application.properties`.
+- Ejecutar con `./gradlew bootRun`.
+
+**Aplicación Móvil (Android):**
+- Proyecto Android con Kotlin + Jetpack Compose.
+- API base: `http://10.0.2.2:8090/api/v1/` (para emulador Android Studio).
+
+##### Despliegue Local
+
+**Pasos:**
+1. Iniciar PostgreSQL local con una base de datos llamada `buildmaster`.
+2. Ejecutar el backend con `./gradlew bootRun`.
+3. Probar la API REST desde Swagger UI (`http://localhost:8090/swagger-ui/index.html`) o Postman.
+4. Ejecutar la aplicación móvil en un emulador desde Android Studio.
+
+---
+
+##### Despliegue para Sprint 1 (Remoto)
+
+| Producto | Plataforma | URL | Comentarios |
+|----------|------------|-----|-------------|
+| **Landing Page** | GitHub Pages | `https://<usuario>.github.io/buildmaster-landing/` | Página estática generada con HTML/CSS |
+| **Backend (API REST)** | Firebase Hosting + Cloud Functions (Temporal) | `https://buildmaster-backend.firebaseapp.com/` | Adaptado para ejecutarse como función en Firebase |
+| **Frontend Móvil** | Firebase Hosting (APK o WebView) | `https://buildmaster-app.firebaseapp.com/` | Para fines de validación rápida, podría usarse web móvil o APK descargable desde Firebase Hosting |
+
+**Consideraciones:**
+- La Landing Page se encuentra en un repositorio independiente y usa GitHub Pages para despliegue automático desde la rama `main`.
+- El Backend fue empaquetado como un proyecto de función y adaptado para ser desplegado en Firebase Functions con endpoints compatibles REST.
+- El Frontend móvil fue compilado y exportado para alojarse temporalmente como APK o WebApp en Firebase Hosting, lo que permite validaciones sin necesidad de publicar en Play Store.
+
+Diagrama de despliegue para versión final: 
+
+[![structurizr-101464-Container-001.png](https://i.postimg.cc/W30H2Qn0/structurizr-101464-Container-001.png)](https://postimg.cc/phXZCc3d)
+
 ### 6.2. Landing Page, Services & Applications Implementation.
 #### 6.2.1. Sprint 1
 #### 6.2.1.1. Sprint Planning 1.
