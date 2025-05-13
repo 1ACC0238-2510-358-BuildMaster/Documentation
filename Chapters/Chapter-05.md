@@ -112,8 +112,169 @@ La sección de contacto está enfocada en facilitar la interacción directa entr
 - **Relación Cercana con el Cliente**:
   - Esta sección refuerza el compromiso de la Startup con sus usuarios, fomentando un trato cercano y personalizado, lo que contribuye a mejorar la percepción del producto y la experiencia general del usuario.
 
+  ## Mobile Web Browser
+
+La interfaz del navegador web para dispositivos móviles ha sido diseñada para garantizar una experiencia de usuario óptima, organizada en múltiples divisiones que estructuran de manera coherente el contenido. A continuación, se detallan cada una de las secciones:
+
+### Home – División 1
+![Home División 1](https://i.postimg.cc/QMNg7vt5/1.jpg)
+
+Esta sección constituye la primera visualización del Home en dispositivos móviles. Incluye los siguientes elementos:
+- **Encabezado:** Nombre de la Startup alineado a la izquierda y menú hamburguesa a la derecha.
+- **Presentación del Producto:** Nombre del producto, acompañado de un eslogan representativo.
+- **Call to Action (CTA):** Botón de descarga de la aplicación.
+- **Identidad Visual:** Logo de la aplicación ubicado debajo del botón de descarga.
+
+### Home – División 2
+![Home División 2](https://i.postimg.cc/CKvGsJB2/2.png)
+
+En esta sección se destacan las funcionalidades más relevantes de la aplicación de forma ordenada y visualmente atractiva. Cada característica está presentada de manera que facilite su comprensión rápida por parte del usuario.
+
+### Home – División 3
+![Home División 3](https://i.postimg.cc/nV94q4Hd/3si.jpg)
+
+Esta división está destinada a proporcionar al usuario recomendaciones sobre cómo optimizar la experiencia de uso de la aplicación. Los elementos visuales están centrados y el botón de descarga se mantiene al final del bloque para motivar la acción inmediata.
+
+### Home – División 4
+![Home División 4](https://i.postimg.cc/KzRnqLt8/4.jpg)
+
+La cuarta división aborda la sección “Sobre Nosotros”, donde se presentan los aspectos esenciales de la identidad corporativa:
+- **Resumen Corporativo:** Breve descripción de la Startup, destacando su propuesta de valor.
+- **Misión, Visión y Valores:** Exposición concisa que refuerza los principios y objetivos de la empresa.
+- **Público Objetivo:** Definición clara del usuario objetivo, abarcando tanto usuarios individuales como empresas.
+
+### Home – División 5
+![Home División 5](https://i.postimg.cc/jdzyFRnP/5.jpg)
+
+La sección “Preguntas Frecuentes” (FAQs) organiza de forma clara las dudas comunes que podrían surgir durante el uso de la aplicación. Incluye:
+- Un listado de preguntas frecuentes estructuradas.
+- Botón **Leer más** que redirige a una página completa con respuestas detalladas.
+
+### Home – División 6
+![Home División 6](https://i.postimg.cc/V6pX36FB/6.jpg)
+
+En esta división se encuentra la sección “Contáctanos”, un formulario de contacto que permite al usuario comunicarse directamente con el equipo de soporte. Los campos solicitados son:
+- Nombre
+- Número de teléfono
+- Correo electrónico
+- Mensaje
+- Logo de la aplicación ubicado al final de la sección.
+
+### Home – División 7
+![Home División 7](https://i.postimg.cc/4NCzPYyX/7.jpg)
+
+La última división corresponde al Footer. Aquí se integran los enlaces a las redes sociales de la Startup y los créditos a los autores del desarrollo del Landing Page.
+
+### Sobre Nosotros
+![Sobre Nosotros Mobile](https://i.postimg.cc/zBSdNTVS/W-About-Us-Mobile.png)
+
+En la versión móvil de la sección “Sobre Nosotros”, los textos se reorganizan para optimizar la visibilidad. La disposición incluye:
+- **Misión, Visión y Valores:** Ubicados junto a “Nuestros clientes”, permitiendo una visualización compacta y accesible.
+- **Imagen de Fondo:** Adaptada al tamaño de pantalla móvil, asegurando una experiencia visual consistente sin comprometer la legibilidad.
+
+### Preguntas Frecuentes (FAQs)
+![FAQs Mobile](https://i.postimg.cc/XJ02ts7Y/W-FAQs-Mobile.png)
+
+La versión móvil de la sección “Preguntas Frecuentes” reorganiza los elementos para mantener la estructura vertical, facilitando la navegación y lectura en pantallas reducidas.
+
+### Contáctanos
+![Contáctanos Mobile](https://i.postimg.cc/nLmRdyxW/W-Contact-Mobile.png)
+
+El formulario de contacto en su versión móvil conserva los campos de la versión Desktop, pero adaptados a un diseño compacto y simplificado. Los campos solicitados son:
+- Nombre
+- Número de teléfono
+- Correo electrónico
+- Mensaje
+
+### Menú
+![Menú Mobile](https://i.postimg.cc/cCFXgZ7v/W-Menu-Mobile.png)
+
+En la versión móvil, el menú se despliega al tocar el ícono de menú hamburguesa, presentando las opciones principales de navegación de manera accesible y ordenada.
+
 #### 5.1.3.2. Landing Page Mock-up
 
+Los diseños de los mock-ups se encuentran disponibles en el siguiente enlace: [Landing Page Build Master - Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=9-841&t=EXHAb2Ez3ZlvzPh0-1).
 
+Los mock-ups mantienen la coherencia con los wireframes, asegurando la continuidad en la estructura de información y diseño. Se aplicaron lineamientos de color y tipografía consistentes con la identidad visual de la marca, generando un contraste efectivo y mejorando la legibilidad.
 
+### Desktop Web Browser
 
+#### Home (index.html)
+![Home Desktop](https://i.postimg.cc/L8BCVshJ/Home.png)
+
+Visualización de la sección **Home** en la versión de escritorio del navegador web.
+
+#### Sobre Nosotros (about-us.html)
+![About Us Desktop](https://i.postimg.cc/XY01F5NM/About-us.png)
+
+Visualización de la sección **Sobre Nosotros** desde un navegador web de escritorio.
+
+#### Preguntas Frecuentes (help-center.html)
+![FAQs Desktop](https://i.postimg.cc/SQ3vS5wx/Help-FAQs.png)
+
+Sección **Preguntas Frecuentes (FAQs)** en su versión para escritorio, organizada para facilitar el acceso a información clave.
+
+#### Contáctanos (contact.html)
+![Contact Desktop](https://i.postimg.cc/WzkFsQgZ/Contact.png)
+
+Formulario de contacto diseñado para la versión de escritorio, con campos para nombre, teléfono, correo electrónico y mensaje.
+
+#### Menú
+![Menú Desktop](https://i.postimg.cc/SN9tJdh7/Men.png)
+
+Vista del menú hamburguesa desplegado en su versión para escritorio, presentando las opciones principales de navegación.
+
+### Mobile Web Browser
+
+La estructura del navegador web móvil está organizada en divisiones para optimizar la experiencia del usuario en dispositivos móviles. A continuación, se describen las secciones correspondientes:
+
+### División 1 de Index.html
+![División 1](https://i.postimg.cc/CxpCJzvj/1.png)
+En esta división se presenta el encabezado que incluye:
+- **Nombre de la Startup:** Posicionado en la parte superior izquierda.
+- **Menú hamburguesa:** Ubicado a la derecha, con acceso a las opciones principales.
+- **Banner principal:** Sección visual destacada para captar la atención del usuario.
+
+### División 2 de Index.html
+![División 2](https://i.postimg.cc/FHby6Nqw/2.png)
+Esta división está centrada en la presentación de las características principales del producto, organizadas de forma que el usuario pueda comprender rápidamente los beneficios clave de la aplicación.
+
+### División 3 de Index.html
+![División 3](https://i.postimg.cc/zvRWFrKt/3.png)
+En esta sección se proporciona una guía para optimizar la experiencia de usuario, presentando recomendaciones claras y un diseño enfocado en la usabilidad.
+
+### División 4 de Index.html
+![División 4](https://i.postimg.cc/d0q2Pgc3/4.png)
+Esta división contiene la sección "Sobre Nosotros", donde se destacan los elementos esenciales de la empresa, incluyendo misión, visión, valores y público objetivo.
+
+### División 5 de Index.html
+![División 5](https://i.postimg.cc/KYJnZQmN/5.png)
+En esta sección se presentan las **Preguntas Frecuentes (FAQs)**, organizadas de forma que los usuarios puedan acceder rápidamente a respuestas a las dudas más comunes.
+
+### División 6 de Index.html
+![División 6](https://i.postimg.cc/3RN2WpRH/6.png)
+La sección de "Contáctanos" incluye un formulario sencillo que permite a los usuarios comunicarse con el equipo de soporte. Los campos solicitados son:
+- Nombre
+- Número de teléfono
+- Correo electrónico
+- Mensaje
+
+### División 7 de Index.html
+![División 7](https://i.postimg.cc/ZRQpNRBv/7.png)
+En la última división se presenta el footer, que incluye enlaces a las redes sociales de la Startup y los créditos correspondientes a los desarrolladores del proyecto.
+
+### About-us.html
+![About Us](https://i.postimg.cc/prC1fKvX/M-About-Us-Mobile.png)
+Esta sección presenta el apartado "Sobre Nosotros" adaptado a la visualización en dispositivos móviles, manteniendo la estructura informativa sobre misión, visión, valores y público objetivo.
+
+### Help-center.html
+![FAQs](https://i.postimg.cc/mDQnr069/M-FAQs-Mobile.png)
+En esta sección se reordenan las preguntas frecuentes para adaptarse al formato móvil, garantizando una lectura clara y accesible.
+
+### Contact.html
+![Contact](https://i.postimg.cc/PxGcTtKh/M-Contact-Mobile.png)
+Esta sección muestra el formulario de contacto en su versión móvil, manteniendo los mismos campos que en la versión desktop pero optimizados para pantallas reducidas.
+
+### Menú
+![Menu](https://i.postimg.cc/y6y5CCR4/M-Menu-Mobile.png)
+En esta sección se observa el menú desplegable en su versión móvil, manteniendo la estructura de navegación compacta y accesible para el usuario.
