@@ -46,7 +46,8 @@ Ciclo 2025-01
 ## Registro de Versiones  
 | **Versión** | **Fecha**   | **Autor/es**         | **Descripción y Modificación**       |
 |-------------|-------------|----------------------|--------------------------------------|
-| 1.0         | /04/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen  <br> - Machuca García, Celso Eduardo    |    Se redactó la descripción de la startup, los antecedentes y la problemática. Además, se desarrolló el Lean UX Process y se delimitó el segmento objetivo.<br><br> Se completó la sección de Competidores (Incluyendo un análisis competitivo y tácticas frente a competidores). <br><br> Se realizó el diseño de entrevistas, el to-be scenario mapping y el impact mapping. <br><br> Se realizó el Needfinding para obtener las user personas, los user task matrix y el user journey mapping. <br><br> Se completó el Needfinding para obtener el emphaty mapping, el as-is scenario mapping y el lenguaje ubicuo.<br><br> Se realizaron los diagramas C4, el DDD, diagramas de clase y de base de datos para cada bounded context.        |
+| 1.0         | 23/04/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen  <br> - Machuca García, Celso Eduardo    |    Se redactó la descripción de la startup, los antecedentes y la problemática. Además, se desarrolló el Lean UX Process y se delimitó el segmento objetivo.<br><br> Se completó la sección de Competidores (Incluyendo un análisis competitivo y tácticas frente a competidores). <br><br> Se realizó el diseño de entrevistas, el to-be scenario mapping y el impact mapping. <br><br> Se realizó el Needfinding para obtener las user personas, los user task matrix y el user journey mapping. <br><br> Se completó el Needfinding para obtener el emphaty mapping, el as-is scenario mapping y el lenguaje ubicuo.<br><br> Se realizaron los diagramas C4, el DDD, diagramas de clase y de base de datos para cada bounded context.        |
+| 1.1         | 13/05/2025    | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto    <br> - Romero Qwistgaard, Russell Stephen  <br> - Machuca García, Celso Eduardo    |    Se redactó lo faltante del capítulo 4 y se corrigió lo observado. También se avanzo el diseño de la LandingPage y appweb en el capítulo 5. Y se hizo la documentación del sprint 1 donde se desarolló la primera versión de la Landing Page, Backend y Frontend de la Mobile App     |
 
 ## Project Report Collaboration Insights  
 [URL del Repositorio]  
@@ -55,8 +56,8 @@ Ciclo 2025-01
 ---
 
 ## Contenido  
-1. Student Outcome  
-2. Capítulo I: Presentación  
+ * Student Outcome  
+1. Capítulo I: Presentación  
    1.1. Startup Profile  
       - 1.1.1. Descripción de la Startup  
       - 1.1.2. Perfiles de integrantes del equipo  
@@ -68,7 +69,7 @@ Ciclo 2025-01
         * 1.2.2.3. Lean UX Hypothesis Statements  
         * 1.2.2.4. Lean UX Canvas  
    1.3. Segmentos objetivo  
-3. Capítulo II: Requirements Elicitation & Analysis  
+2. Capítulo II: Requirements Elicitation & Analysis  
    2.1. Competidores  
       - 2.1.1. Análisis competitivo  
       - 2.1.2. Estrategias y tácticas frente a competidores  
@@ -83,12 +84,12 @@ Ciclo 2025-01
       - 2.3.4. Empathy Mapping  
       - 2.3.5. As-is Scenario Mapping  
    2.4. Ubiquitous Language  
-4. Capítulo III: Requirements Specification  
+3. Capítulo III: Requirements Specification  
    3.1. To-Be Scenario Mapping.  
    3.2. User Stories.  
    3.3. Impact Mapping.  
    3.4. Product Backlog.  
-5. Capítulo IV: Solution Software Design  
+4. Capítulo IV: Solution Software Design  
    4.1. Strategic-Level Domain-Driven Design  
       - 4.1.1. EventStorming  
         * 4.1.1.1. Candidate Context Discovery  
@@ -100,15 +101,104 @@ Ciclo 2025-01
         * 4.1.3.2. Software Architecture Container Level Diagrams  
         * 4.1.3.3. Software Architecture Deployment Diagrams  
    4.2. Tactical-Level Domain-Driven Design  
-      - 4.2.X. Bounded Context: [Nombre del Contexto Acotado]  
-        * 4.2.X.1. Domain Layer  
-        * 4.2.X.2. Interface Layer  
-        * 4.2.X.3. Application Layer  
-        * 4.2.X.4. Infrastructure Layer  
-        * 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams  
-        * 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams  
-        * 4.2.x.6.1. Bounded Context Domain Layer Class Diagrams  
-        * 4.2.x.6.2. Bounded Context Database Design Diagram  
+      - 4.2.1. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.1.1. Domain Layer  
+        * 4.2.1.2. Interface Layer  
+        * 4.2.1.3. Application Layer  
+        * 4.2.1.4. Infrastructure Layer  
+        * 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.1.6.2. Bounded Context Database Design Diagram 
+        4.2.2. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.2.1. Domain Layer  
+        * 4.2.2.2. Interface Layer  
+        * 4.2.2.3. Application Layer  
+        * 4.2.2.4. Infrastructure Layer  
+        * 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.2.6.2. Bounded Context Database Design Diagram
+        4.2.3. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.3.1. Domain Layer  
+        * 4.2.3.2. Interface Layer  
+        * 4.2.3.3. Application Layer  
+        * 4.2.3.4. Infrastructure Layer  
+        * 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.3.6.2. Bounded Context Database Design Diagram
+        4.2.4. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.3.1. Domain Layer  
+        * 4.2.3.2. Interface Layer  
+        * 4.2.3.3. Application Layer  
+        * 4.2.3.4. Infrastructure Layer  
+        * 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.3.6.2. Bounded Context Database Design Diagram
+        4.2.4. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.4.1. Domain Layer  
+        * 4.2.4.2. Interface Layer  
+        * 4.2.4.3. Application Layer  
+        * 4.2.4.4. Infrastructure Layer  
+        * 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.4.6.2. Bounded Context Database Design Diagram
+        4.2.5. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.5.1. Domain Layer  
+        * 4.2.5.2. Interface Layer  
+        * 4.2.5.3. Application Layer  
+        * 4.2.5.4. Infrastructure Layer  
+        * 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.5.6.2. Bounded Context Database Design Diagram
+        4.2.6. Bounded Context: [Nombre del Contexto Acotado]  
+        * 4.2.6.1. Domain Layer  
+        * 4.2.6.2. Interface Layer  
+        * 4.2.6.3. Application Layer  
+        * 4.2.6.4. Infrastructure Layer  
+        * 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams  
+        * 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams  
+        * 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams  
+        * 4.2.6.6.2. Bounded Context Database Design Diagram
+* Capítulo V: Solution UI/UX Design
+  * 5.1. Product design
+    * 5.1.1. Style Guidelines
+      * 5.1.1.1. General Style Guidelines
+    * 5.1.2. Information Architecture
+      * 5.1.2.1. Organization Systems
+      * 5.1.2.2. Labelling Systems
+      * 5.1.2.3. SEO Tags and Meta Tags
+      * 5.1.2.4. Searching Systems
+      * 5.1.2.5. Navigation Systems
+    * 5.1.3. Landing Page UI Design
+      * 5.1.3.1. Landing Page Wireframe
+      * 5.1.3.2. Landing Page Mock-up
+    * 5.1.4. Mobile Applications UX/UI Design
+      * 5.1.4.1. Mobile Applications Wireframes
+      * 5.1.4.2. Mobile Applications Wireflow Diagrams
+      * 5.1.4.3. Mobile Applications Mock-ups
+      * 5.1.4.4. Mobile Applications User Flow Diagrams
+      * 5.1.4.5. Mobile Applications Prototyping
+* Capítulo VI: Product Implementation, Validation & Deployment
+    * 6.1. Software Configuration Management
+    * 6.1.1. Software Development Environment Configuration
+    * 6.1.2. Source Code Management
+    * 6.1.3. Source Code Style Guide & Conventions
+    * 6.1.4. Software Deployment Configuration
+  * 6.2. Landing Page & Mobile Application Implementation 
+    * 6.2.1. Sprint 1
+    * 6.2.1.1. Sprint Planning 1
+    * 6.2.1.2. Sprint Backlog 1
+    * 6.2.1.3. Development Evidence for Sprint Review
+    * 6.2.1.4. Testing Suite Evidence for Sprint Review
+    * 6.2.1.5. Execution Evidence for Sprint Review
+    * 6.2.1.6. Services Documentation Evidence for Sprint Review
+    * 6.2.1.7. Software Deployment Evidence for Sprint Review
+    * 6.2.1.8. Team Collaboration Insights during Sprint     
 
 ---
 
