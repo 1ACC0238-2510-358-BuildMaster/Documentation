@@ -490,6 +490,9 @@ En esta imagen podemos observar un listado comparativo de precios, mostrando:
 
 ##### 5.1.4.2. Mobile Applications Wireflow Diagrams
 
+Los Wireflow Diagrams fueron hechos en figma. Para verlos acceder al siguiente enlace:
+https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=110-807&t=YPYim1WzaRgAtJET-1
+
 ---
 
 ### User Task 1  
