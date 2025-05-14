@@ -1199,4 +1199,3 @@ Las claves primarias (PK) y foráneas (FK) están correctamente normalizadas par
   
 [![image.png](https://i.postimg.cc/9Fx1knN3/image.png)](https://postimg.cc/tYxhZ2jD)
 
-
