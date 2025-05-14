@@ -369,6 +369,22 @@ En estos commits se puede observar los últimos updates y merge a la rama main q
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|--------------------|
+| Landing Page | main | b442176fa7d5b8e54d45d7621ccaebe7648d5f45| Primera versión de la landing page| |09/05/2025|
+| Landing Page | main | 3ce6d8568e8f2d3c522230d84a75a607f89a55a3| Correción pie de página| |13/05/2025|
+| Landing Page | main | 254b730aac3eb012ee11d3063aaef18ef371fa92| Corrección| |13/05/2025|
+
+Repositorio LP: https://github.com/1ACC0238-2510-358-BuildMaster/buildmaster-landing
+
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+| Backend | catalogue | 5a4abe7be73fbc8f24da943ac189491ff434ce93| feat | Added create component |10/05/2025|
+| Frontend | catalogue | cadc6dbed9728d8b8413bfa87c3e0248db93f3ca |feat | Front and Back connected on local| |10/05/2025|
+|  | catalogue |01dba4387481dc24c02fbdcc01c835a5d99df846|feat | provider bounded context finally|12/05/2025|
+| Backend | dev |c54e723bd8ee4892c52757315d29770a94a344fc|Fix| Una sola navegacion|13/05/2025|
+| Frontend | dev |7442dd2b876188787ecad7ed2e30b65b17bf8c47|feat|Bounded Context Comunity Finally|13/05/2025|
+
+Repositorio backend: https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterApp
 
 
 ##### 6.2.1.4. Execution Evidence for Sprint Review.
