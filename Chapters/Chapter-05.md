@@ -418,8 +418,281 @@ Esta sección muestra el formulario de contacto en su versión móvil, mantenien
 En esta sección se observa el menú desplegable en su versión móvil, manteniendo la estructura de navegación compacta y accesible para el usuario.
 
 #### 5.1.4. Mobile Applications UX/UI Design
+
+Em esta sección se expresa el diseño para nuestra Mobile App utilizando wireframes y mock-ups en la herramienta de Figma.
+
 ##### 5.1.4.1. Mobile Applications Wireframes
+
+Los wireframes fueron desarrollados en el siguiente enlace:  
+[Ver wireframes en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=97-2&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+## Inicio  
+![Home](https://i.postimg.cc/vB80r1cX/Home.png)  
+
+En esta imagen podemos observar la página de inicio, que tendrá:  
+- El logo y el nombre de la aplicación en el **header**.  
+- El menú y nuestro usuario.  
+- Una pequeña descripción de la APP.  
+- Un video introductorio.  
+- Un botón de **llamado a la acción** para comenzar a configurar.  
+
+---
+
+## Inicio de Sesión  
+![Login](https://i.postimg.cc/C1vmmF80/Login.png)  
+
+En esta imagen podemos observar el inicio de sesión que contará con un botón de acción para dirigirse a la aplicación.  
+
+---
+
+## Registro de Usuario  
+![Sign Up](https://i.postimg.cc/bNS39fwX/Sing-Up.png)  
+
+En esta imagen podemos observar el registro de usuario, el cual permite crear una cuenta para ingresar a la aplicación.  
+
+---
+
+## PC Config  
+![PC Config](https://i.postimg.cc/QCwSZ0Sn/PC-Config.png)  
+
+En esta imagen podemos observar un listado con:  
+- Nombres de los productos.  
+- Categoría del producto.  
+- Fabricante.  
+- Botones para **editar** el producto, **eliminarlo** y **añadir un producto**.  
+
+---
+
+## Community  
+![Community](https://i.postimg.cc/kGBwHkNb/Community.png)  
+
+En esta imagen podemos observar un listado con los comentarios de la comunidad, incluyendo:  
+- Nombre del usuario.  
+- Fecha del comentario.  
+- Comentario principal.  
+- Respuestas con fecha al comentario principal.  
+- Cantidad de **likes, dislikes, comentarios y veces compartido**.  
+
+---
+
+## Prices  
+![Prices](https://i.postimg.cc/sfNTWgy9/Prices.png)  
+
+En esta imagen podemos observar un listado comparativo de precios, mostrando:  
+- Imagen del producto.  
+- Nombre del producto.  
+- Precio promedio.  
+- Rango de precios.  
+- Fecha de la última actualización.  
+- Botón para **actualizar la información**.  
+
 ##### 5.1.4.2. Mobile Applications Wireflow Diagrams
-##### 5.1.4.3. Mobile Applications Mock-ups
-##### 5.1.4.4. Mobile Applications User Flow Diagrams
-##### 5.1.4.5. Mobile Applications Prototyping
+
+---
+
+### User Task 1  
+![User Task 1](https://i.postimg.cc/4xnz6rbC/1.png)  
+
+- **Acción del Usuario:** El usuario accede a una cuenta previamente creada.  
+- **Elementos visibles:**  
+  - Título.  
+  - Imagen de logo de usuario.  
+  - Cuadros para introducir usuario y contraseña.  
+  - Botón para **Iniciar Sesión**.  
+
+---
+
+### User Task 2  
+![User Task 2](https://i.postimg.cc/vBwfdDRM/2.png)  
+
+- **Acción del Usuario:** El usuario debe crear una cuenta para usar la aplicación.  
+- **Elementos visibles:**  
+  - Título.  
+  - Imagen de logo de usuario.  
+  - Cuadros para introducir nuevo usuario, contraseña y confirmación de contraseña.  
+  - Botón para **Registrarse**.  
+
+---
+
+### User Task 3  
+![User Task 3](https://i.postimg.cc/4xMpBBBY/3.png)  
+
+- **Acción del Usuario:** El usuario interactúa con el **Home** de la aplicación, puede reproducir el video y comenzar con la configuración haciendo clic en el botón.  
+- **Elementos visibles:**  
+  - Logo de la app.  
+  - Nombre de la app.  
+  - Descripción.  
+  - Video introductorio.  
+  - Botón para **Empezar la Configuración**.  
+  - Menú con más secciones de la aplicación.  
+
+---
+
+### User Task 4  
+![User Task 4](https://i.postimg.cc/hGdTwT5p/4.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **Comunidad** donde puede dar **like, dislike, comentar y compartir**.  
+- **Elementos visibles:**  
+  - Comentarios listados uno por uno.  
+  - Nombre del usuario.  
+  - Foto de perfil.  
+  - Fecha del comentario.  
+  - Comentario principal.  
+  - Respuestas al comentario.  
+  - Botones para **interactuar** (like, dislike, comentar, compartir).  
+
+---
+
+### User Task 5  
+![User Task 5](https://i.postimg.cc/XJKFN335/5.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **PC Config** donde puede **editar, eliminar y agregar productos**.  
+- **Elementos visibles:**  
+  - Productos listados uno por uno.  
+  - Botones para **editar, eliminar** y **añadir producto nuevo**.  
+
+---
+
+### User Task 6  
+![User Task 6](https://i.postimg.cc/Wz2ZhKbH/6.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **Prices** donde puede ver los precios, su rango y la hora de actualización. Puede actualizar el precio de los productos con el botón **Actualizar**.  
+- **Elementos visibles:**  
+  - Productos listados uno por uno.  
+  - Precio del producto.  
+  - Rango de precios.  
+  - Hora de la última actualización.  
+  - Botón para **actualizar la información del producto**.
+
+##### 5.1.4.3. Mobile Applications Mock-ups  
+
+Los mock-ups fueron desarrollados en el siguiente enlace:  
+[Ver mock-ups en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=98-81&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+## Inicio  
+![Home](https://i.postimg.cc/RZnyhnHH/Home.png)  
+
+En este mockup podemos ver:  
+- El **logo de la app** junto a su nombre.  
+- El **logo de perfil del usuario**.  
+- El **menú hamburguesa** en el header.  
+- Una presentación de la aplicación.  
+- Un video acerca del **proceso de ensamblado de un PC y sus costos**.  
+- Un botón para comenzar la configuración de nuestra propia PC.  
+- Secciones de la app: Home, PC Config, Chat, Store y Prices.  
+
+---
+
+## Login  
+![Login](https://i.postimg.cc/tJSwZ3kh/Login.png)  
+
+En este mockup se muestra la pantalla de inicio de sesión, donde se ingresa:  
+- **Usuario y contraseña**.  
+- Botón **Log in** para acceder a la app.  
+
+---
+
+## Sign Up  
+![Sign Up](https://i.postimg.cc/mrYnNfVZ/Sing-Up.png)  
+
+En esta pantalla se solicita al usuario completar:  
+- Nombre de usuario.  
+- Contraseña.  
+- Confirmación de contraseña.  
+- Botón **Sign Up** para registrarse.  
+
+---
+
+## PC Config  
+![PC Config](https://i.postimg.cc/c1XVbWWr/Pc-Config.png)  
+
+En este mockup se muestra una lista con:  
+- Nombre del producto.  
+- Categoría del producto.  
+- Fabricante.  
+- Íconos para **editar** y **eliminar** el producto.  
+- Botón para **añadir otro producto**.  
+
+---
+
+## Community  
+![Community](https://i.postimg.cc/65qDsP6z/Community.png)  
+
+En este mockup se muestra la sección de comunidad, donde se puede ver:  
+- **Nombre del usuario**.  
+- Foto de perfil.  
+- Fecha del comentario.  
+- Comentario principal.  
+- Respuestas con fechas.  
+- **Likes, dislikes, cantidad de comentarios y veces compartido**.  
+
+---
+
+## Prices  
+![Prices](https://i.postimg.cc/QMGPTxQn/Prices.png)  
+
+En este mockup se muestra el comparador de precios, que incluye:  
+- Nombre del producto.  
+- Imagen del producto.  
+- Precio promedio.  
+- Rango de precios.  
+- Fecha de la última actualización.  
+- Botón para **actualizar la información del producto**.
+
+##### 5.1.4.4. Mobile Applications User Flow Diagrams  
+
+Desarrollado en Figma. Ingresar al siguiente enlace:  
+[Ver User Flow Diagrams en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=111-1633&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+### Inicio de sesión  
+![Inicio de sesión](https://i.postimg.cc/XJ3SmM8q/1.png)  
+
+- **Acción del Usuario:** El usuario introduce sus credenciales y presiona **Log In**, lo que lo redirige al **Home**.  
+
+---
+
+### Crear Usuario  
+![Crear Usuario](https://i.postimg.cc/XqYMNwt0/2.png)  
+
+- **Acción del Usuario:** Desde el **Login**, el usuario presiona en **Create User** para registrarse y usar la aplicación.  
+
+---
+
+### Creación del Usuario  
+![Creación del Usuario](https://i.postimg.cc/d1BPKWHB/3.png)  
+
+- **Acción del Usuario:** Después de registrarse correctamente, el usuario es redirigido al **Login** para introducir sus credenciales y acceder al **Home**.  
+
+---
+
+### Acceder a Chat (Community)  
+![Acceder a Chat (Community)](https://i.postimg.cc/qqbPNNd6/4.png)  
+
+- **Acción del Usuario:** El usuario accede a la sección **Community** para interactuar con otros usuarios de la aplicación.  
+
+---
+
+### Acceder a PC Config  
+![Acceder a PC Config](https://i.postimg.cc/PfSs3R8f/5.png)  
+
+- **Acción del Usuario:** El usuario accede a **PC Config** para **agregar, editar o eliminar productos**.  
+
+---
+
+### Acceder a Prices  
+![Acceder a Prices](https://i.postimg.cc/02rgL0pY/6.png)  
+
+- **Acción del Usuario:** El usuario accede a **Prices** para ver los **precios actualizados** y sus **rango de precios**.  
+
+##### 5.1.4.5. Mobile Applications Prototyping  
+
+![Prototype](https://i.postimg.cc/7hLDWMZR/proto.png)  
+
+En el siguiente video se muestran los **flujos o caminos que tomará el usuario** al usar la aplicación:  
+[Ver video del prototipo](prototype app.mp4)  
