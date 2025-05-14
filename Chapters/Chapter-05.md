@@ -695,4 +695,4 @@ Desarrollado en Figma. Ingresar al siguiente enlace:
 ![Prototype](https://i.postimg.cc/7hLDWMZR/proto.png)  
 
 En el siguiente video se muestran los **flujos o caminos que tomará el usuario** al usar la aplicación:  
-[Ver video del prototipo](prototype app.mp4)  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202513698_upc_edu_pe/EXTE-vqTQhVNo8BayLhvX_kBrjdWvlN7uLvm9v6ZP8VmPQ?e=CDDjTc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
