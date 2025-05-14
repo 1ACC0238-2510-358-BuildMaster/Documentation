@@ -360,8 +360,8 @@ El objetivo principal de este Sprint es concretar el desarrollo de una primera v
     </tbody>
 </table>
 
-TODO: *Imagen del board*
-Anexo #
+
+Link del board: https://trello.com/invite/b/681e3d7c63957fd64e2ce209/ATTI06f69cb3073c26dc6331093ca0ca15adA2FE2ACF/1acc0238-2510-358-buildmaster
 
 ##### 6.2.1.3. Development Evidence for Sprint Review.
 
@@ -369,32 +369,74 @@ En estos commits se puede observar los últimos updates y merge a la rama main q
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|--------------------|
+
+
 ##### 6.2.1.4. Execution Evidence for Sprint Review.
 
 En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas. 
-TODO: Vídeo con la ejecución de lp y front
+
+Vídeo con la ejecución de lp y front: 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EbIxWMbIqOFNtY2mL4kNORIBAdMv51lqnU2bjKoz0h-Bqw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=uSe3i0
+
 
 ##### 6.2.1.5. Services Documentation Evidence for Sprint Review.
 
 En esta sección se evidenciará los endpoints del backend de la aplicación móvil
-TODO: Endpoints del backend
+
+Vídeo de evidencia de los endpoints:
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EUHsfSElsUZEgI-oiHfND_MBZ5JmZU_QqSNrz9_4DeQPXA?e=udzs06&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+
 
 ##### 6.2.1.6. Software Deployment Evidence for Sprint Review.
 
-Para el deploy de este sprint solo se hizo deploy de la aplicación móvil y Landing Page:
+Para el despliegue de este sprint solo se hizo deploy de la Landing Page y Bakend
 
-Link de deploy de LP: https://1acc0238-2510-358-buildmaster.github.io/buildmaster-landing/ 
-Link de deploy de la Aplicación móvil: 
+Para el despliegue de la Landing Pages se usó la caracterísitica de githubpages. La cual facilita bastante el proceso, además de ello de gozar de una buena velocidad, es gratuita y el único costo sería no poder escoger el dominio pero lo hace ídoneo para startups.
 
-##### 6.2.1.7. Team Collaboration Insights during Sprint.
+[![Landing-Page.png](https://i.postimg.cc/prDVKj3b/Landing-Page.png)](https://postimg.cc/GTm1C4cq)
 
-TODO: Imagenes de los insights de cada repositorio
+Para el despliegue del backend se uso render. Una herramienta que nos permite el despliegue de tanto la base de datos
+
+[![render.png](https://i.postimg.cc/rmgsHxQ1/render.png)](https://postimg.cc/xJJ9JJr8)
+
+[![render2.png](https://i.postimg.cc/yx4jfJYy/render2.png)](https://postimg.cc/47PpyxcY)
+
+Para ello se requiere que tanto la base de datos como el programa hecho con springboot se tengan en los servidores de render, no tengan errores y esten conectados. Su único punto bajo es que los servidores con mejor conexión para nosotros sea los de Estados Unidos.
+
+[![back.png](https://i.postimg.cc/hP3zgkTH/back.png)](https://postimg.cc/zVKXFPdj)
+[![back-2.png](https://i.postimg.cc/1X8SKjXq/back-2.png)](https://postimg.cc/n9fNFTvF)
+
+Link de deploy de LP: https://1acc0238-2510-358-buildmaster.github.io/buildmaster-landing/
+Link de deploy del backend: https://backend-041m.onrender.com/swagger-ui/index.html#/
+
+##### 6.2.1.7. Team Collaboration Insights during Sprint
+En está sección se presentará los insights en los repositorios durante que se tuvieron durante el sprint
+
+ - Repositorio de la Landing Page: https://github.com/1ACC0238-2510-358-BuildMaster/buildmaster-landing
+
+ [![lp.png](https://i.postimg.cc/SQt4TkWY/lp.png)](https://postimg.cc/qgnWgfDp)
+
+ [![lp-2.png](https://i.postimg.cc/1tCkjrN1/lp-2.png)](https://postimg.cc/Q97YB5bf)
+
+
+- Repositorio de la mobile app: https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterApp/tree/dev
+
+[![front1.png](https://i.postimg.cc/d08d65pD/front1.png)](https://postimg.cc/06yb208q)
+
+[![front-2.png](https://i.postimg.cc/JzXB7T1K/front-2.png)](https://postimg.cc/K1ZYJD3g)
+
+- Repositorio del backend: https://github.com/1ACC0238-2510-358-BuildMaster/Backend
+
+[![Back-1.png](https://i.postimg.cc/JnCwVzpP/Back-1.png)](https://postimg.cc/HJzvbdDy)
+
+[![back-2.png](https://i.postimg.cc/mgPKPHqm/back-2.png)](https://postimg.cc/xXS67c9m)
 
 ## Conclusiones
 
 
 ## Video About-the-team
-
 
 ## Bibliografía
 
@@ -411,3 +453,5 @@ TODO: Imagenes de los insights de cada repositorio
 ## Anexos
 
 - To-be Scenario Mapping: https://miro.com/app/board/uXjVIE_P0Bw=/?share_link_id=102963333287 
+
+- Video de Exposición del TP: 
