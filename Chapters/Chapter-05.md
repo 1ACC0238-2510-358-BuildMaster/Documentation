@@ -1,10 +1,148 @@
 ## Capítulo V: Solution UI/UX Design
+### 5.1. Product design
 
-### 5.1.3. Landing Page UI Design
+En esta sección se presenta el diseño del producto **BuildMaster** como una parte esencial de la arquitectura del sistema. El diseño ha sido cuidadosamente estructurado para alinear las funcionalidades clave del sistema con las necesidades detectadas en fases anteriores del análisis y modelado del dominio.
+
+El producto está centrado en brindar a usuarios entusiastas de hardware y tecnología una plataforma intuitiva y poderosa para la creación, análisis y compartición de builds personalizados de PC. El diseño del sistema considera tanto la experiencia del usuario como la eficiencia del backend, asegurando una integración coherente entre sus diferentes componentes.
+
+La arquitectura de BuildMaster contempla una aplicación móvil desarrollada en **Kotlin**, respaldada por un backend en **Spring Boot** y una base de datos relacional en **PostgreSQL**. Estas decisiones tecnológicas permiten escalabilidad, rapidez en el desarrollo y mantenibilidad a largo plazo.
+
+#### 5.1.1. Style Guidelines
+El objetivo de esta sección es establecer una guía clara y compartida por todo el equipo sobre el diseño visual de la aplicación. Contar con un set de reglas comunes sobre colores, tipografía, espaciados, iconografía y otros aspectos visuales asegura una experiencia de usuario coherente y profesional.
+
+Todo el equipo trabaja sobre un repositorio central de **assets**, que incluye íconos, fuentes, paleta de colores, y componentes de UI reutilizables. Esto facilita la consistencia entre las pantallas, reduce ambigüedades en el diseño y mejora la colaboración entre desarrolladores y diseñadores.
+##### 5.1.1.1. General Style Guidelines
+
+**Paleta de colores principal**  
+La estética visual de BuildMaster se basa en una paleta minimalista pero fuerte que refleja confianza, tecnología y modernidad:
+
+| Color         | Hex       | Uso principal                                           |
+|---------------|-----------|----------------------------------------------------------|
+| Verde Tecla   | `#00B253` | Color primario en botones, íconos, acentos y el logo.    |
+| Blanco        | `#FFFFFF` | Fondo principal en vistas limpias y legibilidad.         |
+| Negro         | `#000000` | Tipografía principal, bordes y líneas.                   |
+| Gris Claro    | `#F5F5F5` | Fondo neutro para secciones o tarjetas secundarias.      |
+| Gris Oscuro   | `#333333` | Textos secundarios o subtítulos.                         |
+
+**Tipografía**  
+BuildMaster utiliza una fuente sans-serif moderna para garantizar claridad y consistencia:
+
+- Fuente primaria: **Montserrat** o **Poppins**
+- Pesos recomendados:
+  - Títulos: Bold o Semi-Bold
+  - Texto general: Regular
+  - Botones: Medium
+
+**Iconografía y botones**  
+- Iconos minimalistas en negro o verde.
+- Bordes ligeramente redondeados (`border-radius: 8px`).
+- Botones primarios con fondo verde `#00B253` y texto blanco.
+- En hover: verde más oscuro o borde verde con fondo blanco.
+
+**Estilo visual**  
+- Diseño limpio, con uso de espacio en blanco.
+- Tarjetas para agrupar contenido (componentes, builds, guías).
+- Sombra ligera (`box-shadow`) para destacar componentes interactivos.
+
+**Usabilidad y accesibilidad**  
+- Contraste suficiente entre texto y fondo.
+- Botones navegables por teclado.
+- Uso correcto de atributos `aria-*` para compatibilidad con lectores de pantalla.
+
+#### 5.1.2. Information Architecture
+
+Esta sección describe cómo se estructura la información dentro del sistema BuildMaster, tanto en su aplicación móvil como en su landing page. Se abordan aspectos como la organización visual, categorización, etiquetado, SEO/ASO y los mecanismos que facilitarán al usuario encontrar y recorrer los contenidos.
+
+##### 5.1.2.1. Organization Systems
+
+En **BuildMaster**, se aplican diferentes tipos de organización de la información, según el contexto y la funcionalidad:
+
+- **Organización jerárquica**:
+  - Aplicada en la navegación de componentes (Catálogo), donde los usuarios pueden explorar por categorías (CPU, GPU, RAM, etc.) y subcategorías.
+  - También en la gestión de builds guardadas del usuario.
+
+- **Organización secuencial**:
+  - Utilizada en el proceso de creación de una build, el cual sigue una estructura paso a paso: seleccionar categoría → seleccionar componente → validar compatibilidad → guardar.
+
+- **Organización matricial**:
+  - Se aplica al comparar múltiples builds o especificaciones de componentes de forma tabular.
+
+**Esquemas de categorización**:
+
+- **Alfabética**: listado de fabricantes o builds ordenados por nombre.
+- **Por tópicos**: guías técnicas agrupadas por tema (Overclocking, Ensamblaje, Mantenimiento, etc.).
+- **Por audiencia**: contenido educativo clasificado para principiantes, intermedios o expertos.
+
+##### 5.1.2.2. Labelling Systems
+
+Para garantizar la claridad y facilidad de uso, los datos y acciones estarán etiquetados con palabras breves, claras y coherentes.
+
+**Ejemplos de etiquetas principales**:
+
+- **Botones**: `Agregar`, `Guardar Build`, `Comparar`, `Eliminar`, `Filtrar`, `Ver Detalles`.
+- **Secciones**:
+  - Catálogo → `Componentes`
+  - Builds → `Mis Builds`, `Builds Populares`
+  - Comunidad → `Comentarios`, `Votaciones`
+  - Guías → `Tips`, `Tutoriales`, `Guías Técnicas`
+- **Filtros de búsqueda**: `Nombre`, `Tipo`, `Fabricante`, `Compatibilidad`, `Categoría`.
+
+Las asociaciones visuales estarán apoyadas por iconografía intuitiva, colores y agrupamiento por tarjetas.
+
+##### 5.1.2.3. SEO Tags and Meta Tags
+
+Se definirán metadatos específicos para mejorar la visibilidad en motores de búsqueda (SEO) y en tiendas de aplicaciones (ASO).
+
+**Landing Page - SEO Tags**:
+
+- `Title`: BuildMaster - Crea y Comparte Builds de PC
+- `Meta Description`: Plataforma para armar builds de PC personalizados, comparar componentes y recibir sugerencias de compatibilidad.
+- `Keywords`: build pc, armar pc, componentes pc, catálogo hardware, builds personalizadas
+- `Author`: Equipo BuildMaster
+
+**Web App / Mobile App - ASO Tags**:
+
+- `App Title`: BuildMaster
+- `App Subtitle`: Creador de Builds de PC con validación automática
+- `App Description`: Con BuildMaster puedes crear builds de PC personalizados, analizar compatibilidad de componentes, guardar tus configuraciones y compartirlas con la comunidad.
+- `App Keywords`: build pc, compatibilidad, hardware, armar computadora, piezas pc
+
+##### 5.1.2.4. Searching Systems
+
+Se definirán metadatos específicos para mejorar la visibilidad en motores de búsqueda (SEO) y en tiendas de aplicaciones (ASO).
+
+**Landing Page - SEO Tags**:
+
+- `Title`: BuildMaster - Crea y Comparte Builds de PC
+- `Meta Description`: Plataforma para armar builds de PC personalizados, comparar componentes y recibir sugerencias de compatibilidad.
+- `Keywords`: build pc, armar pc, componentes pc, catálogo hardware, builds personalizadas
+- `Author`: Equipo BuildMaster
+
+**Web App / Mobile App - ASO Tags**:
+
+- `App Title`: BuildMaster
+- `App Subtitle`: Creador de Builds de PC con validación automática
+- `App Description`: Con BuildMaster puedes crear builds de PC personalizados, analizar compatibilidad de componentes, guardar tus configuraciones y compartirlas con la comunidad.
+- `App Keywords`: build pc, compatibilidad, hardware, armar computadora, piezas pc
+
+##### 5.1.2.5. Navigation Systems
+
+Para asegurar una experiencia fluida, BuildMaster cuenta con sistemas de navegación estructurados tanto en la landing como en la aplicación móvil:
+
+**Landing Page**:
+- Menú superior con scroll y anclas: `Inicio`, `Sobre Nosotros`, `Contacto`, `FAQ`.
+- Botones destacados de llamada a la acción: `Explorar Builds`, `Comenzar Build`.
+
+**Aplicación Móvil**:
+- Barra de navegación inferior con íconos: `Catálogo`, `Mis Builds`, `Crear`, `Comunidad`, `Perfil`.
+- Botones contextuales flotantes (FAB) para crear o guardar rápidamente.
+- Breadcrumbs internos y etiquetas de paso en la creación de builds para mantener al usuario orientado.
+
+#### 5.1.3. Landing Page UI Design
 
 A continuación el diseño realizado de la Landing Page del producto Build Master.
 
-#### 5.1.3.1. Landing Page Wireframe
+##### 5.1.3.1. Landing Page Wireframe
 
 Los diseños de los wireframes para la landing page se desarrollaron con la plataforma de diseño en línea Figma. El enlace es el siguiente:
 https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=51-81&t=WEg4UUejSRIh8MVj-1
@@ -191,7 +329,7 @@ El formulario de contacto en su versión móvil conserva los campos de la versi�
 
 En la versión móvil, el menú se despliega al tocar el ícono de menú hamburguesa, presentando las opciones principales de navegación de manera accesible y ordenada.
 
-#### 5.1.3.2. Landing Page Mock-up
+##### 5.1.3.2. Landing Page Mock-up
 
 Los diseños de los mock-ups se encuentran disponibles en el siguiente enlace: [Landing Page Build Master - Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=9-841&t=EXHAb2Ez3ZlvzPh0-1).
 
@@ -278,3 +416,286 @@ Esta sección muestra el formulario de contacto en su versión móvil, mantenien
 ### Menú
 ![Menu](https://i.postimg.cc/y6y5CCR4/M-Menu-Mobile.png)
 En esta sección se observa el menú desplegable en su versión móvil, manteniendo la estructura de navegación compacta y accesible para el usuario.
+
+#### 5.1.4. Mobile Applications UX/UI Design
+
+Em esta sección se expresa el diseño para nuestra Mobile App utilizando wireframes y mock-ups en la herramienta de Figma.
+
+##### 5.1.4.1. Mobile Applications Wireframes
+
+Los wireframes fueron desarrollados en el siguiente enlace:  
+[Ver wireframes en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=97-2&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+## Inicio  
+![Home](https://i.postimg.cc/vB80r1cX/Home.png)  
+
+En esta imagen podemos observar la página de inicio, que tendrá:  
+- El logo y el nombre de la aplicación en el **header**.  
+- El menú y nuestro usuario.  
+- Una pequeña descripción de la APP.  
+- Un video introductorio.  
+- Un botón de **llamado a la acción** para comenzar a configurar.  
+
+---
+
+## Inicio de Sesión  
+![Login](https://i.postimg.cc/C1vmmF80/Login.png)  
+
+En esta imagen podemos observar el inicio de sesión que contará con un botón de acción para dirigirse a la aplicación.  
+
+---
+
+## Registro de Usuario  
+![Sign Up](https://i.postimg.cc/bNS39fwX/Sing-Up.png)  
+
+En esta imagen podemos observar el registro de usuario, el cual permite crear una cuenta para ingresar a la aplicación.  
+
+---
+
+## PC Config  
+![PC Config](https://i.postimg.cc/QCwSZ0Sn/PC-Config.png)  
+
+En esta imagen podemos observar un listado con:  
+- Nombres de los productos.  
+- Categoría del producto.  
+- Fabricante.  
+- Botones para **editar** el producto, **eliminarlo** y **añadir un producto**.  
+
+---
+
+## Community  
+![Community](https://i.postimg.cc/kGBwHkNb/Community.png)  
+
+En esta imagen podemos observar un listado con los comentarios de la comunidad, incluyendo:  
+- Nombre del usuario.  
+- Fecha del comentario.  
+- Comentario principal.  
+- Respuestas con fecha al comentario principal.  
+- Cantidad de **likes, dislikes, comentarios y veces compartido**.  
+
+---
+
+## Prices  
+![Prices](https://i.postimg.cc/sfNTWgy9/Prices.png)  
+
+En esta imagen podemos observar un listado comparativo de precios, mostrando:  
+- Imagen del producto.  
+- Nombre del producto.  
+- Precio promedio.  
+- Rango de precios.  
+- Fecha de la última actualización.  
+- Botón para **actualizar la información**.  
+
+##### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+Los Wireflow Diagrams fueron hechos en figma. Para verlos acceder al siguiente enlace:
+https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=110-807&t=YPYim1WzaRgAtJET-1
+
+---
+
+### User Task 1  
+![User Task 1](https://i.postimg.cc/4xnz6rbC/1.png)  
+
+- **Acción del Usuario:** El usuario accede a una cuenta previamente creada.  
+- **Elementos visibles:**  
+  - Título.  
+  - Imagen de logo de usuario.  
+  - Cuadros para introducir usuario y contraseña.  
+  - Botón para **Iniciar Sesión**.  
+
+---
+
+### User Task 2  
+![User Task 2](https://i.postimg.cc/vBwfdDRM/2.png)  
+
+- **Acción del Usuario:** El usuario debe crear una cuenta para usar la aplicación.  
+- **Elementos visibles:**  
+  - Título.  
+  - Imagen de logo de usuario.  
+  - Cuadros para introducir nuevo usuario, contraseña y confirmación de contraseña.  
+  - Botón para **Registrarse**.  
+
+---
+
+### User Task 3  
+![User Task 3](https://i.postimg.cc/4xMpBBBY/3.png)  
+
+- **Acción del Usuario:** El usuario interactúa con el **Home** de la aplicación, puede reproducir el video y comenzar con la configuración haciendo clic en el botón.  
+- **Elementos visibles:**  
+  - Logo de la app.  
+  - Nombre de la app.  
+  - Descripción.  
+  - Video introductorio.  
+  - Botón para **Empezar la Configuración**.  
+  - Menú con más secciones de la aplicación.  
+
+---
+
+### User Task 4  
+![User Task 4](https://i.postimg.cc/hGdTwT5p/4.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **Comunidad** donde puede dar **like, dislike, comentar y compartir**.  
+- **Elementos visibles:**  
+  - Comentarios listados uno por uno.  
+  - Nombre del usuario.  
+  - Foto de perfil.  
+  - Fecha del comentario.  
+  - Comentario principal.  
+  - Respuestas al comentario.  
+  - Botones para **interactuar** (like, dislike, comentar, compartir).  
+
+---
+
+### User Task 5  
+![User Task 5](https://i.postimg.cc/XJKFN335/5.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **PC Config** donde puede **editar, eliminar y agregar productos**.  
+- **Elementos visibles:**  
+  - Productos listados uno por uno.  
+  - Botones para **editar, eliminar** y **añadir producto nuevo**.  
+
+---
+
+### User Task 6  
+![User Task 6](https://i.postimg.cc/Wz2ZhKbH/6.png)  
+
+- **Acción del Usuario:** El usuario interactúa con la sección **Prices** donde puede ver los precios, su rango y la hora de actualización. Puede actualizar el precio de los productos con el botón **Actualizar**.  
+- **Elementos visibles:**  
+  - Productos listados uno por uno.  
+  - Precio del producto.  
+  - Rango de precios.  
+  - Hora de la última actualización.  
+  - Botón para **actualizar la información del producto**.
+
+##### 5.1.4.3. Mobile Applications Mock-ups  
+
+Los mock-ups fueron desarrollados en el siguiente enlace:  
+[Ver mock-ups en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=98-81&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+## Inicio  
+![Home](https://i.postimg.cc/RZnyhnHH/Home.png)  
+
+En este mockup podemos ver:  
+- El **logo de la app** junto a su nombre.  
+- El **logo de perfil del usuario**.  
+- El **menú hamburguesa** en el header.  
+- Una presentación de la aplicación.  
+- Un video acerca del **proceso de ensamblado de un PC y sus costos**.  
+- Un botón para comenzar la configuración de nuestra propia PC.  
+- Secciones de la app: Home, PC Config, Chat, Store y Prices.  
+
+---
+
+## Login  
+![Login](https://i.postimg.cc/tJSwZ3kh/Login.png)  
+
+En este mockup se muestra la pantalla de inicio de sesión, donde se ingresa:  
+- **Usuario y contraseña**.  
+- Botón **Log in** para acceder a la app.  
+
+---
+
+## Sign Up  
+![Sign Up](https://i.postimg.cc/mrYnNfVZ/Sing-Up.png)  
+
+En esta pantalla se solicita al usuario completar:  
+- Nombre de usuario.  
+- Contraseña.  
+- Confirmación de contraseña.  
+- Botón **Sign Up** para registrarse.  
+
+---
+
+## PC Config  
+![PC Config](https://i.postimg.cc/c1XVbWWr/Pc-Config.png)  
+
+En este mockup se muestra una lista con:  
+- Nombre del producto.  
+- Categoría del producto.  
+- Fabricante.  
+- Íconos para **editar** y **eliminar** el producto.  
+- Botón para **añadir otro producto**.  
+
+---
+
+## Community  
+![Community](https://i.postimg.cc/65qDsP6z/Community.png)  
+
+En este mockup se muestra la sección de comunidad, donde se puede ver:  
+- **Nombre del usuario**.  
+- Foto de perfil.  
+- Fecha del comentario.  
+- Comentario principal.  
+- Respuestas con fechas.  
+- **Likes, dislikes, cantidad de comentarios y veces compartido**.  
+
+---
+
+## Prices  
+![Prices](https://i.postimg.cc/QMGPTxQn/Prices.png)  
+
+En este mockup se muestra el comparador de precios, que incluye:  
+- Nombre del producto.  
+- Imagen del producto.  
+- Precio promedio.  
+- Rango de precios.  
+- Fecha de la última actualización.  
+- Botón para **actualizar la información del producto**.
+
+##### 5.1.4.4. Mobile Applications User Flow Diagrams  
+
+Desarrollado en Figma. Ingresar al siguiente enlace:  
+[Ver User Flow Diagrams en Figma](https://www.figma.com/design/FqAYzDC46kVQpv46HhYI8O/Landing-Page-Build-Master?node-id=111-1633&t=62SAfUKM9sGyv2vu-1)  
+
+---
+
+### Inicio de sesión  
+![Inicio de sesión](https://i.postimg.cc/XJ3SmM8q/1.png)  
+
+- **Acción del Usuario:** El usuario introduce sus credenciales y presiona **Log In**, lo que lo redirige al **Home**.  
+
+---
+
+### Crear Usuario  
+![Crear Usuario](https://i.postimg.cc/XqYMNwt0/2.png)  
+
+- **Acción del Usuario:** Desde el **Login**, el usuario presiona en **Create User** para registrarse y usar la aplicación.  
+
+---
+
+### Creación del Usuario  
+![Creación del Usuario](https://i.postimg.cc/d1BPKWHB/3.png)  
+
+- **Acción del Usuario:** Después de registrarse correctamente, el usuario es redirigido al **Login** para introducir sus credenciales y acceder al **Home**.  
+
+---
+
+### Acceder a Chat (Community)  
+![Acceder a Chat (Community)](https://i.postimg.cc/qqbPNNd6/4.png)  
+
+- **Acción del Usuario:** El usuario accede a la sección **Community** para interactuar con otros usuarios de la aplicación.  
+
+---
+
+### Acceder a PC Config  
+![Acceder a PC Config](https://i.postimg.cc/PfSs3R8f/5.png)  
+
+- **Acción del Usuario:** El usuario accede a **PC Config** para **agregar, editar o eliminar productos**.  
+
+---
+
+### Acceder a Prices  
+![Acceder a Prices](https://i.postimg.cc/02rgL0pY/6.png)  
+
+- **Acción del Usuario:** El usuario accede a **Prices** para ver los **precios actualizados** y sus **rango de precios**.  
+
+##### 5.1.4.5. Mobile Applications Prototyping  
+
+![Prototype](https://i.postimg.cc/7hLDWMZR/proto.png)  
+
+En el siguiente video se muestran los **flujos o caminos que tomará el usuario** al usar la aplicación:  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202513698_upc_edu_pe/EXTE-vqTQhVNo8BayLhvX_kBrjdWvlN7uLvm9v6ZP8VmPQ?e=CDDjTc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
