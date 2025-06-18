@@ -386,6 +386,31 @@ Repositorio LP: https://github.com/1ACC0238-2510-358-BuildMaster/buildmaster-lan
 
 Repositorio backend: https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterApp
 
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| Backend | catalogue | a2a7699 | Revert | Merge pull request #1 from feat/component | 17/06/2025 |
+| Backend | catalogue | cf11c4c | Revert | Merge pull request #2 from feat/Community | 17/06/2025 |
+| Backend | catalogue | cc24cc9 | Merge | pull request #2 from feat/Community | 17/06/2025 |
+| Backend | catalogue | e1673c3 | Merge | branch 'main' into feat/Community | 17/06/2025 |
+| Backend | catalogue | 349235e | Merge | pull request #1 from feat/component | 17/06/2025 |
+| Backend | catalogue | 06d86e3 | feat | update component | 17/06/2025 |
+| Backend | catalogue | 1c85b05 | feat | crud methods for component and manufacturer | 17/06/2025 |
+| Backend | community | 803aed4 | feat | Bounded Context Provider | 17/06/2025 |
+| Backend | catalogue | e525bfc | feat | Crud Methods for categories | 17/06/2025 |
+| Backend | community | c0b7048 | feat | Bounded Context community finished | 17/06/2025 |
+| Backend | dev | 71a4055 | fix | cambio de dirección al deploy | 17/06/2025 |
+| Backend | dev | 8bcb0ff | feat | user role functional | 16/06/2025 |
+| Frontend | dev | c66ff05 | add | configuration page | 16/06/2025 |
+| Frontend | dev | bab9521 | fix | deselección de componentes | 16/06/2025 |
+| Frontend | dev | ca4e02f | feat | filters ready | 15/06/2025 |
+| Backend | catalogue | 5a4abe7 | feat | Added create component | 10/05/2025 |
+| Frontend | catalogue | cadc6db | feat | Front and Back connected on local | 10/05/2025 |
+| Backend | catalogue | 01dba43 | feat | provider bounded context finally | 12/05/2025 |
+| Backend | dev | c54e723 | fix | Una sola navegación | 13/05/2025 |
+| Frontend | dev | 7442dd2 | feat | Bounded Context Community Finally | 13/05/2025 |
+
+
+link del repository: https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterAdminApp.git
 
 ##### 6.2.1.4. Execution Evidence for Sprint Review.
 
