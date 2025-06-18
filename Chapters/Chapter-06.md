@@ -108,7 +108,7 @@ Diagrama de despliegue para versión final:
 
 | **Aspecto**                      | **Detalles**                                                                                                           |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **Sprint Planning Background**   |                                                                                                                        |
+| **Sprint Planning Background**   |        flutter develop´app                                                                                                                |
 | **Date**                         | 8/05/2025                                                                                                             |
 | **Time**                         | 4:00 pm                                                                                                                |
 | **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
@@ -479,7 +479,7 @@ En está sección se presentará los insights en los repositorios durante que se
 
 | **Aspecto**                      | **Detalles**                                                                                                           |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **Sprint Planning Background**   |                                                                                                                        |
+| **Sprint Planning Background**   |         flutter develop admin app                                                                                                               |
 | **Date**                         | 3/06/2025                                                                                                             |
 | **Time**                         | 4:00 pm                                                                                                                |
 | **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
@@ -738,7 +738,7 @@ Luego de que revisara la aplicación y el landing page, el entrevistado nos come
 | **CURSO** | cc238 |
 | **SECCIÓN** | 2510 |
 | **PROFESORES** | Reyes Rodríguez, Eduardo Martin |
-| **AUDITOR** | Equipo UX Grupo A |
+| **AUDITOR** | Equipo UX Grupo 2 |
 | **CLIENTE(S)** | Orlando Romero, Jordan Carranza, Mauricio Sanchez |
 
 ---
