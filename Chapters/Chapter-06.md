@@ -103,13 +103,6 @@ Diagrama de despliegue para versión final:
 [![structurizr-101464-Container-001.png](https://i.postimg.cc/W30H2Qn0/structurizr-101464-Container-001.png)](https://postimg.cc/phXZCc3d)
 
 ### 6.2. Landing Page, Services & Applications Implementation.
-#### 6.2.1. Sprint 1
-#### 6.2.1.1. Sprint Planning 1.
-
-| **Aspecto**                      | **Detalles**                                                                                                           |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **Sprint Planning Background**   |        flutter develop´app                                                                                                                |
-| **Date**                         | 8/05/2025                                                                                                             |
 | **Time**                         | 4:00 pm                                                                                                                |
 | **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
 | **Prepared By**                  | NovaPeak                                                                                                              |
@@ -479,7 +472,6 @@ En está sección se presentará los insights en los repositorios durante que se
 
 | **Aspecto**                      | **Detalles**                                                                                                           |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **Sprint Planning Background**   |         flutter develop admin app                                                                                                               |
 | **Date**                         | 3/06/2025                                                                                                             |
 | **Time**                         | 4:00 pm                                                                                                                |
 | **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
@@ -675,6 +667,77 @@ El objetivo principal de este Sprint es desarrollar un sistema completo de admin
     </tbody>
 </table>
 
+###### 6.2.2.3. Development Evidence for Sprint Review.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+| Backend | pre-main |c33ad568b6e737de95611dd2c28922ce92934725 |feat: Added create and delete for categories and manufacturers|Cruds methods for admin view of the app|05/06/2025|
+|Backend | pre-main |e8c5982654dc28a7efd0aad53747e65f1c1a2ef8|feat: getcomponentbyID method|-|16/06/2025|
+|Backend | pre-main |e0c988ac79bd4734581d1b9971114829baa6d42a|hotfix: for searchname| - | 16/06/2025|
+Backend | pre-main |ffd50f52229b24d95de148b6ae65bc54bf23d603| hotfix|-|16/06/2025|
+Backend | pre-main |fb479c93de075906e9ab3d8a74989aaa8f9eb4f31| deploy|-|17/06/2025|
+
+Repositorio backend: https://github.com/1ACC0238-2510-358-BuildMaster/Backend
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+| BuildMasterAdminApp | main | 4f9ae86700425832317c582a2af18de0e5a433fd|feat: initial commit|-|15/06/2025|
+| BuildMasterAdminApp | main | ca4e02ff39de199aed1fdcd6b319a6c83c5fd48c|feat: filters ready|-|/06/2025|
+| BuildMasterAdminApp | main | bab95215f0906eb4a28f0eed1182398915eb2aed|fix: deseleccion de componentes|-|/06/2025|
+| BuildMasterAdminApp | main | c66ff0525bef31e4eaaceb4cd62dc81e8ff55d84|add: configuration page|-|/06/2025|
+| BuildMasterAdminApp | main |8bcb0ff1b670b78c98e81ccde4b6ae953284b585 |feat: user role functional|-|/06/2025|
+| BuildMasterAdminApp | main | 71a40555d630897c2efeabb91c1a0032eea850d0|fix: cambio de dirección al deploy|TODO: CRUD METHODS|/06/2025|
+| BuildMasterAdminApp | main |c0b7048deb10c1b33e1c1a3201596da46d3e0807 |fea: Bounded Context community fnishs|-|/06/2025|
+| BuildMasterAdminApp | main |e525bfce521592cd769ebca93f1ca4e93de5e6f9 |Feat: Crud Methods for categories|TODO: Manufacturers and components|/06/2025|
+| BuildMasterAdminApp | main |803aed4e0440b72b963ab6591d264c8a03d891d1 |fea: Bounded Context Provider|-|/06/2025|
+| BuildMasterAdminApp | main | 1c85b05cd1c90bb4c852f8e1bb9303ec83396885|crud methods for component and manufacturer|TODO: UPDATE FOR COMPONENT|/06/2025|
+| BuildMasterAdminApp | main |06d86e3675b9a36e366857608f3b842fdad2765d |feat: update component|-|/06/2025|
+| BuildMasterAdminApp | main |d51fc75c92abeae2abd8180b180b5c62f5b90207 |god: merge succesful|-|/06/2025|
+| BuildMasterAdminApp | main |5b770f0f4b6ef63c35269347f2469a9d369c2c97 |fix: for build config page|-|/06/2025|
+| BuildMasterAdminApp | main |7f1b2434726031e7d0dafaa5bb4b38ea718dd9d8 |fix: lista en manage component|-|/06/2025|
+
+###### 6.2.2.4. Testing Suite Evidence for Sprint Review.
+
+No se desarrolló más en el repositorio del testing en este sprint.
+
+###### 6.2.2.5. Execution Evidence for Sprint Review.
+
+En esta sección se mostrará un vídeo con todo lo ejecutado para este sprint
+
+Link del vídeo: 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/Eac_N97rh9lDrxudJlovj1MBfypgOiZR5QraxYGJkAmNrA?e=qHKdlC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+###### 6.2.2.6. Services Documentation Evidence for Sprint Review.
+
+[![servicios-1.png](https://i.postimg.cc/FK5nDVcQ/servicios-1.png)](https://postimg.cc/pmCZd8q0)
+[![servicios-2.png](https://i.postimg.cc/L4CCrpfD/servicios-2.png)](https://postimg.cc/ThbJDBt5)
+[![servicios-3.png](https://i.postimg.cc/nrCkHX7k/servicios-3.png)](https://postimg.cc/bSfbgNmD)
+
+Link de servicios desplegados:
+https://backend-5l98.onrender.com/swagger-ui/index.html#/
+
+###### 6.2.2.7. Software Deployment Evidence for Sprint Review.
+
+Para el despliegue de la base de datos y Backend se uso Render
+
+Evidencia del backend desplegado:
+[![backenddesplegado.png](https://i.postimg.cc/yNY8gsbt/backenddesplegado.png)](https://postimg.cc/zy6r4Z5F)
+Link: https://backend-5l98.onrender.com/swagger-ui/index.html#/
+
+Evidencia de la base de datos desplegada:[![basededatosdesplegada.png](https://i.postimg.cc/YSZBr7K1/basededatosdesplegada.png)](https://postimg.cc/XZfzLTvJ)
+
+
+###### 6.2.2.8. Team Collaboration Insights during Sprint.
+
+En esta sección se motrará los insights para cada repositorio
+
+Backend:
+[![back1.png](https://i.postimg.cc/KvRSC4g0/back1.png)](https://postimg.cc/N5qzHsDX)
+[![back2.png](https://i.postimg.cc/5tWhH3Kr/back2.png)](https://postimg.cc/bZLCWQh0)
+AdminApp:
+[![1admin.png](https://i.postimg.cc/KvKr6ycP/1admin.png)](https://postimg.cc/vcsVnkVT)
+[![admin2.png](https://i.postimg.cc/kMwqkkYg/admin2.png)](https://postimg.cc/hhJkm3qk)
+
 ### **6.3. Validation Interviews**
 
 #### **6.3.1. Diseño de Entrevistas**
@@ -738,7 +801,6 @@ Luego de que revisara la aplicación y el landing page, el entrevistado nos come
 | **CURSO** | cc238 |
 | **SECCIÓN** | 2510 |
 | **PROFESORES** | Reyes Rodríguez, Eduardo Martin |
-| **AUDITOR** | Equipo UX Grupo 2 |
 | **CLIENTE(S)** | Orlando Romero, Jordan Carranza, Mauricio Sanchez |
 
 ---
@@ -846,6 +908,11 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 * **Recomendación:** Optimizar el código y el hardware poco a poco.
 
+
+## Video About the product
+
+Link del vídeo:
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EV7TdpLmMP9GhRrmlItr7hIBPdfnWPpJ7-VCfS8U3Ww6HA?e=YkLOu7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ## Conclusiones
 
