@@ -449,6 +449,178 @@ En está sección se presentará los insights en los repositorios durante que se
 
 [![back-2.png](https://i.postimg.cc/mgPKPHqm/back-2.png)](https://postimg.cc/xXS67c9m)
 
+### **6.3. Validation Interviews**
+
+#### **6.3.1. Diseño de Entrevistas**
+
+Se muestra landing page:
+
+- ¿Qué te parece la Landing Page? 
+
+- ¿Siente que es fácil de usar?
+
+Se muestra el prototipo de la app y se explica las funcionalidades que tendrá:
+
+- ¿Siente que la aplicación móvil satisfará tus necesidades como futur@ usuario?
+
+#### **6.3.2.Registro de Entrevistas**
+
+Segmento 1 \- Entrevista 1
+
+[![image.png](https://i.postimg.cc/J7xgrqZ1/image.png)](https://postimg.cc/3Wy992t6)
+
+| Nombres | Apellidos | Edad | Inicio | Duración |
+| ----- | ----- | ----- | ----- | ----- |
+| Orlando | Romero Flores | 59 | 0:00 | 04:39 |
+
+Link de la entrevista: [Entrevista \- Orlando Romero 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/EcHW5uoaC2JInfvP-fvXsLEBvIU_6Qxe5yfnsrPmrDcAEA?e=xrjsv6)
+
+En esta ocasión, el entrevistado analiza el funcionamiento del landing page y la aplicación web, explicando lo que le gustó de ambos.
+
+Segmento 1 \- Entrevista 2
+
+[![image.png](https://i.postimg.cc/hjqwjZ2G/image.png)](https://postimg.cc/f3B5qCn4)
+
+| Nombres | Apellidos | Edad | Inicio | Duración |
+| ----- | ----- | ----- | ----- | ----- |
+| Jordan | Carranza | 33 | 4:39 | 9:00 |
+
+Link de la entrevista: [Entrevista \- Jordan Carranza 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/ER34wv59djpKkeFu4tIJH5kBy8pB_ZU2CI06Pra5N8LG8g?e=vXpfEf) 
+
+El entrevistado da su opinión técnica y personal sobre la landing page y la app móvil.
+
+Segmento 1 \- Entrevista 3
+
+[![image.png](https://i.postimg.cc/Pxz78b7Q/image.png)](https://postimg.cc/YG0R5FMv)
+
+| Nombres | Apellidos | Edad | Inicio | Duración |
+| ----- | ----- | ----- | ----- | ----- |
+| Mauricio | Sanchez | 20 | 9:00 | 13:11 |
+
+Link de la entrevista: [Entrevista \- Mauricio Sanchez 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211043_upc_edu_pe/ETf17IXoUthPnRIwPOYue8kBz-HsRWekajWqVpO5DVmYcg?e=iWs1dd)
+
+Luego de que revisara la aplicación y el landing page, el entrevistado nos comenta su experiencia y lo que han logrado cumplir según sus expectativas.
+
+#### **6.3.3.Evaluaciones según heurísticas**
+
+#### **UX Heuristics & Principles Evaluation**
+
+**Usability** \- **Inclusive Design** \- **Information Architecture**
+
+| CARRERA | Ingeniería de Software |
+| ----- | ----- |
+| **CURSO** | cc238 |
+| **SECCIÓN** | 2510 |
+| **PROFESORES** | Reyes Rodríguez, Eduardo Martin |
+| **AUDITOR** | Equipo UX Grupo A |
+| **CLIENTE(S)** | Orlando Romero, Jordan Carranza, Mauricio Sanchez |
+
+---
+
+##### **SITE o APP A EVALUAR:**
+
+**Landing Page y Prototipo de App Móvil BUILDMASTER**
+
+### **TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Visualización y navegación del Landing Page  
+2. Exploración de funcionalidades en el prototipo de la app  
+3. Registro real de usuario (implementación backend)
+
+##### **TAREAS FUERA DEL ALCANCE:**
+
+1. Mayor escalabilidad
+
+---
+
+**ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| ----- | ----- |
+| 1 | Problema superficial: ocurre con muy poca frecuencia y no interfiere significativamente con la tarea. |
+| 2 | Problema menor: ocurre ocasionalmente y dificulta un poco la tarea; prioridad baja de corrección. |
+| 3 | Problema mayor: ocurre frecuentemente o impide avanzar sin ayuda; prioridad alta de corrección. |
+| 4 | Problema muy grave: bloquea por completo la tarea; debe corregirse antes del lanzamiento. |
+
+---
+
+#### **TABLA RESUMEN:**
+
+| \# | Problema | Severidad | Heurística/Principio violada |
+| ----- | ----- | ----- | ----- |
+| 1 | No hay un control de navegación para volver al Landing Page desde el prototipo de la app | 3 | Usabilidad: Libertad y control del usuario |
+| 2 | Opciones de menú repetidas en secciones similares | 2 | Usabilidad: Consistencia y estándares |
+| 3 | Imágenes en el prototipo sin atributo "alt" | 3 | Inclusión: Proporciona experiencias comparables |
+| 4 | Botón "Ver más" sin contenido asociado | 3 | Inclusión: Accesibilidad de contenido |
+| 5 | Falta de escalabilidad del proyecto a largo plazo | 3 | Usabilidad: Libertad y control del usuario |
+
+---
+
+#### **DESCRIPCIÓN DE PROBLEMAS:**
+
+##### **PROBLEMA \#1: No hay un control de navegación para volver al Landing Page**
+
+* **Severidad:** 3
+
+* **Heurística violada:** Usabilidad \- Libertad y control del usuario
+
+* **Descripción:** En el prototipo de la app, una vez que el usuario avanza a la sección de funcionalidades, no existe un elemento que permita regresar fácilmente al Landing Page, lo que obliga a reiniciar la vista o cerrar la ventana.
+
+* **Recomendación:** Agregar un botón de "Inicio" o un ícono de retroceso persistente en la esquina superior para facilitar la navegación bidireccional.
+
+---
+
+##### **PROBLEMA \#2: Opciones de menú repetidas en secciones similares**
+
+* **Severidad:** 2
+
+* **Heurística violada:** Usabilidad \- Consistencia y estándares
+
+* **Descripción:** Se detecta que elementos de navegación y botones con la misma función aparecen duplicados en diferentes partes de la interfaz, generando confusión en el usuario.
+
+* **Recomendación:** Unificar las rutas de navegación y eliminar elementos redundantes para mantener la consistencia.
+
+---
+
+##### **PROBLEMA \#3: Imágenes en el prototipo sin atributo "alt"**
+
+* **Severidad:** 3
+
+* **Heurística violada:** Inclusión \- Proporciona experiencias comparables
+
+* **Descripción:** Las imágenes utilizadas en el prototipo carecen de texto alternativo, lo que impide la accesibilidad para lectores de pantalla.
+
+* **Recomendación:** Incluir atributos "alt" descriptivos en todas las imágenes para mejorar la accesibilidad.
+
+---
+
+##### **PROBLEMA \#4: Botón "Ver más" sin contenido asociado**
+
+* **Severidad:** 3
+
+* **Heurística violada:** Inclusión \- Accesibilidad de contenido
+
+* **Descripción:** El elemento "Ver más" invita a explorar contenido adicional, pero al interactuar no existe nada más que mostrar.
+
+* **Recomendación:** Remover el botón si no hay contenido o implementar la sección asociada prevista.
+
+---
+
+##### **PROBLEMA \#5: Falta de escalabilidad del proyecto a largo plazo**
+
+* **Severidad:** 3
+
+* **Heurística violada:** Usabilidad: Libertad y control del usuario
+
+* **Descripción:** La app no está preparada para poder actualizarse rápidamente o soportar mayor tráfico de usuarios que el esperado
+
+* **Recomendación:** Optimizar el código y el hardware poco a poco.
+
+
 ## Conclusiones
 
 
