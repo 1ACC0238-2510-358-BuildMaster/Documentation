@@ -449,6 +449,207 @@ En está sección se presentará los insights en los repositorios durante que se
 
 [![back-2.png](https://i.postimg.cc/mgPKPHqm/back-2.png)](https://postimg.cc/xXS67c9m)
 
+#### 6.2.2. Sprint 2
+#### 6.2.2.1. Sprint Planning 2.
+
+| **Aspecto**                      | **Detalles**                                                                                                           |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**   |                                                                                                                        |
+| **Date**                         | 3/06/2025                                                                                                             |
+| **Time**                         | 4:00 pm                                                                                                                |
+| **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
+| **Prepared By**                  | NovaPeak                                                                                                              |
+| **Attendees (to planning meeting)** | Casaverde De La Cruz, Ernesto David / Cantoral Sedamano, Alexander Alberto / Romero Qwistgaard, Russell Stephen / Machuca García, Celso Eduardo |
+| **Sprint 1 Review Summary**      | En el Sprint 1 se completó exitosamente el desarrollo de la Landing Page y la primera versión de la aplicación móvil con funcionalidades básicas para usuarios. Se implementaron las características de registro, inicio de sesión, búsqueda de componentes, filtros y visualización de builds populares. La retroalimentación inicial de los usuarios fue positiva, destacando la interfaz intuitiva y la funcionalidad de búsqueda.                           |
+| **Sprint 1 Retrospective Summary** | El equipo destacó el excelente progreso en el desarrollo del frontend y backend básico. Se identificó la necesidad de mejorar la documentación del código y establecer mejores prácticas para la gestión de estados en la aplicación. El equipo acordó dedicar más tiempo a las pruebas unitarias y de integración para mantener la calidad del código. Se sugirió implementar un sistema de revisión de código más riguroso. |
+| **Sprint Goal & User Stories**   | **Our focus is on** *desarrollar las funcionalidades administrativas del sistema, incluyendo gestión de usuarios, moderación de contenido y herramientas de administración.* **We believe it delivers** *un sistema robusto de administración que permita mantener la calidad del contenido y gestionar eficientemente la plataforma* **to** *administradores del sistema, proporcionando herramientas esenciales para la operación y mantenimiento de la plataforma.* **This will be confirmed when** *los administradores puedan gestionar usuarios, moderar contenido y acceder a análisis detallados del sistema de manera eficiente.*                                                             |
+| **Sprint 2 Goal**                | Implementar el panel de administración completo con funcionalidades de gestión de usuarios, moderación de contenido y herramientas de análisis |
+| **Sprint 2 Velocity**            | Velocidad estimada de 42 puntos. La velocidad del equipo se incrementó considerando la experiencia adquirida en el Sprint 1 y la mayor familiaridad con las tecnologías utilizadas.                                                                             |
+| **Sum of Story Points**          | Se asignaron 42 puntos de historia a las tareas de desarrollo del panel administrativo, incluyendo funcionalidades de gestión, moderación y análisis del sistema. |
+
+##### 6.2.2.2. Sprint Backlog 2.
+
+El objetivo principal de este Sprint es desarrollar un sistema completo de administración que permita gestionar usuarios, moderar contenido y proporcionar herramientas analíticas para los administradores del sistema.
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td colspan="7">Sprint 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">User Story</td>
+            <td colspan="6">Work-Item / Task</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Estimation (Hours)</td>
+            <td>Assigned To</td>
+            <td>Status (To-do / In-Process / To-Review / Done)</td>
+        </tr>
+        <!-- Fila de separación para User Story 7 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US07</td>
+        </tr>
+        <tr>
+            <td>US07</td>
+            <td>Panel de administración</td>
+            <td>07</td>
+            <td>Desarrollo del dashboard administrativo</td>
+            <td>Esta tarea se enfoca en crear el panel principal de administración con métricas generales, navegación y acceso rápido a todas las funcionalidades administrativas.</td>
+            <td>04</td>
+            <td>Machuca García, Celso Eduardo</td>
+            <td>In-Process</td>
+        </tr>
+        <!-- Fila de separación para User Story 8 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US08</td>
+        </tr>
+        <tr>
+            <td>US08</td>
+            <td>Gestión de usuarios</td>
+            <td>08</td>
+            <td>Desarrollo de CRUD de usuarios</td>
+            <td>Esta tarea implementa las funcionalidades para crear, leer, actualizar y eliminar usuarios del sistema, incluyendo la asignación de roles y permisos.</td>
+            <td>05</td>
+            <td>Romero Qwistgaard, Russell Stephen</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para User Story 9 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US09</td>
+        </tr>
+        <tr>
+            <td>US09</td>
+            <td>Moderación de builds</td>
+            <td>09</td>
+            <td>Sistema de moderación de contenido</td>
+            <td>Esta tarea desarrolla las herramientas para que los administradores puedan revisar, aprobar, rechazar o eliminar builds reportadas por la comunidad.</td>
+            <td>04</td>
+            <td>Casaverde De La Cruz, Ernesto David</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para User Story 10 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US10</td>
+        </tr>
+        <tr>
+            <td>US10</td>
+            <td>Gestión de componentes</td>
+            <td>10</td>
+            <td>Administración del catálogo de componentes</td>
+            <td>Esta tarea permite a los administradores agregar, editar, eliminar y categorizar componentes en el catálogo del sistema.</td>
+            <td>04</td>
+            <td>Cantoral Sedamano, Alexander Alberto</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para User Story 11 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US11</td>
+        </tr>
+        <tr>
+            <td>US11</td>
+            <td>Sistema de reportes</td>
+            <td>11</td>
+            <td>Gestión de reportes de usuarios</td>
+            <td>Esta tarea implementa un sistema para revisar y gestionar reportes de contenido inapropiado o usuarios problemáticos enviados por la comunidad.</td>
+            <td>03</td>
+            <td>Casaverde De La Cruz, Ernesto David</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para User Story 12 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US12</td>
+        </tr>
+        <tr>
+            <td>US12</td>
+            <td>Análisis y estadísticas</td>
+            <td>12</td>
+            <td>Dashboard de métricas y análisis</td>
+            <td>Esta tarea desarrolla un sistema de análisis que muestra estadísticas de uso, usuarios activos, builds más populares y métricas de engagement.</td>
+            <td>05</td>
+            <td>Machuca García, Celso Eduardo</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para User Story 13 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US13</td>
+        </tr>
+        <tr>
+            <td>US13</td>
+            <td>Gestión de categorías</td>
+            <td>13</td>
+            <td>Administración de categorías de componentes</td>
+            <td>Esta tarea permite crear, editar y eliminar categorías para organizar mejor los componentes del catálogo.</td>
+            <td>02</td>
+            <td>Cantoral Sedamano, Alexander Alberto</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para Technical Story 2 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for TS02</td>
+        </tr>
+        <tr>
+            <td>TS02</td>
+            <td>Sistema de roles y permisos</td>
+            <td>28</td>
+            <td>Implementación de autorización por roles</td>
+            <td>Esta tarea desarrolla el sistema de roles y permisos que controla el acceso a diferentes funcionalidades según el tipo de usuario.</td>
+            <td>04</td>
+            <td>Romero Qwistgaard, Russell Stephen</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para Technical Story 5 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for TS05</td>
+        </tr>
+        <tr>
+            <td>TS05</td>
+            <td>API de administración</td>
+            <td>31</td>
+            <td>Desarrollo de endpoints administrativos</td>
+            <td>Esta tarea implementa los endpoints específicos para las funcionalidades administrativas, incluyendo validaciones y controles de seguridad adicionales.</td>
+            <td>04</td>
+            <td>Cantoral Sedamano, Alexander Alberto</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para Technical Story 6 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for TS06</td>
+        </tr>
+        <tr>
+            <td>TS06</td>
+            <td>Sistema de logs y auditoría</td>
+            <td>32</td>
+            <td>Implementación de logging y auditoría</td>
+            <td>Esta tarea desarrolla un sistema de logs que registra todas las acciones administrativas para fines de auditoría y seguridad.</td>
+            <td>03</td>
+            <td>Machuca García, Celso Eduardo</td>
+            <td>To-do</td>
+        </tr>
+        <!-- Fila de separación para Technical Story 8 -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for TS08</td>
+        </tr>
+        <tr>
+            <td>TS08</td>
+            <td>Notificaciones administrativas</td>
+            <td>33</td>
+            <td>Sistema de notificaciones para administradores</td>
+            <td>Esta tarea implementa un sistema de notificaciones que alerta a los administradores sobre eventos importantes como reportes nuevos, actividad sospechosa o métricas críticas.</td>
+            <td>02</td>
+            <td>Casaverde De La Cruz, Ernesto David</td>
+            <td>To-do</td>
+        </tr>
+    </tbody>
+</table>
+
 ### **6.3. Validation Interviews**
 
 #### **6.3.1. Diseño de Entrevistas**
