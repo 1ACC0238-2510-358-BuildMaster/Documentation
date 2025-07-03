@@ -724,7 +724,8 @@ Evidencia del backend desplegado:
 [![backenddesplegado.png](https://i.postimg.cc/yNY8gsbt/backenddesplegado.png)](https://postimg.cc/zy6r4Z5F)
 Link: https://backend-5l98.onrender.com/swagger-ui/index.html#/
 
-Evidencia de la base de datos desplegada:[![basededatosdesplegada.png](https://i.postimg.cc/YSZBr7K1/basededatosdesplegada.png)](https://postimg.cc/XZfzLTvJ)
+Evidencia de la base de datos desplegada:
+[![basededatosdesplegada.png](https://i.postimg.cc/YSZBr7K1/basededatosdesplegada.png)](https://postimg.cc/XZfzLTvJ)
 
 
 ###### 6.2.2.8. Team Collaboration Insights during Sprint.
@@ -737,6 +738,30 @@ Backend:
 AdminApp:
 [![1admin.png](https://i.postimg.cc/KvKr6ycP/1admin.png)](https://postimg.cc/vcsVnkVT)
 [![admin2.png](https://i.postimg.cc/kMwqkkYg/admin2.png)](https://postimg.cc/hhJkm3qk)
+
+##### 6.2.3. Sprint 3
+###### 6.2.3.1. Sprint Planning 3
+
+###### 6.2.3.2. Sprint Backlog 3
+
+
+###### 6.2.3.3. Development Evidence for Sprint Review.
+
+
+###### 6.2.3.4. Testing Suite Evidence for Sprint Review.
+
+
+###### 6.2.3.5. Execution Evidence for Sprint Review.
+
+
+###### 6.2.3.6. Services Documentation Evidence for Sprint Review.
+
+
+###### 6.2.3.7. Software Deployment Evidence for Sprint Review.
+
+
+###### 6.2.3.8. Team Collaboration Insights during Sprint.
+
 
 ### **6.3. Validation Interviews**
 
@@ -914,10 +939,10 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 Link del vídeo:
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EV7TdpLmMP9GhRrmlItr7hIBPdfnWPpJ7-VCfS8U3Ww6HA?e=YkLOu7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-## Conclusiones
+## Conclusiones y Recomendaciones
 
 
-## Video About-the-team
+## Video About-the-team 
 
 ## Bibliografía
 
@@ -935,4 +960,4 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EV7TdpLm
 
 - To-be Scenario Mapping: https://miro.com/app/board/uXjVIE_P0Bw=/?share_link_id=102963333287 
 
-- Video de Exposición del TP: 
+- Video de Exposición del TF: 
