@@ -742,27 +742,89 @@ AdminApp:
 ##### 6.2.3. Sprint 3
 ###### 6.2.3.1. Sprint Planning 3
 
-###### 6.2.3.2. Sprint Backlog 3
+| **Aspecto**                      | **Detalles**                                                                                                           |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Date**                         | 1/07/2025                                                                                                             |
+| **Time**                         | 6:00 pm                                                                                                                |
+| **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
+| **Prepared By**                  | NovaPeak                                                                                                              |
+| **Attendees (to planning meeting)** | Casaverde De La Cruz, Ernesto David / Cantoral Sedamano, Alexander Alberto / Romero Qwistgaard, Russell Stephen|
+| **Sprint 2 Review Summary**      | En el Sprint 2 se completó la primera versión de la aplicación para la vista de administrador en flutter.              |
+| **Sprint 2 Retrospective Summary** | El equipo destacó el excelente progreso en el desarrollo del frontend y backend básico. Se identificó la necesidad de mejorar la documentación del código y establecer mejores prácticas para la gestión de estados en la aplicación. El equipo acordó dedicar más tiempo a las pruebas unitarias y de integración para mantener la calidad del código. Se sugirió implementar un sistema de revisión de código más riguroso. |
+| **Sprint Goal & User Stories**   | **Our focus is on** *desarrollar las funcionalidades administrativas del sistema, incluyendo gestión de usuarios, moderación de contenido y herramientas de administración y de uso rutinario* **We believe it delivers** *una funciondalidad sencilla gana al usuario porque ninguno quiere leer un manual para usar una aplicación* **to** los usuarios para que usen la aplicación de forma sencilla* **This will be confirmed when** *los usuarios tanto administradores como contidianos puedan usar la aplicación sin problemas*                                                             |
+| **Sprint 3 Goal**                | Implementar el panel de administración completo con funcionalidades de gestión de usuarios, moderación de contenido y herramientas de análisis |
+| **Sprint 3 Velocity**            | Velocidad estimada de 42 puntos. La velocidad del equipo se incrementó considerando la experiencia adquirida en el Sprint 1 y la mayor familiaridad con las tecnologías utilizadas.                                                                             |
+| **Sum of Story Points**          | Se asignaron 42 puntos de historia a las tareas de desarrollo del panel administrativo, incluyendo funcionalidades de gestión, moderación y análisis del sistema. |
 
+
+###### 6.2.3.2. Sprint Backlog 3
+ No se desarrollaron más historias de usario en este sprint más que terminar las que estaba en revisión a medias.
 
 ###### 6.2.3.3. Development Evidence for Sprint Review.
 
+En estos commits se puede observar los últimos updates y merge a la rama main que se hizo en el repositorio de la Landing Page, Frontend y Backend.
 
-###### 6.2.3.4. Testing Suite Evidence for Sprint Review.
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+| Landing Page | main | b442176fa7d5b8e54d45d7621ccaebe7648d5f45| Feat: About the team and apk link| |08/07/2025|
 
+Repositorio de la LP: https://github.com/1ACC0238-2510-358-BuildMaster/buildmaster-landing
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| Backend | pre-main  | 0e5229baf057b88f68673d6062d413a343262ec6 | Feat: Build methods ready | | 01/07/2025 |
+|Backend | pre-main| b53159964b14b9ac61681c93d1b05bfd92f048a0 |feat: Added BuildResultSimulation|Es algo básico y capaz lo mejore para la entrega pero por ahora sirve| 02/07/2025 |
+
+Reposiorio del Backend: https://github.com/1ACC0238-2510-358-BuildMaster/Backend
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| BuildMasterApp | feature/build | 0e5229baf057b88f68673d6062d413a343262ec6 | Feat: Build methods ready | | 01/07/2025 |
+| BuildMasterApp |d2e4e9abdd3cade5eaf8d0605afeaa1c62b690cc| feature/build | feat: Filtros de componentes|TODO: Build BC|07/07/2025|
+| BuildMasterApp |626ba882d039550d8de505f66d4ba49c7e0d7bc6|feature/build|feat: Guardar build funcional|07/07/2025|
+
+Repositorio de las apps:
+https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterApp
+https://github.com/1ACC0238-2510-358-BuildMaster/BuildMasterAdminApp
 
 ###### 6.2.3.5. Execution Evidence for Sprint Review.
+
+En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas. 
+
+Vídeo con la ejecución de las vistas de usuario:
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYWAp9cqz5RMj7G9RaI1EtoBHt__DmNqebx1ue9bbDWxnQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=GyWmof 
+Vídeo con la ejecución de las vistas de administrador:
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQqCiHYXzcJEtX_3kUwtiRgB8dNHzehbC95XBgvSp6Lt4w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Hv9wx9 
+
+
+
 
 
 ###### 6.2.3.6. Services Documentation Evidence for Sprint Review.
 
+[![services.png](https://i.postimg.cc/MGpc2rng/services.png)](https://postimg.cc/BjRZ2pcC)
+Liks mejorados:
+Backend mejorado con build configuration:
+https://backend-5l98.onrender.com/swagger-ui/index.html#/
 
 ###### 6.2.3.7. Software Deployment Evidence for Sprint Review.
 
+Para este sprint se mejoró la LP y las aplicaciones para cada tipo de usuario:
+[![evidence-lp.png](https://i.postimg.cc/jdWmvzRT/evidence-lp.png)](https://postimg.cc/PPjS5vLV)
+Lp mejorada con el link para descargar la app y también el video about the team:
+https://1acc0238-2510-358-buildmaster.github.io/buildmaster-landing/
+Links de descarga de los apks:
+User version:
+https://drive.google.com/file/d/1Kc59fx7H_LoX7C2kv3jttoe0xC96gjyo/view?usp=drive_link
+Admin version:
+https://drive.google.com/file/d/1vZnNFHYoKUwT7t9bDcz-j_fO5zMV_1DE/view?usp=drive_link
 
 ###### 6.2.3.8. Team Collaboration Insights during Sprint.
-
-
+Imagenes de la colaboración durante este sprint:
+[![image.png](https://i.postimg.cc/MGyxYHCW/image.png)](https://postimg.cc/1g5LmmRT)
+[![image.png](https://i.postimg.cc/ncZFS4H6/image.png)](https://postimg.cc/Jt6CGBHq)
+[![image.png](https://i.postimg.cc/8cXZvdwj/image.png)](https://postimg.cc/LgfkK1cp)
+[![image.png](https://i.postimg.cc/vBBqZSLp/image.png)](https://postimg.cc/zLsSd7Qj)
 ### **6.3. Validation Interviews**
 
 #### **6.3.1. Diseño de Entrevistas**
@@ -937,12 +999,15 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 ## Video About the product
 
 Link del vídeo:
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EV7TdpLmMP9GhRrmlItr7hIBPdfnWPpJ7-VCfS8U3Ww6HA?e=YkLOu7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
 
 ## Conclusiones y Recomendaciones
 
+Para concluir este trabajo se podría decir que la idea tiene potencial pero necsesita muchos recursos y un mejor equipo para se desarrollada en cualquier de las dos formas en las que se hizo.
 
 ## Video About-the-team 
+
+Link del vídeo: https://acortar.link/FwYoqD
 
 ## Bibliografía
 
